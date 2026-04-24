@@ -465,11 +465,25 @@ response = client.messages.create(
 | [Deal Term Negotiation Brief Builder](skills/brokerage/deal-term-negotiation-brief-builder.md) | Organizes seller priorities, give / get issues, and business-term negotiation posture |
 | [PSA to Close Transaction Coordinator](skills/brokerage/psa-to-close-transaction-coordinator.md) | Coordinates milestone tracking, open issues, and seller-side execution from signed deal to close |
 
+### Asset Management v1 (9 skills)
+
+| Skill | What It Does |
+|-------|-------------|
+| [Annual Operating Budget Builder](skills/asset-management/annual-operating-budget-builder.md) | Builds next-year operating budget from T-12 actuals, rent roll, and market assumptions with NOI / NCF split per Fannie Form 4660 convention |
+| [Monthly Variance Analyst](skills/asset-management/monthly-variance-analyst.md) | Monthly and YTD variance analysis classifying each line item as Timing, Permanent, or One-Time with LP-ready commentary |
+| [Rent Collection & Delinquency Manager](skills/asset-management/rent-collection-delinquency-manager.md) | A/R aging analysis, split-aging decision rule, state-specific eviction timelines, bad-debt reserve, and tenant-level collection actions |
+| [Renewal Decision Analyst](skills/asset-management/renewal-decision-analyst.md) | Per-lease retain-vs-replace economics comparing retention cost to turnover cost, with rent-bump elasticity guidance |
+| [Lease-Up & Concessions Analyst](skills/asset-management/lease-up-concessions-analyst.md) | Lease-up velocity tracking, concession burn-off mechanics, effective-vs-face rent reconciliation, and stabilization-date reforecasting |
+| [CapEx & Value-Add Execution Tracker](skills/asset-management/capex-value-add-execution-tracker.md) | Capex program tracking vs budget, rent-premium realization %, yield-on-cost, and named failure-mode analysis |
+| [NOI Improvement Analyst](skills/asset-management/noi-improvement-analyst.md) | Prioritized NOI lever library scored by Impact × Difficulty × Time-to-Realize across ancillary income, OpEx reduction, tax appeal, RUBS, and insurance shopping |
+| [Hold/Sell/Refi Analyst](skills/asset-management/hold-sell-refi-analyst.md) | Four-scenario comparison (Hold / Refi+Hold / Sell-Current / Sell-Stabilized) with IRR-to-date, remaining-IRR projection, and disposition handoff to broker |
+| [Quarterly Asset Review Writer](skills/asset-management/quarterly-asset-review-writer.md) | Composite flagship skill — synthesizes all eight prior AM skills into a publication-ready QAR memo for IC, LP, or internal asset committee |
+
 ---
 
 ## Knowledge Bases
 
-Twelve reference files containing formulas, benchmarks, criteria, and checklists. Five belong to the original multifamily-first release, three extend the repo for Industrial v1, and four extend it again for Brokerage Investment Sales v1.
+Fifteen reference files containing formulas, benchmarks, criteria, and checklists. Five belong to the original multifamily-first release, three extend the repo for Industrial v1, four extend it for Brokerage Investment Sales v1, and three extend it again for Asset Management v1.
 
 | Knowledge Base | What It Contains | Used By |
 |---------------|-----------------|---------|
@@ -485,12 +499,15 @@ Twelve reference files containing formulas, benchmarks, criteria, and checklists
 | [Broker Opinion of Value Guidance](knowledge/broker-opinion-of-value-guidance.md) | BOV boundaries, method selection, disclaimer logic, and state-law caution | BOV Builder, Listing Proposal |
 | [Marketing Confidentiality and Buyer Process](knowledge/marketing-confidentiality-and-buyer-process.md) | Teaser / OM release, confidentiality, registration, vetting, data room, tours, and Q&A | OM / Teaser Writer, Buyer Process Manager |
 | [Offer Negotiation and Closing Playbook](knowledge/offer-negotiation-and-closing-playbook.md) | Bid comparison, BAFO logic, seller-side negotiation framing, and PSA-to-close coordination | Bid Leveling, Negotiation Brief, PSA-to-Close |
+| [Asset Management Benchmarks](knowledge/asset-management-benchmarks.md) | Operational benchmarks for variance materiality, A/R reserves, turnover costs, unit-turn capex, concession norms by market, bad-debt, absorption, ancillary income lift, and rent-premium realization | Budget Builder, Variance Analyst, Collections Manager, Lease-Up Analyst, CapEx Tracker, NOI Improvement |
+| [Renewal Economics](knowledge/renewal-economics.md) | Retain-vs-replace framework, turnover cost components, rent-bump elasticity curve, tenant A/B/C tiering, hold-period analytics, refinance DSCR/LTV gates, and four-scenario disposition framework | Renewal Analyst, CapEx Tracker, Hold/Sell/Refi Analyst |
+| [Asset Management Reporting Standards](knowledge/asset-management-reporting-standards.md) | 10-section QAR template, LP report cadence, 12-KPI mandatory dashboard, T-3 vs T-12 bridging conventions, variance-classification taxonomy, and commentary-to-table ratios | Variance Analyst, Quarterly Asset Review Writer |
 
 **How to use knowledge bases:** Load the knowledge base alongside the skill you're using. For example, when using the Financial Model Builder skill, also load Underwriting Calculations for formula definitions and Multifamily Benchmarks for expense assumptions. The Claude Code plugins bundle relevant knowledge bases automatically.
 
 ### Companion Research Notes
 
-Industrial v1 includes 11 research notes under `research/industrial/` plus [research/industrial/INDEX.md](research/industrial/INDEX.md). Brokerage Investment Sales v1 adds 12 more research notes under `research/brokerage/` plus [research/brokerage/INDEX.md](research/brokerage/INDEX.md).
+Industrial v1 includes 11 research notes under `research/industrial/` plus [research/industrial/INDEX.md](research/industrial/INDEX.md). Brokerage Investment Sales v1 adds 12 more research notes under `research/brokerage/` plus [research/brokerage/INDEX.md](research/brokerage/INDEX.md). Asset Management v1 adds 10 more research files under `research/asset-management/` — 1 shared taxonomy seed, 9 skill-backing notes with 168+ cited sources, and [research/asset-management/INDEX.md](research/asset-management/INDEX.md).
 
 ---
 
