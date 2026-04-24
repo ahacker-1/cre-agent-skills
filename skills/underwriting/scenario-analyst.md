@@ -329,3 +329,4 @@ For deeper analysis, pair this skill with:
 - [Multifamily Benchmarks](knowledge/multifamily-benchmarks.md) — market norms for vacancy, expense ratios, and rent growth that inform scenario variable selection
 - [Financial Model Builder](skills/underwriting/financial-model-builder.md) — produces the base case model that this skill stress-tests
 - [IC Memo Writer](skills/underwriting/ic-memo-writer.md) — consumes this skill's scenario output for the investment committee memorandum
+- Downstream: [Hold/Sell/Refi Analyst](../asset-management/hold-sell-refi-analyst.md)

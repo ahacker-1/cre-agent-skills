@@ -12,15 +12,19 @@ This roadmap reflects the intended direction of `cre-agent-skills` as a broader 
 
 ### 1. Multifamily Depth
 
+Status: Substantially complete (4 of 5 focus areas shipped in v1.3.0)
+
 Focus areas:
 
-- Asset management workflows
-- Lease-up and concessions analysis
-- Value-add execution tracking
-- Renewal, collections, and delinquency review
-- Affordable and workforce housing overlays
+- Asset management workflows — ✅ Shipped in v1.3.0 (Asset Management pack)
+- Lease-up and concessions analysis — ✅ Shipped in v1.3.0 (Asset Management pack)
+- Value-add execution tracking — ✅ Shipped in v1.3.0 (Asset Management pack)
+- Renewal, collections, and delinquency review — ✅ Shipped in v1.3.0 (Asset Management pack)
+- Affordable and workforce housing overlays — Deferred to v1.4.0+
 
 ### 2. Office
+
+Status: Next — planned for v1.4.0
 
 Focus areas:
 

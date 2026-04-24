@@ -381,7 +381,15 @@ Compile all post-closing items:
         "reason": "estimated | assumed | unverified | stale_data | interpolated",
         "impact": "Description of what downstream analysis this affects"
       }
-    ]
+    ],
+    "stabilization_handoff": {
+      "_comment": "(optional, populated if asset will be fed to cre-asset-management pack for post-acquisition operations)",
+      "owner_name": "",
+      "acquisition_date": "",
+      "day1_rent_roll_ref": "",
+      "day1_t12_ref": "",
+      "business_plan_summary": ""
+    }
   }
 }
 ```
@@ -464,3 +472,4 @@ For deeper analysis, pair this skill with:
 - **Legal Checklist** knowledge base — for detailed document requirements by document type and jurisdiction
 - **Lender Criteria** knowledge base — for lender-specific closing condition checklists and common agency/CMBS requirements
 - **Underwriting Calculations** knowledge base — for verifying DSCR and Debt Yield tests referenced in lender closing conditions
+- Downstream cross-reference: [Annual Operating Budget Builder](../asset-management/annual-operating-budget-builder.md) — consumes `stabilization_handoff` block for next-year budget construction

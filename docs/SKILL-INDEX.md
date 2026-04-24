@@ -50,6 +50,20 @@ Find the right skill for your task. Each entry shows what the skill does, what i
 | [Closing Coordinator](../skills/closing/closing-coordinator.md) | Manage the closing checklist | Status of all workstreams (DD, UW, financing, legal) | Legal Checklist |
 | [Funds Flow Manager](../skills/closing/funds-flow-manager.md) | Prepare funds flow and settlement statement | Purchase price, loan terms, prorations, closing costs | Underwriting Calculations |
 
+## Asset Management
+
+| Skill | Use When You Need To... | Key Inputs | Pair With |
+|-------|------------------------|------------|-----------|
+| [Annual Operating Budget Builder](../skills/asset-management/annual-operating-budget-builder.md) | Builds next-year operating budget from T-12 actuals + rent roll + market assumptions with NOI/NCF split | T-12 actuals, rent roll, market assumptions | — |
+| [Monthly Variance Analyst](../skills/asset-management/monthly-variance-analyst.md) | Monthly/YTD variance analysis with Timing/Permanent/One-Time classification and LP-ready commentary | Monthly actuals, approved budget, prior-year comps | — |
+| [Rent Collection & Delinquency Manager](../skills/asset-management/rent-collection-delinquency-manager.md) | A/R aging analysis with split-aging rule, delinquency classification, state-specific eviction timelines | A/R aging report, rent roll, state jurisdiction | — |
+| [Renewal Decision Analyst](../skills/asset-management/renewal-decision-analyst.md) | Per-lease retain-vs-replace economics with rent-bump elasticity guidance | Rent roll, market rents, turnover costs, concession data | — |
+| [Lease-Up & Concessions Analyst](../skills/asset-management/lease-up-concessions-analyst.md) | Lease-up velocity tracking, concessions burn-off mechanics, stabilization reforecast | Lease-up traffic, leasing velocity, concession schedule | — |
+| [CapEx & Value-Add Execution Tracker](../skills/asset-management/capex-value-add-execution-tracker.md) | Capex program tracking with rent-premium realization and failure-mode analysis | Capex budget, completion status, post-reno rent data | — |
+| [NOI Improvement Analyst](../skills/asset-management/noi-improvement-analyst.md) | Prioritized NOI lever library scored by Impact × Difficulty × Time-to-Realize | Current P&L, rent roll, operating data, market context | — |
+| [Hold/Sell/Refi Analyst](../skills/asset-management/hold-sell-refi-analyst.md) | Four-scenario comparison (Hold / Refi+Hold / Sell-Current / Sell-Stabilized) with IRR-to-date and disposition handoff | Basis, current debt, projected NOI, market cap rates | — |
+| [Quarterly Asset Review Writer](../skills/asset-management/quarterly-asset-review-writer.md) | Composite flagship skill: synthesizes all 8 AM skills into a publication-ready QAR memo | Outputs from the 8 AM skills, LP reporting context | — |
+
 ## Document Ingestion
 
 | Skill | Use When You Need To... | Key Inputs | Pair With |

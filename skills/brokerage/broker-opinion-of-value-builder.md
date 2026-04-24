@@ -19,6 +19,7 @@ Use this skill when you need to prepare a broker pricing opinion for a seller wh
 - Known market context
 - Seller timing or process preferences
 - State or jurisdiction if known
+- (Optional) `disposition_handoff` block from [Hold/Sell/Refi Analyst](../asset-management/hold-sell-refi-analyst.md) — provides as-is / stabilized NOI, capex completed/remaining, suggested pricing range, deal story
 
 ---
 
@@ -140,6 +141,7 @@ HIGH | MEDIUM | LOW
 
 - [Broker Opinion of Value Guidance](knowledge/broker-opinion-of-value-guidance.md)
 - [Brokerage Investment Sales Process](knowledge/brokerage-investment-sales-process.md)
+- Upstream cross-reference: [Hold/Sell/Refi Analyst](../asset-management/hold-sell-refi-analyst.md) — produces `disposition_handoff` object
 
 ## Research Basis
 

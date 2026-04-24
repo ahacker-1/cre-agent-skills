@@ -1,20 +1,20 @@
 # CRE Agent Skills — AI-Powered Commercial Real Estate Analysis
 
-**Originally released with 25 standalone AI skill files for commercial real estate multifamily acquisitions — due diligence, underwriting, financing, legal, and closing. Expanded in v1.1.0 with Industrial v1, and now expanded again in v1.2.0 with an 8-skill Brokerage Investment Sales v1 pack, 4 brokerage knowledge bases, 12 companion research notes, and an 8th Claude Code plugin.**
+**Originally released with 25 standalone AI skill files for commercial real estate multifamily acquisitions — due diligence, underwriting, financing, legal, and closing. Expanded in v1.1.0 with Industrial v1, again in v1.2.0 with an 8-skill Brokerage Investment Sales v1 pack, and now expanded in v1.3.0 with a 9-skill Asset Management v1 pack covering post-acquisition operations.**
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-41-green.svg)](#skill-index)
-[![Knowledge Bases](https://img.shields.io/badge/Knowledge_Bases-12-blue.svg)](#knowledge-bases)
+[![Skills](https://img.shields.io/badge/Skills-50-green.svg)](#skill-index)
+[![Knowledge Bases](https://img.shields.io/badge/Knowledge_Bases-15-blue.svg)](#knowledge-bases)
 [![Research Notes](https://img.shields.io/badge/Research_Notes-23-orange.svg)](#new-in-v120)
-[![Claude Code Plugins](https://img.shields.io/badge/Claude_Code_Plugins-8-purple.svg)](#claude-code-plugins-recommended)
+[![Claude Code Plugins](https://img.shields.io/badge/Claude_Code_Plugins-9-purple.svg)](#claude-code-plugins-recommended)
 [![No API Keys](https://img.shields.io/badge/API_Keys-None_Required-brightgreen.svg)](#quick-start)
 
 ---
 
 | | | | |
 |---|---|---|---|
-| **41** AI Skills | **12** Knowledge Bases | **8** Claude Code Plugins | **0** Dependencies |
-| **7** Due Diligence | **3** Underwriting | **3** Financing | **8** Brokerage v1 |
+| **50** AI Skills | **15** Knowledge Bases | **9** Claude Code Plugins | **0** Dependencies |
+| **7** Due Diligence | **3** Underwriting | **3** Financing | **9** Asset Management v1 |
 
 ---
 
@@ -25,6 +25,18 @@ These skills are extracted from the [CRE Acquisition Orchestrator](https://githu
 > **No API keys. No installation. No dependencies.** Each `.md` file works on its own.
 
 > **Disclaimer:** These skill files are educational and informational resources, not production software for making investment decisions. The financial calculations, legal checklists, underwriting models, and analysis outputs are for reference and learning purposes only. Nothing in this repository constitutes financial, legal, investment, or tax advice. The authors and contributors are not liable for any decisions made based on information produced using these skills. Always consult qualified professionals — licensed attorneys, CPAs, commercial real estate brokers, and financial advisors — before making real estate investment decisions. These materials are provided "as is" without warranty of any kind. See [LICENSE](LICENSE) for full terms.
+
+---
+
+## New in v1.3.0
+
+This release adds a new post-acquisition operational pack without changing the existing multifamily, industrial, or brokerage paths:
+
+- **Asset Management v1** with 9 new post-acquisition operational skills — budgeting, variance, collections, renewals, lease-up, capex, NOI improvement, hold/sell/refi decisions, and quarterly asset review memo
+- **`/cre-asset-management` Claude Code plugin**
+- **Additive release framing** on top of the original multifamily core, Industrial v1, and Brokerage Investment Sales v1
+
+Asset Management v1 is post-closing operational work for owner/operators running stabilized and transitional assets.
 
 ---
 
@@ -59,6 +71,7 @@ The original multifamily core remains intact. Industrial v1 is the first additiv
 
 ## Table of Contents
 
+- [New in v1.3.0](#new-in-v130)
 - [New in v1.2.0](#new-in-v120)
 - [New in v1.1.0](#new-in-v110)
 - [Quick Start](#quick-start)
@@ -143,7 +156,7 @@ The repo is structured so an AI agent can read this README, understand the full 
 
 ## Claude Code Plugins (Recommended)
 
-The repo now includes the original six department plugins plus two additive packs: Industrial v1 and Brokerage Investment Sales v1. Each plugin includes a `SKILL.md` entry point that routes to the right specialist skill based on your request, plus all referenced knowledge base files bundled inside.
+The repo now includes the original six department plugins plus three additive packs: Industrial v1, Brokerage Investment Sales v1, and Asset Management v1. Each plugin includes a `SKILL.md` entry point that routes to the right specialist skill based on your request, plus all referenced knowledge base files bundled inside.
 
 ### Available Plugins
 
@@ -154,6 +167,7 @@ The repo now includes the original six department plugins plus two additive pack
 | **Financing** | `/cre-financing` | 3 skills (lender outreach, quote comparator, term sheet) | Lender Criteria, Underwriting Calc |
 | **Legal** | `/cre-legal` | 6 skills (PSA, title/survey, estoppels, loan docs, insurance, transfer docs) | Legal Checklist |
 | **Closing** | `/cre-closing` | 2 skills (closing coordinator, funds flow) | Legal Checklist, Underwriting Calc |
+| **Asset Management v1** | `/cre-asset-management` | 9 skills (budgeting, variance, collections, renewals, lease-up, capex, NOI improvement, hold/sell/refi, quarterly asset review memo) | Asset Management Benchmarks, Asset Management Reporting Standards, Renewal Economics |
 | **Document Ingestion** | `/cre-document-ingestion` | 4 skills (classifier, rent roll parser, financials parser, OM parser) | None (self-contained) |
 | **Industrial v1** | `/cre-industrial` | 8 skills (market study, lease roster, lease abstract, tenant credit, physical inspection, underwriting, financing fit, IC memo) | Industrial Benchmarks, Industrial Lease Structures, Industrial Lender Criteria |
 | **Brokerage v1** | `/cre-brokerage` | 8 skills (assignment intake, BOV, listing proposal, OM / teaser, buyer process, bid leveling, negotiation brief, PSA-to-close coordination) | Brokerage Investment Sales Process, Broker Opinion of Value Guidance, Marketing Confidentiality and Buyer Process, Offer Negotiation and Closing Playbook |
@@ -550,7 +564,7 @@ cre-agent-skills/
 │       ├── broker-opinion-of-value-builder.md
 │       └── ...
 │
-├── knowledge/                             # 12 domain knowledge reference files
+├── knowledge/                             # 15 domain knowledge reference files
 │   ├── underwriting-calc.md               #   Every CRE financial formula
 │   ├── risk-scoring.md                    #   9-category risk scoring framework
 │   ├── multifamily-benchmarks.md          #   Industry benchmarks by class/region
@@ -568,7 +582,7 @@ cre-agent-skills/
 │   └── industrial/
 │   └── brokerage/
 │
-├── claude-code-plugins/                   # 8 ready-to-install Claude Code plugins
+├── claude-code-plugins/                   # 9 ready-to-install Claude Code plugins
 │   ├── cre-due-diligence/                 #   /cre-due-diligence → 7 skills + 3 KBs
 │   │   ├── SKILL.md
 │   │   ├── skills/
@@ -594,6 +608,7 @@ cre-agent-skills/
 │       └── skills/
 │   └── cre-industrial/                    #   /cre-industrial → 8 skills + 3 KBs
 │   └── cre-brokerage/                     #   /cre-brokerage → 8 skills + 4 KBs
+│   └── cre-asset-management/              #   /cre-asset-management → 9 skills + 3 KBs
 │
 ├── templates/
 │   └── sample-inputs/                     # Example input data for testing

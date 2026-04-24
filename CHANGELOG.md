@@ -4,6 +4,52 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.3.0] - 2026-04-24
+
+### Added
+
+- Asset Management Pack v1 release with 9 new U.S.-focused post-closing asset management skills under `skills/asset-management/`
+  - Annual Operating Budget Builder
+  - Monthly Variance Analyst
+  - Rent Collection & Delinquency Manager
+  - Renewal Decision Analyst
+  - Lease-Up & Concessions Analyst
+  - CapEx & Value-Add Execution Tracker
+  - NOI Improvement Analyst
+  - Hold/Sell/Refi Analyst
+  - Quarterly Asset Review Writer (composite synthesizer)
+- 3 new shared knowledge bases under `knowledge/`
+  - `asset-management-benchmarks.md` — operational benchmarks (variance thresholds, A/R reserves, turnover costs, absorption, concession norms)
+  - `renewal-economics.md` — retain-vs-replace framework plus hold/sell/refi economics
+  - `asset-management-reporting-standards.md` — QAR structure, LP reporting cadence, mandatory KPI checklist
+- 10 new research notes under `research/asset-management/` (1 taxonomy seed + 9 skill-backing notes + INDEX), 168+ cited sources, all meeting the >=10 total / >=6 Tier 1/2 thresholds
+- 5 new input templates under `templates/sample-inputs/asset-management/`
+- New Claude Code plugin: `cre-asset-management` at `claude-code-plugins/cre-asset-management/` (16 files: SKILL.md dispatcher + README + 9 mirrored skills + 5 mirrored KBs for standalone install)
+
+### Changed
+
+- `skills/closing/closing-coordinator.md` — added optional `stabilization_handoff` block to Output Format and downstream cross-reference to Budget Builder (+10 lines)
+- `skills/brokerage/broker-opinion-of-value-builder.md` — accepts optional `disposition_handoff` from Hold/Sell/Refi Analyst (+2 lines)
+- `skills/due-diligence/rent-roll-analyst.md` — added downstream cross-link (+1 line)
+- `skills/due-diligence/opex-analyst.md` — added downstream cross-link (+1 line)
+- `skills/underwriting/scenario-analyst.md` — added downstream cross-link (+1 line)
+- `skills/underwriting/ic-memo-writer.md` — added downstream cross-link (+1 line)
+- `docs/ROADMAP.md` — Wave 1 (Multifamily Depth) marked substantially complete (4 of 5 focus areas shipped); Wave 2 (Office) advanced to "next"
+
+### New conventions introduced
+
+Documented in `research/asset-management/_taxonomy-seed.md`:
+
+- NOI/NCF split: AM pack computes NOI excluding Replacement Reserves; NCF = NOI − Replacement Reserves per Fannie Form 4660 convention (note: divergence from existing `underwriting-calc.md` treatment — transparent, documented)
+- 12-section skill template (AM pack extension): adds `## Research Basis` and `## Structured Output` JSON block with `uncertainty_flags` and `red_flags` arrays
+- Variance classification: Timing / Permanent / One-Time buckets with mechanically-applicable decision rules including mixed-variance and seasonal-weather rules
+- A/R split-aging rule: apply action for oldest band with balance >= $100
+- 8-section research note format with 5-column Source Table schema
+
+### Deferred to v1.4.0+
+
+- Affordable and workforce housing overlays (Wave 1, 5th focus area)
+
 ## [1.2.0] - 2026-04-22
 
 ### Added

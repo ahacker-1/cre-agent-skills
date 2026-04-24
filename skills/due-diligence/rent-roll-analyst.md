@@ -318,3 +318,4 @@ Include in output:
 For deeper analysis, pair this skill with:
 - [Underwriting Calculations](knowledge/underwriting-calc.md) for NOI calculations, cap rate, and revenue projections
 - [Multifamily Benchmarks](knowledge/multifamily-benchmarks.md) for market standards on rents, occupancy, and other income per unit
+- Downstream: [Annual Operating Budget Builder](../asset-management/annual-operating-budget-builder.md), [Rent Collection & Delinquency Manager](../asset-management/rent-collection-delinquency-manager.md)
