@@ -159,6 +159,17 @@ Load all 7 due diligence skills + Risk Scoring Framework + Multifamily Benchmark
 - Knowledge: Brokerage Investment Sales Process + Broker Opinion of Value Guidance + Marketing Confidentiality and Buyer Process + Offer Negotiation and Closing Playbook
 - Research: use `research/brokerage/` when you want the model to see the source-backed brokerage process and valuation guidance behind the new pack
 
+### Asset Management v1
+- Annual Operating Budget Builder + Monthly Variance Analyst + Rent Collection & Delinquency Manager + Renewal Decision Analyst + Lease-Up & Concessions Analyst + CapEx & Value-Add Execution Tracker + NOI Improvement Analyst + Hold/Sell/Refi Analyst + Quarterly Asset Review Writer
+- Knowledge: Asset Management Benchmarks + Asset Management Reporting Standards + Renewal Economics + Underwriting Calculations + Multifamily Benchmarks
+- Research: use `research/asset-management/` when you want the model to see the source-backed benchmarks, variance-classification rules, A/R aging conventions, and institutional reporting standards behind the pack
+- Note: this pack adopts a Fannie Form 4660 NOI / NCF split — NOI excludes Replacement Reserves; NCF = NOI − Replacement Reserves. See `research/asset-management/_taxonomy-seed.md` for full taxonomy.
+
+### Post-Acquisition Budget-to-QAR Combo
+- Annual Operating Budget Builder → Monthly Variance Analyst → Quarterly Asset Review Writer
+- Knowledge: Asset Management Benchmarks + Asset Management Reporting Standards
+- Gets an operator from day-1 stabilization hand-off through monthly operations into a publication-ready quarterly LP memo
+
 ### Quick Deal Screening
 - Rent Roll Analyst + OpEx Analyst + Financial Model Builder
 - Knowledge: Underwriting Calculations + Multifamily Benchmarks

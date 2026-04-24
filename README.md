@@ -691,6 +691,19 @@ Here are the files: [upload rent roll, T-12, offering memo]
 /cre-brokerage Level the bids and recommend the next step
 ```
 
+### Example: Asset Management v1 Workflow
+
+```
+/cre-asset-management Build the 2027 operating budget from this T-12 and rent roll
+/cre-asset-management Analyze the March YTD variance and classify each line
+/cre-asset-management Run aging analysis on this rent roll and recommend collection actions
+/cre-asset-management Which expiring leases should we push on renewal vs let walk
+/cre-asset-management Track this month's value-add capex execution vs plan
+/cre-asset-management Give me the prioritized NOI improvement lever list
+/cre-asset-management Compare hold vs refi vs sell for this asset at year 3
+/cre-asset-management Draft the Q1 Asset Review memo for the LP
+```
+
 ---
 
 ## Common Workflows
@@ -718,6 +731,18 @@ Here are the files: [upload rent roll, T-12, offering memo]
 ### "We're heading into closing"
 1. **PSA Reviewer** → review the purchase agreement
 2. **Title & Survey Reviewer** → clear title issues
+
+### "I'm building next year's budget"
+1. **Annual Operating Budget Builder** → line-by-line budget from T-12 + rent roll + market benchmarks
+2. **Monthly Variance Analyst** → once actuals arrive, classify each variance as Timing / Permanent / One-Time
+
+### "I need to write a quarterly LP report"
+1. Run the upstream skills first (Budget Builder / Variance Analyst / Collections Manager / CapEx Tracker / NOI Improvement as needed)
+2. **Quarterly Asset Review Writer** → synthesize everything into the 10-section QAR memo with the mandatory KPI dashboard
+
+### "Should I hold, refinance, or sell?"
+1. **Hold/Sell/Refi Analyst** → IRR-to-date, remaining-IRR projection, and a four-scenario comparison (Hold / Refi+Hold / Sell-Current / Sell-Stabilized)
+2. If sell wins, pass the `disposition_handoff` block into the **Broker Opinion of Value Builder** in the Brokerage pack
 3. **Estoppel Tracker** → manage tenant estoppels
 4. **Loan Doc Reviewer** → review loan docs
 5. **Insurance Coordinator** → verify coverage
