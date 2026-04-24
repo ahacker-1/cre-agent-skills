@@ -1,6 +1,42 @@
 # CRE Agent Skills — AI-Powered Commercial Real Estate Analysis
 
-**Originally released with 25 standalone AI skill files for commercial real estate multifamily acquisitions — due diligence, underwriting, financing, legal, and closing. Expanded in v1.1.0 with Industrial v1, again in v1.2.0 with an 8-skill Brokerage Investment Sales v1 pack, and now expanded in v1.3.0 with a 9-skill Asset Management v1 pack covering post-acquisition operations.**
+**50 CRE skills. No orchestrator required.**
+
+Most CRE operators don't need another AI platform.
+
+They need one sharp tool for the thing on their desk right now. The rent roll they're cleaning tonight. The IC memo due Thursday. The lender comparison they've been avoiding for a week. The quarterly LP report due Friday.
+
+So I took my own orchestrator apart and gave it to them.
+
+A while back I shipped a full multi-agent [CRE Acquisition Orchestrator](https://github.com/ahacker-1/cre-acquisition-orchestrator) — 31 skills wired together across due diligence, underwriting, financing, legal, closing, and document ingestion. Some operators loved it. They wanted the full stack running like a junior analyst team that never sleeps.
+
+But most people I talked to didn't want that.
+
+Not yet.
+
+They had a specific piece of work already in front of them. They didn't want to adopt a whole system. They wanted one good tool for the one thing they were doing right now.
+
+The all-in-one AI platform pitch is a bad fit for how CRE work actually moves. Deals don't wait for you to adopt a pipeline. They land on your desk in pieces.
+
+So I pulled every skill out.
+
+Made each one a clean, standalone file you drop into your own setup — Claude Code, Claude Projects, ChatGPT, Cursor, or any LLM-powered tool.
+
+Then I kept going.
+
+Added a full **Industrial** pack.
+
+Added a **Brokerage Investment Sales** pack.
+
+Added an **Asset Management** pack for post-acquisition operations — budgets, variance, renewals, capex execution, NOI improvement, hold/sell/refi decisions, and quarterly LP reviews.
+
+Built knowledge bases — real references, not placeholders. Every benchmark traces to a cited source.
+
+Grab it. Apache 2.0. No API keys. No signup. Clone, star, come back.
+
+Here's where I want to land.
+
+I want this to be the most helpful AI resource in commercial real estate. Period. Not a product I sell. A growing set of building blocks you pick from. Scaffolding for the work you're already trying to think through.
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Skills](https://img.shields.io/badge/Skills-50-green.svg)](#skill-index)
@@ -17,10 +53,6 @@
 | **7** Due Diligence | **3** Underwriting | **3** Financing | **9** Asset Management v1 |
 
 ---
-
-Pick the skill you need, load it into your AI assistant, and go. Each file is a self-contained prompt that encodes the original multifamily acquisition expertise of the project, plus the additive Industrial v1 and Brokerage Investment Sales v1 expansions — ready to use in Claude Code, Claude Projects, ChatGPT, Cursor, or any LLM-powered tool.
-
-These skills are extracted from the [CRE Acquisition Orchestrator](https://github.com/ahacker-1/cre-acquisition-orchestrator), a 31-agent multi-agent pipeline for multifamily acquisitions. That repo models the full acquisition lifecycle as an AI-native system with orchestration logic, phase dependencies, checkpoint/resume, and a real-time dashboard. This repo breaks those agents into standalone tools you can use individually — no pipeline, no infrastructure, no setup required.
 
 > **No API keys. No installation. No dependencies.** Each `.md` file works on its own.
 
