@@ -1,6 +1,6 @@
 # CRE Agent Skills — AI-Powered Commercial Real Estate Analysis
 
-**58 CRE skills. No orchestrator required.**
+**66 CRE skills. No orchestrator required.**
 
 Most CRE operators don't need another AI platform.
 
@@ -32,6 +32,8 @@ Added an **Asset Management** pack for post-acquisition operations — budgets, 
 
 Added an **Office** pack for lease-driven office analysis - flight-to-quality, stacking plans, lease abstracts, rollover exposure, TI/LC-heavy underwriting, tenant credit, financing fit, and IC memo writing.
 
+Added a **Capital Markets** pack for the messy refinance and maturity work everyone is dealing with now - debt maturity diagnostics, proceeds gaps, extensions, workouts, rescue capital, CMBS special servicing readiness, lender updates, and recap IC memos.
+
 Built knowledge bases — real references, not placeholders. Every benchmark traces to a cited source.
 
 Grab it. Apache 2.0. No API keys. No signup. Clone, star, come back.
@@ -41,24 +43,38 @@ Here's where I want to land.
 I want this to be the most helpful AI resource in commercial real estate. Period. Not a product I sell. A growing set of building blocks you pick from. Scaffolding for the work you're already trying to think through.
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-58-green.svg)](#skill-index)
-[![Knowledge Bases](https://img.shields.io/badge/Knowledge_Bases-19-blue.svg)](#knowledge-bases)
-[![Research Notes](https://img.shields.io/badge/Research_Notes-45-orange.svg)](#new-in-v140)
-[![Claude Code Plugins](https://img.shields.io/badge/Claude_Code_Plugins-10-purple.svg)](#claude-code-plugins-recommended)
+[![Skills](https://img.shields.io/badge/Skills-66-green.svg)](#skill-index)
+[![Knowledge Bases](https://img.shields.io/badge/Knowledge_Bases-23-blue.svg)](#knowledge-bases)
+[![Research Notes](https://img.shields.io/badge/Research_Notes-57-orange.svg)](#new-in-v150)
+[![Claude Code Plugins](https://img.shields.io/badge/Claude_Code_Plugins-11-purple.svg)](#claude-code-plugins-recommended)
 [![No API Keys](https://img.shields.io/badge/API_Keys-None_Required-brightgreen.svg)](#quick-start)
 
 ---
 
 | | | | |
 |---|---|---|---|
-| **58** AI Skills | **19** Knowledge Bases | **10** Claude Code Plugins | **0** Dependencies |
-| **8** Office v1 | **9** Asset Management v1 | **8** Brokerage v1 | **8** Industrial v1 |
+| **66** AI Skills | **23** Knowledge Bases | **11** Claude Code Plugins | **0** Dependencies |
+| **8** Capital Markets v1 | **8** Office v1 | **9** Asset Management v1 | **8** Brokerage v1 |
 
 ---
 
 > **No API keys. No installation. No dependencies.** Each `.md` file works on its own.
 
 > **Disclaimer:** These skill files are educational and informational resources, not production software for making investment decisions. The financial calculations, legal checklists, underwriting models, and analysis outputs are for reference and learning purposes only. Nothing in this repository constitutes financial, legal, investment, or tax advice. The authors and contributors are not liable for any decisions made based on information produced using these skills. Always consult qualified professionals — licensed attorneys, CPAs, commercial real estate brokers, and financial advisors — before making real estate investment decisions. These materials are provided "as is" without warranty of any kind. See [LICENSE](LICENSE) for full terms.
+
+---
+
+## New in v1.5.0
+
+This release adds a cross-property capital markets pack for the refinance, extension, workout, and recapitalization decisions cutting across every CRE asset type:
+
+- **Capital Markets / Debt Maturity & Recap v1** with 8 new U.S.-focused skills - maturity diagnostics, refinance proceeds gaps, extension/workout strategy, rescue capital comparison, capital stack term sheet comparison, CMBS special servicing readiness, lender update packages, and recap IC memo writing
+- **4 capital markets knowledge bases** covering debt sizing, workout structures, rescue capital / preferred equity, and CMBS servicing / default mechanics
+- **12 capital markets companion research notes** under `research/capital-markets/`
+- **`/cre-capital-markets` Claude Code plugin**
+- **Additive release framing** on top of the original multifamily core, Industrial v1, Brokerage Investment Sales v1, Asset Management v1, and Office v1
+
+Capital Markets v1 is property-type-agnostic. It is designed for owners, brokers, lenders, asset managers, and advisors dealing with maturity walls, refinance gaps, lender updates, special servicing, and rescue-capital decisions.
 
 ---
 
@@ -120,6 +136,7 @@ The original multifamily core remains intact. Industrial v1 is the first additiv
 
 ## Table of Contents
 
+- [New in v1.5.0](#new-in-v150)
 - [New in v1.4.0](#new-in-v140)
 - [New in v1.3.0](#new-in-v130)
 - [New in v1.2.0](#new-in-v120)
@@ -158,7 +175,7 @@ claude
 > /cre-due-diligence Analyze the rent roll for 200 Park Avenue, Austin TX
 ```
 
-See [Claude Code Plugins](#claude-code-plugins-recommended) below for the original department plugins plus the additive Industrial v1, Brokerage v1, Asset Management v1, and Office v1 packs.
+See [Claude Code Plugins](#claude-code-plugins-recommended) below for the original department plugins plus the additive Industrial v1, Brokerage v1, Asset Management v1, Office v1, and Capital Markets v1 packs.
 
 #### Windows / PowerShell
 
@@ -190,6 +207,16 @@ New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
 Copy-Item -Recurse .\claude-code-plugins\cre-office "$HOME\.claude\skills\"
 ```
 
+Capital Markets v1 example:
+
+```powershell
+git clone https://github.com/ahacker-1/cre-agent-skills.git
+Set-Location .\cre-agent-skills
+
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
+Copy-Item -Recurse .\claude-code-plugins\cre-capital-markets "$HOME\.claude\skills\"
+```
+
 ### Option 2: Copy a Single Skill File
 
 1. Browse the [Skill Index](#skill-index) below
@@ -216,7 +243,7 @@ The repo is structured so an AI agent can read this README, understand the full 
 
 ## Claude Code Plugins (Recommended)
 
-The repo now includes the original six department plugins plus four additive packs: Industrial v1, Brokerage Investment Sales v1, Asset Management v1, and Office v1. Each plugin includes a `SKILL.md` entry point that routes to the right specialist skill based on your request, plus all referenced knowledge base files bundled inside.
+The repo now includes the original six department plugins plus five additive packs: Industrial v1, Brokerage Investment Sales v1, Asset Management v1, Office v1, and Capital Markets v1. Each plugin includes a `SKILL.md` entry point that routes to the right specialist skill based on your request, plus all referenced knowledge base files bundled inside.
 
 ### Available Plugins
 
@@ -232,6 +259,7 @@ The repo now includes the original six department plugins plus four additive pac
 | **Industrial v1** | `/cre-industrial` | 8 skills (market study, lease roster, lease abstract, tenant credit, physical inspection, underwriting, financing fit, IC memo) | Industrial Benchmarks, Industrial Lease Structures, Industrial Lender Criteria |
 | **Brokerage v1** | `/cre-brokerage` | 8 skills (assignment intake, BOV, listing proposal, OM / teaser, buyer process, bid leveling, negotiation brief, PSA-to-close coordination) | Brokerage Investment Sales Process, Broker Opinion of Value Guidance, Marketing Confidentiality and Buyer Process, Offer Negotiation and Closing Playbook |
 | **Office v1** | `/cre-office` | 8 skills (market / flight-to-quality, rent roll / stacking plan, lease abstract, rollover / occupancy cost, TI/LC underwriting, tenant credit, financing fit, IC memo) | Office Benchmarks, Office Lease Structures, Office TI/LC Economics, Office Lender Criteria |
+| **Capital Markets v1** | `/cre-capital-markets` | 8 skills (maturity diagnostic, refi gap, extension/workout, rescue capital, term sheet comparison, CMBS readiness, lender update, recap IC memo) | Capital Markets Benchmarks, Workout and Extension Structures, Rescue Capital and Preferred Equity, CMBS Servicing and Default Playbook |
 
 ### How to Install
 
@@ -304,6 +332,13 @@ New-Item -ItemType Directory -Force .\.claude\skills | Out-Null
 Copy-Item -Recurse C:\path\to\cre-agent-skills\claude-code-plugins\cre-office .\.claude\skills\
 ```
 
+Capital Markets v1 example:
+
+```powershell
+New-Item -ItemType Directory -Force .\.claude\skills | Out-Null
+Copy-Item -Recurse C:\path\to\cre-agent-skills\claude-code-plugins\cre-capital-markets .\.claude\skills\
+```
+
 Project-level skills take priority over personal skills with the same name. You can commit the `.claude/skills/` directory to git so your team shares the same skills.
 
 #### Method C: Using `--add-dir` (No Installation)
@@ -368,6 +403,11 @@ Once installed, invoke any plugin with its slash command:
 /cre-office Analyze the market and flight-to-quality risk for this CBD tower
 /cre-office Review this rent roll and stacking plan for rollover exposure
 /cre-office Build a TI/LC-heavy underwriting view for this office recap
+
+# Capital Markets v1
+/cre-capital-markets Diagnose the maturity risk for this loan due in October
+/cre-capital-markets Calculate the refinance proceeds gap and rescue-capital need
+/cre-capital-markets Build the lender update package for an extension request
 ```
 
 Claude reads the `SKILL.md` entry point, identifies which specialist skill to load based on your request, loads the full skill instructions plus relevant knowledge bases, and runs the analysis.
@@ -565,11 +605,24 @@ response = client.messages.create(
 | [Office Financing Fit](skills/office/office-financing-fit.md) | Matches office deals to bank, life company, CMBS, debt fund, SBA owner-user, private credit, or rescue-capital lanes |
 | [Office IC Memo Writer](skills/office/office-ic-memo-writer.md) | Synthesizes office market, lease, tenant, TI/LC, financing, and risk findings into a decision memo |
 
+### Capital Markets v1 (8 skills)
+
+| Skill | What It Does |
+|-------|-------------|
+| [Debt Maturity Diagnostic](skills/capital-markets/debt-maturity-diagnostic.md) | Classifies maturity urgency, refinanceability, extension risk, and the controlling constraint |
+| [Refinance Proceeds Gap Analyzer](skills/capital-markets/refinance-proceeds-gap-analyzer.md) | Calculates supportable refinance proceeds, all-in payoff, reserves, costs, and total gap |
+| [Extension / Workout Strategy Builder](skills/capital-markets/extension-workout-strategy-builder.md) | Builds lender-credible extension, modification, forbearance, discounted payoff, or workout strategy |
+| [Rescue Capital Comparator](skills/capital-markets/rescue-capital-comparator.md) | Compares preferred equity, mezzanine, JV equity, bridge, note purchase, discounted payoff, and sale alternatives |
+| [Capital Stack Term Sheet Comparator](skills/capital-markets/capital-stack-term-sheet-comparator.md) | Normalizes competing debt, mezzanine, preferred equity, and JV equity term sheets |
+| [CMBS / Special Servicing Readiness Reviewer](skills/capital-markets/cmbs-special-servicing-readiness-reviewer.md) | Reviews CMBS watchlist, maturity default, transfer, and special-servicing package readiness |
+| [Lender Update Package Builder](skills/capital-markets/lender-update-package-builder.md) | Builds lender, servicer, or capital-provider update package with NOI bridge and exhibit checklist |
+| [Recap IC Memo Writer](skills/capital-markets/recap-ic-memo-writer.md) | Synthesizes refinance, extension, workout, rescue capital, sale, or hold alternatives into an IC memo |
+
 ---
 
 ## Knowledge Bases
 
-Nineteen reference files containing formulas, benchmarks, criteria, and checklists. Five belong to the original multifamily-first release, three extend the repo for Industrial v1, four extend it for Brokerage Investment Sales v1, three extend it for Asset Management v1, and four extend it again for Office v1.
+Twenty-three reference files containing formulas, benchmarks, criteria, and checklists. Five belong to the original multifamily-first release, three extend the repo for Industrial v1, four extend it for Brokerage Investment Sales v1, three extend it for Asset Management v1, four extend it for Office v1, and four extend it again for Capital Markets v1.
 
 | Knowledge Base | What It Contains | Used By |
 |---------------|-----------------|---------|
@@ -592,12 +645,16 @@ Nineteen reference files containing formulas, benchmarks, criteria, and checklis
 | [Office Lease Structures](knowledge/office-lease-structures.md) | Full-service, modified gross, base-year, expense-stop, NNN, BOMA area, work letter, option, assignment, sublease, contraction, and termination issue spotting | Office Lease Abstract, Rent Roll / Stacking Plan, Rollover Analyst |
 | [Office TI/LC Economics](knowledge/office-ti-lc-economics.md) | TI, LC, free rent, downtime, net effective rent, leasing-cost reserve, renewal-vs-new-lease, and capital stack stress modeling | TI/LC Underwriting, Rollover Analyst, Financing Fit |
 | [Office Lender Criteria](knowledge/office-lender-criteria.md) | Office lender lanes, sizing tests, DSCR / debt-yield pressure, leasing reserves, recourse posture, and financing red flags | Office Financing Fit, TI/LC Underwriting, Office IC Memo |
+| [Capital Markets Benchmarks](knowledge/capital-markets-benchmarks.md) | Debt sizing, refinance gap, DSCR, debt yield, LTV, LTC, debt constant, and capital-stack screening logic | Debt Maturity Diagnostic, Refinance Gap Analyzer, Term Sheet Comparator, Recap IC Memo |
+| [Workout and Extension Structures](knowledge/workout-and-extension-structures.md) | Extensions, modifications, forbearance, A/B notes, discounted payoff, deed-in-lieu, lender give/get, and package requirements | Extension / Workout Strategy, Lender Update Package, Recap IC Memo |
+| [Rescue Capital and Preferred Equity](knowledge/rescue-capital-and-pref-equity.md) | Preferred equity, mezzanine, JV equity, bridge, note purchase, discounted payoff, dilution, governance, and exit analysis | Rescue Capital Comparator, Refinance Gap Analyzer, Term Sheet Comparator |
+| [CMBS Servicing and Default Playbook](knowledge/cmbs-servicing-and-default-playbook.md) | CMBS parties, transfer triggers, special-servicer package readiness, borrower strategy, and watchlist/default signals | CMBS Readiness Reviewer, Extension / Workout Strategy, Lender Update Package |
 
 **How to use knowledge bases:** Load the knowledge base alongside the skill you're using. For example, when using the Financial Model Builder skill, also load Underwriting Calculations for formula definitions and Multifamily Benchmarks for expense assumptions. The Claude Code plugins bundle relevant knowledge bases automatically.
 
 ### Companion Research Notes
 
-Industrial v1 includes 11 research notes under `research/industrial/` plus [research/industrial/INDEX.md](research/industrial/INDEX.md). Brokerage Investment Sales v1 adds 12 more research notes under `research/brokerage/` plus [research/brokerage/INDEX.md](research/brokerage/INDEX.md). Asset Management v1 adds 10 more research files under `research/asset-management/` - 1 shared taxonomy seed, 9 skill-backing notes with 168+ cited sources, and [research/asset-management/INDEX.md](research/asset-management/INDEX.md). Office v1 adds 12 more research notes under `research/office/` plus [research/office/INDEX.md](research/office/INDEX.md), bringing the repo to 45 companion research notes.
+Industrial v1 includes 11 research notes under `research/industrial/` plus [research/industrial/INDEX.md](research/industrial/INDEX.md). Brokerage Investment Sales v1 adds 12 more research notes under `research/brokerage/` plus [research/brokerage/INDEX.md](research/brokerage/INDEX.md). Asset Management v1 adds 10 more research files under `research/asset-management/` - 1 shared taxonomy seed, 9 skill-backing notes with 168+ cited sources, and [research/asset-management/INDEX.md](research/asset-management/INDEX.md). Office v1 adds 12 more research notes under `research/office/` plus [research/office/INDEX.md](research/office/INDEX.md). Capital Markets v1 adds 12 more research notes under `research/capital-markets/` plus [research/capital-markets/INDEX.md](research/capital-markets/INDEX.md), bringing the repo to 57 companion research notes.
 
 ---
 
@@ -630,7 +687,7 @@ cre-agent-skills/
 |-- LICENSE                                # Apache 2.0
 |-- NOTICE                                 # Attribution notice
 |
-|-- skills/                                # 58 standalone skill files
+|-- skills/                                # 66 standalone skill files
 |   |-- due-diligence/                     # 7 property analysis skills
 |   |-- underwriting/                      # 3 financial modeling skills
 |   |-- financing/                         # 3 debt sourcing skills
@@ -640,9 +697,10 @@ cre-agent-skills/
 |   |-- industrial/                        # 8 industrial v1 skills
 |   |-- brokerage/                         # 8 brokerage investment sales v1 skills
 |   |-- asset-management/                  # 9 post-acquisition operations skills
-|   `-- office/                            # 8 office v1 skills
+|   |-- office/                            # 8 office v1 skills
+|   `-- capital-markets/                   # 8 capital markets v1 skills
 |
-|-- knowledge/                             # 19 domain knowledge reference files
+|-- knowledge/                             # 23 domain knowledge reference files
 |   |-- underwriting-calc.md
 |   |-- risk-scoring.md
 |   |-- multifamily-benchmarks.md
@@ -661,15 +719,20 @@ cre-agent-skills/
 |   |-- office-benchmarks.md
 |   |-- office-lease-structures.md
 |   |-- office-ti-lc-economics.md
-|   `-- office-lender-criteria.md
+|   |-- office-lender-criteria.md
+|   |-- capital-markets-benchmarks.md
+|   |-- workout-and-extension-structures.md
+|   |-- rescue-capital-and-pref-equity.md
+|   `-- cmbs-servicing-and-default-playbook.md
 |
-|-- research/                              # 45 companion research notes
+|-- research/                              # 57 companion research notes
 |   |-- industrial/
 |   |-- brokerage/
 |   |-- asset-management/
-|   `-- office/
+|   |-- office/
+|   `-- capital-markets/
 |
-|-- claude-code-plugins/                   # 10 ready-to-install Claude Code plugins
+|-- claude-code-plugins/                   # 11 ready-to-install Claude Code plugins
 |   |-- cre-due-diligence/
 |   |-- cre-underwriting/
 |   |-- cre-financing/
@@ -679,7 +742,8 @@ cre-agent-skills/
 |   |-- cre-industrial/
 |   |-- cre-brokerage/
 |   |-- cre-asset-management/
-|   `-- cre-office/
+|   |-- cre-office/
+|   `-- cre-capital-markets/
 |
 |-- scripts/
 |   `-- validate-repo.ps1                  # strict repo consistency checks
@@ -773,6 +837,16 @@ Here are the files: [upload rent roll, T-12, offering memo]
 /cre-office Write the IC memo for the acquisition committee
 ```
 
+### Example: Capital Markets v1 Workflow
+
+```
+/cre-capital-markets Diagnose the maturity risk for this loan due in October
+/cre-capital-markets Calculate the refinance proceeds gap at current lender sizing
+/cre-capital-markets Compare sponsor equity, preferred equity, mezzanine, and sale alternatives
+/cre-capital-markets Build the lender update package for an extension request
+/cre-capital-markets Write the recap IC memo with refinance, workout, rescue capital, and sale options
+```
+
 ---
 
 ## Common Workflows
@@ -849,6 +923,21 @@ Here are the files: [upload rent roll, T-12, offering memo]
 7. **Office Financing Fit** → identify likely lender lanes and sizing constraints
 8. **Office IC Memo Writer** → summarize the investment or refinance case
 
+### "My loan is maturing and the refinance may not cover the payoff"
+1. **Debt Maturity Diagnostic** → classify urgency, current loan facts, refinanceability, and controlling constraint
+2. **Refinance Proceeds Gap Analyzer** → quantify all-in payoff, supportable proceeds, reserves, costs, and gap
+3. **Rescue Capital Comparator** → compare sponsor equity, preferred equity, mezzanine, JV equity, bridge debt, note purchase, DPO, and sale
+4. **Capital Stack Term Sheet Comparator** → normalize term sheets and identify hidden cost, control, and consent issues
+5. **Lender Update Package Builder** → prepare the lender or servicer package
+6. **Recap IC Memo Writer** → make the final recommendation
+
+### "I need an extension or workout strategy"
+1. **Debt Maturity Diagnostic** → establish default risk, maturity window, and lender path
+2. **Extension / Workout Strategy Builder** → select extension, modification, forbearance, A/B note, DPO, deed-in-lieu, or sale-process standstill
+3. **CMBS / Special Servicing Readiness Reviewer** → use if the loan is securitized or may transfer to special servicing
+4. **Lender Update Package Builder** → assemble ask, NOI bridge, business plan, exhibits, and lender protections
+5. **Recap IC Memo Writer** → document decision, alternatives, risks, and approval conditions
+
 ---
 
 ## FAQ
@@ -883,7 +972,7 @@ This repo extracts those same agents into standalone skills you can use individu
 
 ### Can I use these for property types other than multifamily?
 
-Yes. The original repo was optimized for multifamily acquisitions, and those skills remain intact. As of v1.1.0, the repo also includes **Industrial v1** for U.S. industrial acquisitions. As of v1.2.0, it includes **Brokerage Investment Sales v1** for U.S. seller-side commercial investment sales process work. As of v1.4.0, it includes **Office v1** for U.S. office acquisitions, refinancings, recapitalizations, lease-up, tenant credit, TI/LC underwriting, and IC memo writing. Retail and self-storage are still planned future sector packs, though many shared and brokerage workflows transfer.
+Yes. The original repo was optimized for multifamily acquisitions, and those skills remain intact. As of v1.1.0, the repo also includes **Industrial v1** for U.S. industrial acquisitions. As of v1.2.0, it includes **Brokerage Investment Sales v1** for U.S. seller-side commercial investment sales process work. As of v1.4.0, it includes **Office v1** for U.S. office acquisitions, refinancings, recapitalizations, lease-up, tenant credit, TI/LC underwriting, and IC memo writing. As of v1.5.0, it includes **Capital Markets v1** for debt maturities, refinance gaps, workouts, rescue capital, special servicing, and recap decisions across property types. Retail and self-storage are still planned future sector packs, though many shared, brokerage, and capital-markets workflows transfer.
 
 ---
 

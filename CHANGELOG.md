@@ -4,6 +4,47 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.5.0] - 2026-06-16
+
+### Added
+
+- Capital Markets / Debt Maturity & Recap Pack v1 release with 8 new U.S.-focused cross-property capital markets skills under `skills/capital-markets/`
+  - Debt Maturity Diagnostic
+  - Refinance Proceeds Gap Analyzer
+  - Extension / Workout Strategy Builder
+  - Rescue Capital Comparator
+  - Capital Stack Term Sheet Comparator
+  - CMBS / Special Servicing Readiness Reviewer
+  - Lender Update Package Builder
+  - Recap IC Memo Writer
+- 4 new capital markets knowledge bases under `knowledge/`
+  - `capital-markets-benchmarks.md` - debt sizing, DSCR, debt yield, LTV, refinance gap, and capital-stack screening
+  - `workout-and-extension-structures.md` - extensions, modifications, forbearance, A/B notes, DPOs, deeds-in-lieu, and lender give/get
+  - `rescue-capital-and-pref-equity.md` - preferred equity, mezzanine, JV equity, bridge, note purchase, DPO, and rescue-capital comparison
+  - `cmbs-servicing-and-default-playbook.md` - CMBS parties, transfer triggers, special-servicer package readiness, and borrower strategy
+- 12 new companion research notes under `research/capital-markets/` plus `research/capital-markets/INDEX.md`
+- New Claude Code plugin: `cre-capital-markets` at `claude-code-plugins/cre-capital-markets/`
+- New release notes:
+  - `docs/releases/capital-markets-v1.md`
+  - `docs/releases/capital-markets-v1-pr-summary.md`
+
+### Changed
+
+- Updated README, HOW-TO-USE, SKILL-INDEX, and ROADMAP to position Capital Markets v1 as the fifth additive pack after Industrial v1, Brokerage Investment Sales v1, Asset Management v1, and Office v1
+- Updated GitHub issue templates to include capital markets skills and knowledge bases
+
+### New conventions introduced
+
+- Cross-property packs can sit beside sector and role packs when the workflow applies across multiple property types
+- Refinance and recap workflows should separate asset viability, supportable proceeds, reserve need, sponsor liquidity, lender consent, and exit feasibility
+- Capital markets outputs must distinguish educational decision support from legal, tax, investment, or financing advice
+
+### Deferred to future releases
+
+- Retail and self-storage sector packs
+- Affordable and workforce housing overlays
+- Capital markets depth modules for agency-specific refinances, construction-loan workouts, lender-side credit memos, and note-sale bidding
+
 ## [1.4.0] - 2026-06-16
 
 ### Added

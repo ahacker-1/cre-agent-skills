@@ -112,6 +112,19 @@ Find the right skill for your task. Each entry shows what the skill does, what i
 | [Office Financing Fit](../skills/office/office-financing-fit.md) | Identify likely lender lanes and sizing constraints for office debt | NOI, occupancy, WALT, rollover, tenant quality, loan request | Office Lender Criteria, Underwriting Calculations |
 | [Office IC Memo Writer](../skills/office/office-ic-memo-writer.md) | Synthesize office diligence into a decision memo | Outputs from office market, lease, rollover, TI/LC, tenant credit, and financing skills | Office Benchmarks, Office Lender Criteria, Risk Scoring Framework |
 
+## Capital Markets v1
+
+| Skill | Use When You Need To... | Key Inputs | Pair With |
+|-------|------------------------|------------|-----------|
+| [Debt Maturity Diagnostic](../skills/capital-markets/debt-maturity-diagnostic.md) | Classify maturity risk, refinanceability, and next path | Existing loan terms, maturity, payoff, NOI, rent roll, value, sponsor liquidity | Capital Markets Benchmarks, Workout and Extension Structures |
+| [Refinance Proceeds Gap Analyzer](../skills/capital-markets/refinance-proceeds-gap-analyzer.md) | Quantify payoff vs supportable refinance proceeds and funding gap | Payoff, current and stabilized NOI, debt terms, value, reserves, closing costs | Capital Markets Benchmarks, Rescue Capital and Preferred Equity |
+| [Extension / Workout Strategy Builder](../skills/capital-markets/extension-workout-strategy-builder.md) | Build extension, modification, forbearance, DPO, or workout strategy | Loan terms, default status, lender type, business plan, sponsor contribution | Workout and Extension Structures, CMBS Servicing and Default Playbook |
+| [Rescue Capital Comparator](../skills/capital-markets/rescue-capital-comparator.md) | Compare preferred equity, mezzanine, JV equity, bridge, note purchase, DPO, or sale | Gap amount, capital stack, business plan, sponsor objectives, indicative terms | Rescue Capital and Preferred Equity, Capital Markets Benchmarks |
+| [Capital Stack Term Sheet Comparator](../skills/capital-markets/capital-stack-term-sheet-comparator.md) | Normalize competing debt, mezzanine, preferred equity, or JV proposals | Term sheets, NOI, value, existing debt, sponsor priorities | Capital Markets Benchmarks, Rescue Capital and Preferred Equity |
+| [CMBS / Special Servicing Readiness Reviewer](../skills/capital-markets/cmbs-special-servicing-readiness-reviewer.md) | Prepare for CMBS watchlist, transfer, default, or special servicing | Loan documents, servicer status, financials, rent roll, borrower request | CMBS Servicing and Default Playbook, Workout and Extension Structures |
+| [Lender Update Package Builder](../skills/capital-markets/lender-update-package-builder.md) | Build lender, servicer, or capital-provider update package | Loan facts, T-12, rent roll, NOI bridge, business plan, requested decision | Workout and Extension Structures, Capital Markets Benchmarks |
+| [Recap IC Memo Writer](../skills/capital-markets/recap-ic-memo-writer.md) | Synthesize refinance, extension, workout, rescue capital, sale, or hold decision | Outputs from maturity, refi gap, rescue capital, term sheet, servicing, and lender update skills | All Capital Markets knowledge bases, Risk Scoring Framework |
+
 ---
 
 ## Common Workflows
@@ -177,3 +190,17 @@ Find the right skill for your task. Each entry shows what the skill does, what i
 6. **Office Tenant Credit and Exposure Analyst** → assess tenant durability and concentration cliffs
 7. **Office Financing Fit** → identify viable lender lanes and required structure
 8. **Office IC Memo Writer** → summarize the investment case
+
+### "My CRE loan is maturing and I need a plan"
+1. **Debt Maturity Diagnostic** → classify maturity urgency, refinanceability, and controlling constraint
+2. **Refinance Proceeds Gap Analyzer** → calculate all-in payoff, supportable proceeds, reserves, costs, and gap
+3. **Rescue Capital Comparator** → compare sponsor equity, preferred equity, mezzanine, JV equity, bridge, note purchase, DPO, and sale
+4. **Capital Stack Term Sheet Comparator** → compare actual proposals by net proceeds, cost, control, consent, and exit
+5. **Lender Update Package Builder** → assemble the lender or servicer package
+6. **Recap IC Memo Writer** → document the recommended path and approval conditions
+
+### "This may become a workout or special servicing issue"
+1. **Debt Maturity Diagnostic** → identify maturity, default, and servicing risk
+2. **Extension / Workout Strategy Builder** → build lender give/get and milestone strategy
+3. **CMBS / Special Servicing Readiness Reviewer** → map servicer path and package gaps
+4. **Lender Update Package Builder** → produce borrower package and exhibit checklist

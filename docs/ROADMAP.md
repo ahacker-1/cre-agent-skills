@@ -10,6 +10,7 @@ This roadmap reflects the intended direction of `cre-agent-skills` as a broader 
 - Seller-side Brokerage Investment Sales v1 pack
 - Post-acquisition Asset Management v1 pack
 - Research-backed Office v1 expansion
+- Cross-property Capital Markets v1 pack for maturities, refinance gaps, workouts, rescue capital, and recap decisions
 
 ## Next Planned Waves
 
@@ -48,7 +49,20 @@ Focus areas:
 - Self-storage operating metrics and revenue management
 - Property-type-specific underwriting and lender criteria
 
-### 4. Affordable / Workforce Housing Overlays
+### 4. Capital Markets Depth
+
+Status: Initial pack shipped in v1.5.0
+
+Focus areas:
+
+- Debt maturity diagnostics - shipped
+- Refinance proceeds gap analysis - shipped
+- Extension and workout strategy - shipped
+- Rescue capital and preferred equity comparison - shipped
+- CMBS special servicing readiness - shipped
+- Future depth: agency-specific refinance overlays, construction-loan workouts, lender-side credit memo variants, and note-sale bidding workflows
+
+### 5. Affordable / Workforce Housing Overlays
 
 Status: Future wave
 

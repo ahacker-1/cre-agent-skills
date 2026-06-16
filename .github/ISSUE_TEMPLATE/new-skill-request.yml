@@ -18,6 +18,7 @@ body:
         - Brokerage Investment Sales
         - Asset Management
         - Office
+        - Capital Markets
         - Other / New Department
     validations:
       required: true

@@ -36,6 +36,7 @@ The repo still works well with individual skill files, and Claude Code now has a
 - plus the new `/cre-brokerage` plugin added in v1.2.0
 - plus the `/cre-asset-management` plugin added in v1.3.0
 - plus the `/cre-office` plugin added in v1.4.0
+- plus the `/cre-capital-markets` plugin added in v1.5.0
 
 PowerShell example for the new Industrial v1 plugin:
 
@@ -76,6 +77,16 @@ Set-Location .\cre-agent-skills
 
 New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
 Copy-Item -Recurse .\claude-code-plugins\cre-office "$HOME\.claude\skills\"
+```
+
+Capital Markets v1 install example:
+
+```powershell
+git clone https://github.com/ahacker-1/cre-agent-skills.git
+Set-Location .\cre-agent-skills
+
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
+Copy-Item -Recurse .\claude-code-plugins\cre-capital-markets "$HOME\.claude\skills\"
 ```
 
 ---
@@ -183,6 +194,12 @@ Load all 7 due diligence skills + Risk Scoring Framework + Multifamily Benchmark
 - Research: use `research/office/` when you want the model to see the source-backed office market, leasing, TI/LC, and lender assumptions behind the pack
 - Note: this pack is U.S.-focused and treats office as lease-driven, capital-intensive, and highly sensitive to building quality, rollover, tenant credit, and lender structure.
 
+### Capital Markets v1
+- Debt Maturity Diagnostic + Refinance Proceeds Gap Analyzer + Extension / Workout Strategy Builder + Rescue Capital Comparator + Capital Stack Term Sheet Comparator + CMBS / Special Servicing Readiness Reviewer + Lender Update Package Builder + Recap IC Memo Writer
+- Knowledge: Capital Markets Benchmarks + Workout and Extension Structures + Rescue Capital and Preferred Equity + CMBS Servicing and Default Playbook + Underwriting Calculations + Risk Scoring Framework
+- Research: use `research/capital-markets/` when you want the model to see the source-backed maturity, debt sizing, workout, rescue capital, and special servicing logic behind the pack
+- Note: this pack is property-type-agnostic and works especially well with Office v1, Asset Management v1, Brokerage v1, and Financing skills.
+
 ### Post-Acquisition Budget-to-QAR Combo
 - Annual Operating Budget Builder → Monthly Variance Analyst → Quarterly Asset Review Writer
 - Knowledge: Asset Management Benchmarks + Asset Management Reporting Standards
@@ -192,6 +209,16 @@ Load all 7 due diligence skills + Risk Scoring Framework + Multifamily Benchmark
 - Office Market and Flight-to-Quality Study → Office Rent Roll and Stacking Plan Analyst → Office Lease Abstract Reviewer → Office TI / LC Underwriting Model Builder → Office Financing Fit → Office IC Memo Writer
 - Knowledge: Office Benchmarks + Office Lease Structures + Office TI/LC Economics + Office Lender Criteria
 - Gets an investor from office intake through lender-fit and committee-ready recommendation
+
+### Maturity-to-Recap Combo
+- Debt Maturity Diagnostic → Refinance Proceeds Gap Analyzer → Rescue Capital Comparator → Capital Stack Term Sheet Comparator → Lender Update Package Builder → Recap IC Memo Writer
+- Knowledge: Capital Markets Benchmarks + Rescue Capital and Preferred Equity + Workout and Extension Structures
+- Gets an owner from maturity risk through refinance gap, capital alternatives, lender package, and IC recommendation
+
+### Workout / Special Servicing Combo
+- Debt Maturity Diagnostic → Extension / Workout Strategy Builder → CMBS / Special Servicing Readiness Reviewer → Lender Update Package Builder
+- Knowledge: Workout and Extension Structures + CMBS Servicing and Default Playbook
+- Gets a borrower from maturity/default risk through lender-facing package readiness
 
 ### Quick Deal Screening
 - Rent Roll Analyst + OpEx Analyst + Financial Model Builder
