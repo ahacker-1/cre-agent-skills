@@ -262,7 +262,7 @@ Before finalizing results, run all of the following checks:
 | Stress case vacancy | <= 15% | > 15% |
 | Stress case expense ratio | <= 55% of EGI | > 55% of EGI |
 
-**Confidence Scoring**
+## Confidence Scoring
 
 | Level | Criteria |
 |-------|----------|

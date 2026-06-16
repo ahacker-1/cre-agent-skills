@@ -305,7 +305,7 @@ Before finalizing the model, run all of the following checks:
 - EGI - OpEx = NOI in every year (recalculate if mismatch)
 - Every estimated or assumed value is documented in uncertainty_flags
 
-**Confidence Scoring**
+## Confidence Scoring
 
 Assign an overall confidence level:
 

@@ -34,6 +34,8 @@ The repo still works well with individual skill files, and Claude Code now has a
 - original multifamily department plugins
 - plus the new `/cre-industrial` plugin added in v1.1.0
 - plus the new `/cre-brokerage` plugin added in v1.2.0
+- plus the `/cre-asset-management` plugin added in v1.3.0
+- plus the `/cre-office` plugin added in v1.4.0
 
 PowerShell example for the new Industrial v1 plugin:
 
@@ -64,6 +66,16 @@ Set-Location .\cre-agent-skills
 
 New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
 Copy-Item -Recurse .\claude-code-plugins\cre-brokerage "$HOME\.claude\skills\"
+```
+
+Office v1 install example:
+
+```powershell
+git clone https://github.com/ahacker-1/cre-agent-skills.git
+Set-Location .\cre-agent-skills
+
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
+Copy-Item -Recurse .\claude-code-plugins\cre-office "$HOME\.claude\skills\"
 ```
 
 ---
@@ -165,10 +177,21 @@ Load all 7 due diligence skills + Risk Scoring Framework + Multifamily Benchmark
 - Research: use `research/asset-management/` when you want the model to see the source-backed benchmarks, variance-classification rules, A/R aging conventions, and institutional reporting standards behind the pack
 - Note: this pack adopts a Fannie Form 4660 NOI / NCF split — NOI excludes Replacement Reserves; NCF = NOI − Replacement Reserves. See `research/asset-management/_taxonomy-seed.md` for full taxonomy.
 
+### Office v1
+- Office Market and Flight-to-Quality Study + Office Rent Roll and Stacking Plan Analyst + Office Lease Abstract Reviewer + Office Rollover and Occupancy Cost Analyst + Office TI / LC Underwriting Model Builder + Office Tenant Credit and Exposure Analyst + Office Financing Fit + Office IC Memo Writer
+- Knowledge: Office Benchmarks + Office Lease Structures + Office TI/LC Economics + Office Lender Criteria + Underwriting Calculations + Risk Scoring Framework
+- Research: use `research/office/` when you want the model to see the source-backed office market, leasing, TI/LC, and lender assumptions behind the pack
+- Note: this pack is U.S.-focused and treats office as lease-driven, capital-intensive, and highly sensitive to building quality, rollover, tenant credit, and lender structure.
+
 ### Post-Acquisition Budget-to-QAR Combo
 - Annual Operating Budget Builder → Monthly Variance Analyst → Quarterly Asset Review Writer
 - Knowledge: Asset Management Benchmarks + Asset Management Reporting Standards
 - Gets an operator from day-1 stabilization hand-off through monthly operations into a publication-ready quarterly LP memo
+
+### Office Acquisition-to-IC Combo
+- Office Market and Flight-to-Quality Study → Office Rent Roll and Stacking Plan Analyst → Office Lease Abstract Reviewer → Office TI / LC Underwriting Model Builder → Office Financing Fit → Office IC Memo Writer
+- Knowledge: Office Benchmarks + Office Lease Structures + Office TI/LC Economics + Office Lender Criteria
+- Gets an investor from office intake through lender-fit and committee-ready recommendation
 
 ### Quick Deal Screening
 - Rent Roll Analyst + OpEx Analyst + Financial Model Builder

@@ -99,6 +99,19 @@ Find the right skill for your task. Each entry shows what the skill does, what i
 | [Deal Term Negotiation Brief Builder](../skills/brokerage/deal-term-negotiation-brief-builder.md) | Build a seller-side negotiation brief for business terms | LOI or offer terms, seller priorities, open issues | Offer Negotiation and Closing Playbook |
 | [PSA to Close Transaction Coordinator](../skills/brokerage/psa-to-close-transaction-coordinator.md) | Coordinate seller-side execution from signed deal to close | Executed terms, dates, diligence workstreams, open issues | Brokerage Investment Sales Process, Offer Negotiation and Closing Playbook |
 
+## Office v1
+
+| Skill | Use When You Need To... | Key Inputs | Pair With |
+|-------|------------------------|------------|-----------|
+| [Office Market and Flight-to-Quality Study](../skills/office/office-market-and-flight-to-quality-study.md) | Evaluate office market regime, competitive set, flight-to-quality, sublease pressure, and tenant demand | Property address, building class, size, tenancy profile, competitive set | Office Benchmarks |
+| [Office Rent Roll and Stacking Plan Analyst](../skills/office/office-rent-roll-and-stacking-plan-analyst.md) | Reconcile rent roll, occupancy, WALT, rollover, tenant concentration, and floor-level exposure | Rent roll, stacking plan, lease dates, suite list, floor plates | Office Benchmarks, Office Lease Structures |
+| [Office Lease Abstract Reviewer](../skills/office/office-lease-abstract-reviewer.md) | Abstract office lease economics, recovery structure, options, work letters, and assignment/sublease rights | Lease documents, amendments, abstracts, work letters | Office Lease Structures, Office TI/LC Economics |
+| [Office Rollover and Occupancy Cost Analyst](../skills/office/office-rollover-and-occupancy-cost-analyst.md) | Analyze renewal probability, occupancy-cost pressure, and renewal-vs-relet economics | Lease schedule, current rents, market rents, tenant sales or operating context where available | Office Benchmarks, Office TI/LC Economics |
+| [Office TI / LC Underwriting Model Builder](../skills/office/office-ti-lc-underwriting-model-builder.md) | Build office cash flow after downtime, TI, LC, free rent, and net effective rent | Rent roll, leasing assumptions, TI/LC budget, debt terms, market assumptions | Office TI/LC Economics, Underwriting Calculations |
+| [Office Tenant Credit and Exposure Analyst](../skills/office/office-tenant-credit-and-exposure-analyst.md) | Assess tenant credit, guarantor support, industry concentration, and downside vacancy | Tenant list, lease economics, public/private credit info, industry exposure | Office Benchmarks, Risk Scoring Framework |
+| [Office Financing Fit](../skills/office/office-financing-fit.md) | Identify likely lender lanes and sizing constraints for office debt | NOI, occupancy, WALT, rollover, tenant quality, loan request | Office Lender Criteria, Underwriting Calculations |
+| [Office IC Memo Writer](../skills/office/office-ic-memo-writer.md) | Synthesize office diligence into a decision memo | Outputs from office market, lease, rollover, TI/LC, tenant credit, and financing skills | Office Benchmarks, Office Lender Criteria, Risk Scoring Framework |
+
 ---
 
 ## Common Workflows
@@ -154,3 +167,13 @@ Find the right skill for your task. Each entry shows what the skill does, what i
 6. **Call for Offers and Bid Leveling Analyst** → compare bids and guide BAFO
 7. **Deal Term Negotiation Brief Builder** → frame the negotiation posture
 8. **PSA to Close Transaction Coordinator** → track the deal through closing
+
+### "I need a U.S. office acquisition or refinance workflow"
+1. **Office Market and Flight-to-Quality Study** → evaluate demand, submarket quality split, and competitive positioning
+2. **Office Rent Roll and Stacking Plan Analyst** → reconcile occupancy, WALT, rollover, and floor-level exposure
+3. **Office Lease Abstract Reviewer** → abstract economics, recoveries, options, work letters, and transfer rights
+4. **Office Rollover and Occupancy Cost Analyst** → score renewal risk and replacement economics
+5. **Office TI / LC Underwriting Model Builder** → model downtime, TI, LC, free rent, and leasing reserves
+6. **Office Tenant Credit and Exposure Analyst** → assess tenant durability and concentration cliffs
+7. **Office Financing Fit** → identify viable lender lanes and required structure
+8. **Office IC Memo Writer** → summarize the investment case

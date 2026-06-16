@@ -1,6 +1,6 @@
 # CRE Agent Skills — AI-Powered Commercial Real Estate Analysis
 
-**50 CRE skills. No orchestrator required.**
+**58 CRE skills. No orchestrator required.**
 
 Most CRE operators don't need another AI platform.
 
@@ -30,6 +30,8 @@ Added a **Brokerage Investment Sales** pack.
 
 Added an **Asset Management** pack for post-acquisition operations — budgets, variance, renewals, capex execution, NOI improvement, hold/sell/refi decisions, and quarterly LP reviews.
 
+Added an **Office** pack for lease-driven office analysis - flight-to-quality, stacking plans, lease abstracts, rollover exposure, TI/LC-heavy underwriting, tenant credit, financing fit, and IC memo writing.
+
 Built knowledge bases — real references, not placeholders. Every benchmark traces to a cited source.
 
 Grab it. Apache 2.0. No API keys. No signup. Clone, star, come back.
@@ -39,24 +41,39 @@ Here's where I want to land.
 I want this to be the most helpful AI resource in commercial real estate. Period. Not a product I sell. A growing set of building blocks you pick from. Scaffolding for the work you're already trying to think through.
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-50-green.svg)](#skill-index)
-[![Knowledge Bases](https://img.shields.io/badge/Knowledge_Bases-15-blue.svg)](#knowledge-bases)
-[![Research Notes](https://img.shields.io/badge/Research_Notes-23-orange.svg)](#new-in-v120)
-[![Claude Code Plugins](https://img.shields.io/badge/Claude_Code_Plugins-9-purple.svg)](#claude-code-plugins-recommended)
+[![Skills](https://img.shields.io/badge/Skills-58-green.svg)](#skill-index)
+[![Knowledge Bases](https://img.shields.io/badge/Knowledge_Bases-19-blue.svg)](#knowledge-bases)
+[![Research Notes](https://img.shields.io/badge/Research_Notes-45-orange.svg)](#new-in-v140)
+[![Claude Code Plugins](https://img.shields.io/badge/Claude_Code_Plugins-10-purple.svg)](#claude-code-plugins-recommended)
 [![No API Keys](https://img.shields.io/badge/API_Keys-None_Required-brightgreen.svg)](#quick-start)
 
 ---
 
 | | | | |
 |---|---|---|---|
-| **50** AI Skills | **15** Knowledge Bases | **9** Claude Code Plugins | **0** Dependencies |
-| **7** Due Diligence | **3** Underwriting | **3** Financing | **9** Asset Management v1 |
+| **58** AI Skills | **19** Knowledge Bases | **10** Claude Code Plugins | **0** Dependencies |
+| **8** Office v1 | **9** Asset Management v1 | **8** Brokerage v1 | **8** Industrial v1 |
 
 ---
 
 > **No API keys. No installation. No dependencies.** Each `.md` file works on its own.
 
 > **Disclaimer:** These skill files are educational and informational resources, not production software for making investment decisions. The financial calculations, legal checklists, underwriting models, and analysis outputs are for reference and learning purposes only. Nothing in this repository constitutes financial, legal, investment, or tax advice. The authors and contributors are not liable for any decisions made based on information produced using these skills. Always consult qualified professionals — licensed attorneys, CPAs, commercial real estate brokers, and financial advisors — before making real estate investment decisions. These materials are provided "as is" without warranty of any kind. See [LICENSE](LICENSE) for full terms.
+
+---
+
+## New in v1.4.0
+
+This release adds a new office acquisition and recapitalization pack, plus validation tooling so the repo can keep scaling without silent drift:
+
+- **Office v1** with 8 new U.S.-focused office skills - flight-to-quality market study, rent roll and stacking plan analysis, lease abstract review, rollover and occupancy-cost analysis, TI/LC underwriting, tenant credit, financing fit, and IC memo writing
+- **4 office knowledge bases** covering office benchmarks, lease structures, TI/LC economics, and lender criteria
+- **12 office companion research notes** under `research/office/`
+- **`/cre-office` Claude Code plugin**
+- **PowerShell validation tooling** with `.github/workflows/validate.yml` and `scripts/validate-repo.ps1 -Strict`
+- **Additive release framing** on top of the original multifamily core, Industrial v1, Brokerage Investment Sales v1, and Asset Management v1
+
+Office v1 is lease-driven and U.S.-focused. It is designed for acquisitions, refinancings, recapitalizations, lease-up, and hold/sell decisions in a selective office capital environment.
 
 ---
 
@@ -103,6 +120,7 @@ The original multifamily core remains intact. Industrial v1 is the first additiv
 
 ## Table of Contents
 
+- [New in v1.4.0](#new-in-v140)
 - [New in v1.3.0](#new-in-v130)
 - [New in v1.2.0](#new-in-v120)
 - [New in v1.1.0](#new-in-v110)
@@ -140,7 +158,7 @@ claude
 > /cre-due-diligence Analyze the rent roll for 200 Park Avenue, Austin TX
 ```
 
-See [Claude Code Plugins](#claude-code-plugins-recommended) below for the original department plugins plus the additive Industrial v1 and Brokerage v1 packs.
+See [Claude Code Plugins](#claude-code-plugins-recommended) below for the original department plugins plus the additive Industrial v1, Brokerage v1, Asset Management v1, and Office v1 packs.
 
 #### Windows / PowerShell
 
@@ -160,6 +178,16 @@ Set-Location .\cre-agent-skills
 
 New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
 Copy-Item -Recurse .\claude-code-plugins\cre-brokerage "$HOME\.claude\skills\"
+```
+
+Office v1 example:
+
+```powershell
+git clone https://github.com/ahacker-1/cre-agent-skills.git
+Set-Location .\cre-agent-skills
+
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
+Copy-Item -Recurse .\claude-code-plugins\cre-office "$HOME\.claude\skills\"
 ```
 
 ### Option 2: Copy a Single Skill File
@@ -188,7 +216,7 @@ The repo is structured so an AI agent can read this README, understand the full 
 
 ## Claude Code Plugins (Recommended)
 
-The repo now includes the original six department plugins plus three additive packs: Industrial v1, Brokerage Investment Sales v1, and Asset Management v1. Each plugin includes a `SKILL.md` entry point that routes to the right specialist skill based on your request, plus all referenced knowledge base files bundled inside.
+The repo now includes the original six department plugins plus four additive packs: Industrial v1, Brokerage Investment Sales v1, Asset Management v1, and Office v1. Each plugin includes a `SKILL.md` entry point that routes to the right specialist skill based on your request, plus all referenced knowledge base files bundled inside.
 
 ### Available Plugins
 
@@ -203,6 +231,7 @@ The repo now includes the original six department plugins plus three additive pa
 | **Document Ingestion** | `/cre-document-ingestion` | 4 skills (classifier, rent roll parser, financials parser, OM parser) | None (self-contained) |
 | **Industrial v1** | `/cre-industrial` | 8 skills (market study, lease roster, lease abstract, tenant credit, physical inspection, underwriting, financing fit, IC memo) | Industrial Benchmarks, Industrial Lease Structures, Industrial Lender Criteria |
 | **Brokerage v1** | `/cre-brokerage` | 8 skills (assignment intake, BOV, listing proposal, OM / teaser, buyer process, bid leveling, negotiation brief, PSA-to-close coordination) | Brokerage Investment Sales Process, Broker Opinion of Value Guidance, Marketing Confidentiality and Buyer Process, Offer Negotiation and Closing Playbook |
+| **Office v1** | `/cre-office` | 8 skills (market / flight-to-quality, rent roll / stacking plan, lease abstract, rollover / occupancy cost, TI/LC underwriting, tenant credit, financing fit, IC memo) | Office Benchmarks, Office Lease Structures, Office TI/LC Economics, Office Lender Criteria |
 
 ### How to Install
 
@@ -268,6 +297,13 @@ New-Item -ItemType Directory -Force .\.claude\skills | Out-Null
 Copy-Item -Recurse C:\path\to\cre-agent-skills\claude-code-plugins\cre-brokerage .\.claude\skills\
 ```
 
+Office v1 example:
+
+```powershell
+New-Item -ItemType Directory -Force .\.claude\skills | Out-Null
+Copy-Item -Recurse C:\path\to\cre-agent-skills\claude-code-plugins\cre-office .\.claude\skills\
+```
+
 Project-level skills take priority over personal skills with the same name. You can commit the `.claude/skills/` directory to git so your team shares the same skills.
 
 #### Method C: Using `--add-dir` (No Installation)
@@ -327,6 +363,11 @@ Once installed, invoke any plugin with its slash command:
 /cre-brokerage Build a BOV for this office investment sale listing
 /cre-brokerage Draft the OM and teaser for this retail center
 /cre-brokerage Level these offers and recommend a seller response
+
+# Office v1
+/cre-office Analyze the market and flight-to-quality risk for this CBD tower
+/cre-office Review this rent roll and stacking plan for rollover exposure
+/cre-office Build a TI/LC-heavy underwriting view for this office recap
 ```
 
 Claude reads the `SKILL.md` entry point, identifies which specialist skill to load based on your request, loads the full skill instructions plus relevant knowledge bases, and runs the analysis.
@@ -511,11 +552,24 @@ response = client.messages.create(
 | [Hold/Sell/Refi Analyst](skills/asset-management/hold-sell-refi-analyst.md) | Four-scenario comparison (Hold / Refi+Hold / Sell-Current / Sell-Stabilized) with IRR-to-date, remaining-IRR projection, and disposition handoff to broker |
 | [Quarterly Asset Review Writer](skills/asset-management/quarterly-asset-review-writer.md) | Composite flagship skill — synthesizes all eight prior AM skills into a publication-ready QAR memo for IC, LP, or internal asset committee |
 
+### Office v1 (8 skills)
+
+| Skill | What It Does |
+|-------|-------------|
+| [Office Market and Flight-to-Quality Study](skills/office/office-market-and-flight-to-quality-study.md) | Evaluates office submarket regime, prime-vs-commodity split, competitive set, demand depth, sublease pressure, and conversion risk |
+| [Office Rent Roll and Stacking Plan Analyst](skills/office/office-rent-roll-and-stacking-plan-analyst.md) | Reconciles rent roll, occupancy, WALT, rollover, tenant concentration, and floor-by-floor exposure |
+| [Office Lease Abstract Reviewer](skills/office/office-lease-abstract-reviewer.md) | Abstracts office lease economics, recovery structures, BOMA area, work letters, options, assignment/sublease, and termination or contraction rights |
+| [Office Rollover and Occupancy Cost Analyst](skills/office/office-rollover-and-occupancy-cost-analyst.md) | Measures renewal probability, occupancy-cost pressure, replacement economics, and tenant-by-tenant action priorities |
+| [Office TI / LC Underwriting Model Builder](skills/office/office-ti-lc-underwriting-model-builder.md) | Builds office cash flow after downtime, TI, LC, free rent, net effective rent, leasing reserves, and debt stress |
+| [Office Tenant Credit and Exposure Analyst](skills/office/office-tenant-credit-and-exposure-analyst.md) | Evaluates tenant durability, guarantor exposure, industry concentration, concentration cliffs, watchlist risk, and downside vacancy |
+| [Office Financing Fit](skills/office/office-financing-fit.md) | Matches office deals to bank, life company, CMBS, debt fund, SBA owner-user, private credit, or rescue-capital lanes |
+| [Office IC Memo Writer](skills/office/office-ic-memo-writer.md) | Synthesizes office market, lease, tenant, TI/LC, financing, and risk findings into a decision memo |
+
 ---
 
 ## Knowledge Bases
 
-Fifteen reference files containing formulas, benchmarks, criteria, and checklists. Five belong to the original multifamily-first release, three extend the repo for Industrial v1, four extend it for Brokerage Investment Sales v1, and three extend it again for Asset Management v1.
+Nineteen reference files containing formulas, benchmarks, criteria, and checklists. Five belong to the original multifamily-first release, three extend the repo for Industrial v1, four extend it for Brokerage Investment Sales v1, three extend it for Asset Management v1, and four extend it again for Office v1.
 
 | Knowledge Base | What It Contains | Used By |
 |---------------|-----------------|---------|
@@ -534,12 +588,16 @@ Fifteen reference files containing formulas, benchmarks, criteria, and checklist
 | [Asset Management Benchmarks](knowledge/asset-management-benchmarks.md) | Operational benchmarks for variance materiality, A/R reserves, turnover costs, unit-turn capex, concession norms by market, bad-debt, absorption, ancillary income lift, and rent-premium realization | Budget Builder, Variance Analyst, Collections Manager, Lease-Up Analyst, CapEx Tracker, NOI Improvement |
 | [Renewal Economics](knowledge/renewal-economics.md) | Retain-vs-replace framework, turnover cost components, rent-bump elasticity curve, tenant A/B/C tiering, hold-period analytics, refinance DSCR/LTV gates, and four-scenario disposition framework | Renewal Analyst, CapEx Tracker, Hold/Sell/Refi Analyst |
 | [Asset Management Reporting Standards](knowledge/asset-management-reporting-standards.md) | 10-section QAR template, LP report cadence, 12-KPI mandatory dashboard, T-3 vs T-12 bridging conventions, variance-classification taxonomy, and commentary-to-table ratios | Variance Analyst, Quarterly Asset Review Writer |
+| [Office Benchmarks](knowledge/office-benchmarks.md) | Office market, quality-tier, vacancy, leasing, operating, sublease, and flight-to-quality guardrails | Office Market Study, Rent Roll / Stacking Plan, TI/LC Underwriting, Office IC Memo |
+| [Office Lease Structures](knowledge/office-lease-structures.md) | Full-service, modified gross, base-year, expense-stop, NNN, BOMA area, work letter, option, assignment, sublease, contraction, and termination issue spotting | Office Lease Abstract, Rent Roll / Stacking Plan, Rollover Analyst |
+| [Office TI/LC Economics](knowledge/office-ti-lc-economics.md) | TI, LC, free rent, downtime, net effective rent, leasing-cost reserve, renewal-vs-new-lease, and capital stack stress modeling | TI/LC Underwriting, Rollover Analyst, Financing Fit |
+| [Office Lender Criteria](knowledge/office-lender-criteria.md) | Office lender lanes, sizing tests, DSCR / debt-yield pressure, leasing reserves, recourse posture, and financing red flags | Office Financing Fit, TI/LC Underwriting, Office IC Memo |
 
 **How to use knowledge bases:** Load the knowledge base alongside the skill you're using. For example, when using the Financial Model Builder skill, also load Underwriting Calculations for formula definitions and Multifamily Benchmarks for expense assumptions. The Claude Code plugins bundle relevant knowledge bases automatically.
 
 ### Companion Research Notes
 
-Industrial v1 includes 11 research notes under `research/industrial/` plus [research/industrial/INDEX.md](research/industrial/INDEX.md). Brokerage Investment Sales v1 adds 12 more research notes under `research/brokerage/` plus [research/brokerage/INDEX.md](research/brokerage/INDEX.md). Asset Management v1 adds 10 more research files under `research/asset-management/` — 1 shared taxonomy seed, 9 skill-backing notes with 168+ cited sources, and [research/asset-management/INDEX.md](research/asset-management/INDEX.md).
+Industrial v1 includes 11 research notes under `research/industrial/` plus [research/industrial/INDEX.md](research/industrial/INDEX.md). Brokerage Investment Sales v1 adds 12 more research notes under `research/brokerage/` plus [research/brokerage/INDEX.md](research/brokerage/INDEX.md). Asset Management v1 adds 10 more research files under `research/asset-management/` - 1 shared taxonomy seed, 9 skill-backing notes with 168+ cited sources, and [research/asset-management/INDEX.md](research/asset-management/INDEX.md). Office v1 adds 12 more research notes under `research/office/` plus [research/office/INDEX.md](research/office/INDEX.md), bringing the repo to 45 companion research notes.
 
 ---
 
@@ -568,106 +626,74 @@ New sector and role-based packs may also include companion research notes that d
 
 ```
 cre-agent-skills/
-├── README.md                              # This file
-├── LICENSE                                # Apache 2.0
-├── NOTICE                                # Attribution notice
-│
-├── skills/                                # 25 standalone skill files
-│   ├── due-diligence/                     #   7 property analysis skills
-│   │   ├── rent-roll-analyst.md
-│   │   ├── opex-analyst.md
-│   │   ├── market-study.md
-│   │   ├── physical-inspection.md
-│   │   ├── environmental-review.md
-│   │   ├── legal-title-review.md
-│   │   └── tenant-credit.md
-│   ├── underwriting/                      #   3 financial modeling skills
-│   │   ├── financial-model-builder.md
-│   │   ├── scenario-analyst.md
-│   │   └── ic-memo-writer.md
-│   ├── financing/                         #   3 debt sourcing skills
-│   │   ├── lender-outreach.md
-│   │   ├── quote-comparator.md
-│   │   └── term-sheet-builder.md
-│   ├── legal/                             #   6 legal review skills
-│   │   ├── psa-reviewer.md
-│   │   ├── title-survey-reviewer.md
-│   │   ├── estoppel-tracker.md
-│   │   ├── loan-doc-reviewer.md
-│   │   ├── insurance-coordinator.md
-│   │   └── transfer-doc-preparer.md
-│   ├── closing/                           #   2 transaction completion skills
-│   │   ├── closing-coordinator.md
-│   │   └── funds-flow-manager.md
-│   └── document-ingestion/                #   4 document parsing skills
-│       ├── document-classifier.md
-│       ├── rent-roll-parser.md
-│       ├── financials-parser.md
-│       └── offering-memo-parser.md
-│   └── industrial/                        #   8 industrial v1 skills
-│       ├── industrial-market-study.md
-│       ├── industrial-lease-roster-analyst.md
-│       └── ...
-│   └── brokerage/                        #   8 brokerage investment sales v1 skills
-│       ├── assignment-intake-manager.md
-│       ├── broker-opinion-of-value-builder.md
-│       └── ...
-│
-├── knowledge/                             # 15 domain knowledge reference files
-│   ├── underwriting-calc.md               #   Every CRE financial formula
-│   ├── risk-scoring.md                    #   9-category risk scoring framework
-│   ├── multifamily-benchmarks.md          #   Industry benchmarks by class/region
-│   ├── lender-criteria.md                 #   Lender qualification criteria
-│   └── legal-checklist.md                 #   Legal compliance checklists
-│   ├── industrial-benchmarks.md           #   Industrial subtype and leasing benchmarks
-│   ├── industrial-lease-structures.md     #   Industrial lease structure guidance
-│   └── industrial-lender-criteria.md      #   Industrial financing fit guidance
-│   ├── brokerage-investment-sales-process.md
-│   ├── broker-opinion-of-value-guidance.md
-│   ├── marketing-confidentiality-and-buyer-process.md
-│   └── offer-negotiation-and-closing-playbook.md
-│
-├── research/                              # 23 companion research notes across industrial and brokerage
-│   └── industrial/
-│   └── brokerage/
-│
-├── claude-code-plugins/                   # 9 ready-to-install Claude Code plugins
-│   ├── cre-due-diligence/                 #   /cre-due-diligence → 7 skills + 3 KBs
-│   │   ├── SKILL.md
-│   │   ├── skills/
-│   │   └── knowledge/
-│   ├── cre-underwriting/                  #   /cre-underwriting → 3 skills + 2 KBs
-│   │   ├── SKILL.md
-│   │   ├── skills/
-│   │   └── knowledge/
-│   ├── cre-financing/                     #   /cre-financing → 3 skills + 2 KBs
-│   │   ├── SKILL.md
-│   │   ├── skills/
-│   │   └── knowledge/
-│   ├── cre-legal/                         #   /cre-legal → 6 skills + 1 KB
-│   │   ├── SKILL.md
-│   │   ├── skills/
-│   │   └── knowledge/
-│   ├── cre-closing/                       #   /cre-closing → 2 skills + 2 KBs
-│   │   ├── SKILL.md
-│   │   ├── skills/
-│   │   └── knowledge/
-│   └── cre-document-ingestion/            #   /cre-document-ingestion → 4 skills
-│       ├── SKILL.md
-│       └── skills/
-│   └── cre-industrial/                    #   /cre-industrial → 8 skills + 3 KBs
-│   └── cre-brokerage/                     #   /cre-brokerage → 8 skills + 4 KBs
-│   └── cre-asset-management/              #   /cre-asset-management → 9 skills + 3 KBs
-│
-├── templates/
-│   └── sample-inputs/                     # Example input data for testing
-│       ├── deal-summary-template.md       #   Fill-in template for property details
-│       ├── rent-roll-sample.csv           #   Sample rent roll (10 units)
-│       └── t12-financials-sample.csv      #   Sample T-12 operating statement
-│
-└── docs/
-    ├── HOW-TO-USE.md                      # Platform-specific setup instructions
-    └── SKILL-INDEX.md                     # Quick reference with recommended combos
+|-- README.md                              # This file
+|-- LICENSE                                # Apache 2.0
+|-- NOTICE                                 # Attribution notice
+|
+|-- skills/                                # 58 standalone skill files
+|   |-- due-diligence/                     # 7 property analysis skills
+|   |-- underwriting/                      # 3 financial modeling skills
+|   |-- financing/                         # 3 debt sourcing skills
+|   |-- legal/                             # 6 legal review skills
+|   |-- closing/                           # 2 transaction completion skills
+|   |-- document-ingestion/                # 4 document parsing skills
+|   |-- industrial/                        # 8 industrial v1 skills
+|   |-- brokerage/                         # 8 brokerage investment sales v1 skills
+|   |-- asset-management/                  # 9 post-acquisition operations skills
+|   `-- office/                            # 8 office v1 skills
+|
+|-- knowledge/                             # 19 domain knowledge reference files
+|   |-- underwriting-calc.md
+|   |-- risk-scoring.md
+|   |-- multifamily-benchmarks.md
+|   |-- lender-criteria.md
+|   |-- legal-checklist.md
+|   |-- industrial-benchmarks.md
+|   |-- industrial-lease-structures.md
+|   |-- industrial-lender-criteria.md
+|   |-- brokerage-investment-sales-process.md
+|   |-- broker-opinion-of-value-guidance.md
+|   |-- marketing-confidentiality-and-buyer-process.md
+|   |-- offer-negotiation-and-closing-playbook.md
+|   |-- asset-management-benchmarks.md
+|   |-- renewal-economics.md
+|   |-- asset-management-reporting-standards.md
+|   |-- office-benchmarks.md
+|   |-- office-lease-structures.md
+|   |-- office-ti-lc-economics.md
+|   `-- office-lender-criteria.md
+|
+|-- research/                              # 45 companion research notes
+|   |-- industrial/
+|   |-- brokerage/
+|   |-- asset-management/
+|   `-- office/
+|
+|-- claude-code-plugins/                   # 10 ready-to-install Claude Code plugins
+|   |-- cre-due-diligence/
+|   |-- cre-underwriting/
+|   |-- cre-financing/
+|   |-- cre-legal/
+|   |-- cre-closing/
+|   |-- cre-document-ingestion/
+|   |-- cre-industrial/
+|   |-- cre-brokerage/
+|   |-- cre-asset-management/
+|   `-- cre-office/
+|
+|-- scripts/
+|   `-- validate-repo.ps1                  # strict repo consistency checks
+|
+|-- .github/
+|   `-- workflows/validate.yml             # CI validation workflow
+|
+|-- templates/
+|   `-- sample-inputs/                     # example input data for testing
+|
+`-- docs/
+    |-- HOW-TO-USE.md                      # platform-specific setup instructions
+    |-- SKILL-INDEX.md                     # quick reference with recommended combos
+    `-- releases/                          # release notes and PR summaries
 ```
 
 ---
@@ -736,6 +762,17 @@ Here are the files: [upload rent roll, T-12, offering memo]
 /cre-asset-management Draft the Q1 Asset Review memo for the LP
 ```
 
+### Example: Office v1 Workflow
+
+```
+/cre-office Run a market and flight-to-quality study for this downtown office asset
+/cre-office Reconcile the rent roll to the stacking plan and flag rollover exposure
+/cre-office Abstract the major tenant leases and work-letter obligations
+/cre-office Build the TI/LC underwriting model with downtime and free rent
+/cre-office Test financing fit for a refinance at today's office lender standards
+/cre-office Write the IC memo for the acquisition committee
+```
+
 ---
 
 ## Common Workflows
@@ -802,6 +839,16 @@ Here are the files: [upload rent roll, T-12, offering memo]
 7. **Deal Term Negotiation Brief Builder** → frame the seller-side negotiation posture
 8. **PSA to Close Transaction Coordinator** → coordinate the deal through closing
 
+### "I need a U.S. office acquisition or refinance workflow"
+1. **Office Market and Flight-to-Quality Study** → evaluate the submarket, quality tier, tenant demand, and competitive set
+2. **Office Rent Roll and Stacking Plan Analyst** → reconcile occupancy, WALT, rollover, and floor-by-floor exposure
+3. **Office Lease Abstract Reviewer** → abstract recoveries, options, work letters, contraction, termination, and sublease rights
+4. **Office Rollover and Occupancy Cost Analyst** → score renewal probability and replacement economics
+5. **Office TI / LC Underwriting Model Builder** → model downtime, TI, LC, free rent, net effective rent, and leasing reserves
+6. **Office Tenant Credit and Exposure Analyst** → assess tenant durability, guarantor support, industry concentration, and downside vacancy
+7. **Office Financing Fit** → identify likely lender lanes and sizing constraints
+8. **Office IC Memo Writer** → summarize the investment or refinance case
+
 ---
 
 ## FAQ
@@ -836,7 +883,7 @@ This repo extracts those same agents into standalone skills you can use individu
 
 ### Can I use these for property types other than multifamily?
 
-Yes. The original repo was optimized for multifamily acquisitions, and those skills remain intact. As of v1.1.0, the repo also includes **Industrial v1** for U.S. industrial acquisitions. As of v1.2.0, it also includes **Brokerage Investment Sales v1** for U.S. seller-side commercial investment sales process work. Other property types like office, retail, and self-storage are not yet full first-class property packs, though many shared and brokerage workflows transfer.
+Yes. The original repo was optimized for multifamily acquisitions, and those skills remain intact. As of v1.1.0, the repo also includes **Industrial v1** for U.S. industrial acquisitions. As of v1.2.0, it includes **Brokerage Investment Sales v1** for U.S. seller-side commercial investment sales process work. As of v1.4.0, it includes **Office v1** for U.S. office acquisitions, refinancings, recapitalizations, lease-up, tenant credit, TI/LC underwriting, and IC memo writing. Retail and self-storage are still planned future sector packs, though many shared and brokerage workflows transfer.
 
 ---
 

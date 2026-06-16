@@ -166,7 +166,9 @@ Group units by type and calculate:
 
 ---
 
-## Output Schema
+## Output Format
+
+Return structured JSON using this schema:
 
 ```json
 {

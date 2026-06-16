@@ -7,6 +7,9 @@ This roadmap reflects the intended direction of `cre-agent-skills` as a broader 
 - Multifamily acquisitions toolkit
 - Shared CRE legal, closing, and document-ingestion tools
 - Research-backed Industrial v1 expansion
+- Seller-side Brokerage Investment Sales v1 pack
+- Post-acquisition Asset Management v1 pack
+- Research-backed Office v1 expansion
 
 ## Next Planned Waves
 
@@ -20,21 +23,23 @@ Focus areas:
 - Lease-up and concessions analysis — ✅ Shipped in v1.3.0 (Asset Management pack)
 - Value-add execution tracking — ✅ Shipped in v1.3.0 (Asset Management pack)
 - Renewal, collections, and delinquency review — ✅ Shipped in v1.3.0 (Asset Management pack)
-- Affordable and workforce housing overlays — Deferred to v1.4.0+
+- Affordable and workforce housing overlays - Deferred to a future release
 
 ### 2. Office
 
-Status: Next — planned for v1.4.0
+Status: Shipped in v1.4.0
 
 Focus areas:
 
-- Office lease abstraction
-- TI/LC heavy underwriting
-- Occupancy-cost and rollover analysis
-- Flight-to-quality and submarket competition review
-- Lender-fit guidance for office in a selective capital environment
+- Office lease abstraction - shipped
+- TI/LC heavy underwriting - shipped
+- Occupancy-cost and rollover analysis - shipped
+- Flight-to-quality and submarket competition review - shipped
+- Lender-fit guidance for office in a selective capital environment - shipped
 
 ### 3. Retail / Self-Storage
+
+Status: Next candidate wave
 
 Focus areas:
 
@@ -42,6 +47,17 @@ Focus areas:
 - Co-tenancy, exclusives, and anchor analysis
 - Self-storage operating metrics and revenue management
 - Property-type-specific underwriting and lender criteria
+
+### 4. Affordable / Workforce Housing Overlays
+
+Status: Future wave
+
+Focus areas:
+
+- Rent restriction, AMI, and compliance review
+- Subsidy, HAP, and regulatory agreement analysis
+- Affordable refinancing and agency-lender fit
+- Workforce housing operating and political-risk overlays
 
 ## Guiding Principles
 

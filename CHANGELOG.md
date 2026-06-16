@@ -4,6 +4,47 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.4.0] - 2026-06-16
+
+### Added
+
+- Office Pack v1 release with 8 new U.S.-focused office acquisition, refinance, recapitalization, lease-up, tenant credit, TI/LC underwriting, financing-fit, and IC memo skills under `skills/office/`
+  - Office Market and Flight-to-Quality Study
+  - Office Rent Roll and Stacking Plan Analyst
+  - Office Lease Abstract Reviewer
+  - Office Rollover and Occupancy Cost Analyst
+  - Office TI / LC Underwriting Model Builder
+  - Office Tenant Credit and Exposure Analyst
+  - Office Financing Fit
+  - Office IC Memo Writer
+- 4 new office knowledge bases under `knowledge/`
+  - `office-benchmarks.md` - office market, quality-tier, vacancy, leasing, operating, and flight-to-quality guardrails
+  - `office-lease-structures.md` - full-service, modified gross, base-year, expense-stop, NNN, BOMA, work-letter, option, and transfer-right guidance
+  - `office-ti-lc-economics.md` - TI, LC, free rent, downtime, net effective rent, leasing-cost reserve, and renewal-vs-new-lease economics
+  - `office-lender-criteria.md` - office lender lanes, sizing tests, reserves, recourse posture, and financing red flags
+- 12 new companion research notes under `research/office/` plus `research/office/INDEX.md`
+- New Claude Code plugin: `cre-office` at `claude-code-plugins/cre-office/`
+- Strict repo validation tooling:
+  - `scripts/validate-repo.ps1`
+  - `.github/workflows/validate.yml`
+
+### Changed
+
+- Updated README, HOW-TO-USE, SKILL-INDEX, and ROADMAP to position Office v1 as the fourth additive pack after Industrial v1, Brokerage Investment Sales v1, and Asset Management v1
+- Updated GitHub issue and PR templates so new sectors and validation are visible in contribution workflows
+- Fixed legacy heading drift in document-ingestion and underwriting skill mirrors so root and plugin copies pass strict validation
+
+### New conventions introduced
+
+- README badges are now validated against actual repo counts for skills, knowledge bases, research notes, and Claude Code plugins
+- Strict validation checks root/plugin mirror coverage, required skill headings, research indexes, and skill-backed research notes
+- Office pack uses an explicit lease-driven framing: market quality, rollover, tenant credit, TI/LC drag, lender selectivity, and IC-level risk synthesis
+
+### Deferred to future releases
+
+- Retail and self-storage sector packs
+- Affordable and workforce housing overlays
+
 ## [1.3.0] - 2026-04-24
 
 ### Added

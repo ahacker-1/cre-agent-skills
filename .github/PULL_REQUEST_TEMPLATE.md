@@ -17,3 +17,4 @@
 - [ ] No orchestration-specific language (checkpoints, pipelines, deal-id, etc.)
 - [ ] All knowledge base references use `knowledge/` paths
 - [ ] Formulas and thresholds are sourced from industry data (cite source if adding new ones)
+- [ ] Ran `.\scripts\validate-repo.ps1 -Strict`

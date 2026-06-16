@@ -267,7 +267,9 @@ Scan the document for standard OM section headers:
 
 ---
 
-## Output Schema
+## Output Format
+
+Return structured JSON using this schema:
 
 ```json
 {

@@ -313,7 +313,7 @@ Common fallbacks:
 - Missing title review: note title was not reviewed; flag as a pre-close requirement
 - Missing market study: use publicly available market data; note reliance on external sources
 
-**Confidence Scoring:**
+## Confidence Scoring
 
 | Level | Criteria |
 |-------|----------|

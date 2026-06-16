@@ -8,5 +8,8 @@ Thumbs.db
 *.swp
 *.swo
 
+# Local agent execution state
+.claude/
+
 # Node (in case someone adds tooling later)
 node_modules/

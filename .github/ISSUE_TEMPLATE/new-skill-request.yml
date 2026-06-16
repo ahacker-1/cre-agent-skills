@@ -14,6 +14,10 @@ body:
         - Legal
         - Closing
         - Document Ingestion
+        - Industrial
+        - Brokerage Investment Sales
+        - Asset Management
+        - Office
         - Other / New Department
     validations:
       required: true
