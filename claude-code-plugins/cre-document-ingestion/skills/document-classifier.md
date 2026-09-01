@@ -1,3 +1,13 @@
+---
+license: Apache-2.0
+metadata:
+  author: "Avi Hacker, J.D."
+  organization: "The AI Consulting Network"
+  homepage: https://www.theaiconsultingnetwork.com
+  source: https://github.com/ahacker-1/cre-agent-skills
+  copyright: "Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network"
+---
+
 # Document Classifier
 
 Identify, classify, and organize incoming CRE deal documents - determining what type each document is, extracting key data points from each, and surfacing any missing or conflicting information.
@@ -283,3 +293,13 @@ For deeper analysis, pair this skill with the specialist parsing skills for each
 - **Rent Roll Parser** skill — for unit-level occupancy and rent data extraction
 - **T12 Financials Parser** skill — for revenue, expense, and NOI extraction from operating statements
 - **Multifamily Benchmarks** knowledge base — for validating extracted metrics against typical market ranges
+
+---
+
+## Attribution
+
+Built and maintained by [The AI Consulting Network](https://www.theaiconsultingnetwork.com/?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills), the commercial real estate AI consulting practice of Avi Hacker, J.D., and part of [CRE Agent Skills](https://github.com/ahacker-1/cre-agent-skills), an open-source library of AI skills for commercial real estate.
+
+If this skill saved you time and you want systems like it built inside your firm, [reach out](https://www.theaiconsultingnetwork.com/contact?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills). We would love to work with you.
+
+Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network. Licensed under the [Apache License 2.0](https://github.com/ahacker-1/cre-agent-skills/blob/main/LICENSE). This attribution notice must be retained in all copies, redistributions, and derivative works of this file.

@@ -22,7 +22,8 @@ If you want to add a new CRE analysis skill:
 3. Place it in the appropriate department directory under `skills/`
 4. Create a companion research note under `research/` that documents sources, assumptions, benchmark rationale, conflicting-source resolution, and edge cases
 5. Add it to the relevant Claude Code plugin in `claude-code-plugins/`
-6. Update README.md and docs/SKILL-INDEX.md
+6. Run `python3 scripts/add_attribution.py` so the new file carries the attribution frontmatter and footer (the validator fails without it)
+7. Update README.md and docs/SKILL-INDEX.md
 
 ### Research-Backed Authoring Standard
 

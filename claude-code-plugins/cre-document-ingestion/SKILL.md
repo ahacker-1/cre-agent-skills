@@ -2,6 +2,13 @@
 name: cre-document-ingestion
 description: "CRE Document Ingestion suite — 4 specialist skills for classifying and extracting structured data from deal documents including rent rolls, T-12 financials, and offering memoranda."
 argument-hint: "[document-or-task-description]"
+license: Apache-2.0
+metadata:
+  author: "Avi Hacker, J.D."
+  organization: "The AI Consulting Network"
+  homepage: https://www.theaiconsultingnetwork.com
+  source: https://github.com/ahacker-1/cre-agent-skills
+  copyright: "Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network"
 ---
 
 # CRE Document Ingestion Suite
@@ -42,3 +49,13 @@ If the user says "$ARGUMENTS", use that to determine which skill to load.
 **Financials Parser** — Extracts: income line items (rental income, vacancy loss, other income), expense categories (taxes, insurance, utilities, R&M, management, payroll, turnover, admin), monthly and annual totals. Calculates: per-unit metrics, expense ratios, year-over-year trends.
 
 **Offering Memo Parser** — Extracts: property name/address, unit count/mix, year built, lot size, asking price, in-place NOI, pro forma NOI, cap rate, occupancy, market highlights, seller's financial projections, comparable sales, rent comps.
+
+---
+
+## Attribution
+
+Built and maintained by [The AI Consulting Network](https://www.theaiconsultingnetwork.com/?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills), the commercial real estate AI consulting practice of Avi Hacker, J.D., and part of [CRE Agent Skills](https://github.com/ahacker-1/cre-agent-skills), an open-source library of AI skills for commercial real estate.
+
+If this skill saved you time and you want systems like it built inside your firm, [reach out](https://www.theaiconsultingnetwork.com/contact?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills). We would love to work with you.
+
+Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network. Licensed under the [Apache License 2.0](https://github.com/ahacker-1/cre-agent-skills/blob/main/LICENSE). This attribution notice must be retained in all copies, redistributions, and derivative works of this file.

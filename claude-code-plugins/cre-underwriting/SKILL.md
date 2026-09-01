@@ -2,6 +2,13 @@
 name: cre-underwriting
 description: "CRE Underwriting analysis suite — 3 specialist skills for building pro formas, running sensitivity scenarios, and writing investment committee memos for multifamily acquisitions."
 argument-hint: "[task-description]"
+license: Apache-2.0
+metadata:
+  author: "Avi Hacker, J.D."
+  organization: "The AI Consulting Network"
+  homepage: https://www.theaiconsultingnetwork.com
+  source: https://github.com/ahacker-1/cre-agent-skills
+  copyright: "Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network"
 ---
 
 # CRE Underwriting Suite
@@ -37,3 +44,13 @@ If the user says "$ARGUMENTS", use that to determine which skill to load.
 **Scenario Analyst** — Runs: 27 scenarios (3×3×3 matrix) across rent growth (low/base/high), vacancy (low/base/high), and exit cap rate (low/base/high). Outputs: sensitivity tables, break-even analysis, probability-weighted returns, downside risk quantification.
 
 **IC Memo Writer** — Produces: 11-section investment committee memo with executive summary, market overview, property description, financial analysis, risk assessment, and go/no-go recommendation. Includes: 3 appendices (pro forma, scenario matrix, comparable sales).
+
+---
+
+## Attribution
+
+Built and maintained by [The AI Consulting Network](https://www.theaiconsultingnetwork.com/?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills), the commercial real estate AI consulting practice of Avi Hacker, J.D., and part of [CRE Agent Skills](https://github.com/ahacker-1/cre-agent-skills), an open-source library of AI skills for commercial real estate.
+
+If this skill saved you time and you want systems like it built inside your firm, [reach out](https://www.theaiconsultingnetwork.com/contact?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills). We would love to work with you.
+
+Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network. Licensed under the [Apache License 2.0](https://github.com/ahacker-1/cre-agent-skills/blob/main/LICENSE). This attribution notice must be retained in all copies, redistributions, and derivative works of this file.

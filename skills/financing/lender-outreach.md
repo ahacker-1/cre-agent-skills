@@ -1,3 +1,13 @@
+---
+license: Apache-2.0
+metadata:
+  author: "Avi Hacker, J.D."
+  organization: "The AI Consulting Network"
+  homepage: https://www.theaiconsultingnetwork.com
+  source: https://github.com/ahacker-1/cre-agent-skills
+  copyright: "Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network"
+---
+
 # Lender Outreach
 
 Research and evaluate potential lenders across all categories (Agency, CMBS, Bank, Bridge), qualify a deal for each type, and produce a ranked lender package with indicative terms and requirements.
@@ -319,3 +329,13 @@ For deeper analysis, pair this skill with:
 - [Lender Criteria](knowledge/lender-criteria.md) — detailed qualification rules, current program parameters, and lender-specific underwriting standards by category
 - [Underwriting Calculations](knowledge/underwriting-calc.md) — formulas for DSCR, debt yield, and return calculations used in lender qualification
 - [Multifamily Benchmarks](knowledge/multifamily-benchmarks.md) — market benchmarks for rates, leverage, and terms to validate lender quotes against market norms
+
+---
+
+## Attribution
+
+Built and maintained by [The AI Consulting Network](https://www.theaiconsultingnetwork.com/?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills), the commercial real estate AI consulting practice of Avi Hacker, J.D., and part of [CRE Agent Skills](https://github.com/ahacker-1/cre-agent-skills), an open-source library of AI skills for commercial real estate.
+
+If this skill saved you time and you want systems like it built inside your firm, [reach out](https://www.theaiconsultingnetwork.com/contact?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills). We would love to work with you.
+
+Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network. Licensed under the [Apache License 2.0](https://github.com/ahacker-1/cre-agent-skills/blob/main/LICENSE). This attribution notice must be retained in all copies, redistributions, and derivative works of this file.

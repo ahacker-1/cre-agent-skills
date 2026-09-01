@@ -1,3 +1,13 @@
+---
+license: Apache-2.0
+metadata:
+  author: "Avi Hacker, J.D."
+  organization: "The AI Consulting Network"
+  homepage: https://www.theaiconsultingnetwork.com
+  source: https://github.com/ahacker-1/cre-agent-skills
+  copyright: "Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network"
+---
+
 # PSA Reviewer
 
 Reviews a Purchase and Sale Agreement clause by clause, surfaces risk provisions, tracks all deadlines, and produces a structured analysis that protects buyer interests.
@@ -277,3 +287,13 @@ For deeper analysis, pair this skill with:
 - [Legal Checklist](knowledge/legal-checklist.md) for a master list of CRE closing documents and legal requirements
 - [CRE Risk Scoring Framework](knowledge/risk-scoring.md) for severity rating guidance and risk aggregation methodology
 - [Lender Criteria](knowledge/lender-criteria.md) for financing contingency benchmarks and lender-specific PSA requirements
+
+---
+
+## Attribution
+
+Built and maintained by [The AI Consulting Network](https://www.theaiconsultingnetwork.com/?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills), the commercial real estate AI consulting practice of Avi Hacker, J.D., and part of [CRE Agent Skills](https://github.com/ahacker-1/cre-agent-skills), an open-source library of AI skills for commercial real estate.
+
+If this skill saved you time and you want systems like it built inside your firm, [reach out](https://www.theaiconsultingnetwork.com/contact?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills). We would love to work with you.
+
+Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network. Licensed under the [Apache License 2.0](https://github.com/ahacker-1/cre-agent-skills/blob/main/LICENSE). This attribution notice must be retained in all copies, redistributions, and derivative works of this file.

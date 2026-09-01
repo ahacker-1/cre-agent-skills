@@ -2,6 +2,13 @@
 name: cre-asset-management
 description: "CRE Asset Management analysis suite — 9 specialist skills for post-acquisition multifamily operations including annual budgeting, monthly variance analysis, rent collection, renewal decisions, lease-up tracking, capex execution, NOI improvement, hold/sell/refi scenario analysis, and quarterly asset review memos."
 argument-hint: "[task-description]"
+license: Apache-2.0
+metadata:
+  author: "Avi Hacker, J.D."
+  organization: "The AI Consulting Network"
+  homepage: https://www.theaiconsultingnetwork.com
+  source: https://github.com/ahacker-1/cre-agent-skills
+  copyright: "Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network"
 ---
 
 # CRE Asset Management Suite
@@ -58,3 +65,13 @@ If the user says "$ARGUMENTS", use that to determine which skill to load and wha
 **Hold / Sell / Refi Analyst** — Scenarios: hold / refi-and-hold / sell-now / sell-at-stabilization with projected IRR, equity multiple, and net proceeds; outputs recommendation with rationale; includes disposition handoff package
 
 **Quarterly Asset Review Writer** — Produces: 10-section QAR memo (Executive Summary, KPI Dashboard, Variance Drivers, Leasing & Occupancy, Capital Projects, Market Update, Risks & Watch Items, Financial Position, Forward Look, Consumed Upstream Outputs) consuming outputs from the other 8 AM skills
+
+---
+
+## Attribution
+
+Built and maintained by [The AI Consulting Network](https://www.theaiconsultingnetwork.com/?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills), the commercial real estate AI consulting practice of Avi Hacker, J.D., and part of [CRE Agent Skills](https://github.com/ahacker-1/cre-agent-skills), an open-source library of AI skills for commercial real estate.
+
+If this skill saved you time and you want systems like it built inside your firm, [reach out](https://www.theaiconsultingnetwork.com/contact?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills). We would love to work with you.
+
+Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network. Licensed under the [Apache License 2.0](https://github.com/ahacker-1/cre-agent-skills/blob/main/LICENSE). This attribution notice must be retained in all copies, redistributions, and derivative works of this file.

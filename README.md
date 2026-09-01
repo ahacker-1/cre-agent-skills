@@ -1019,3 +1019,5 @@ If you're building something in this space or want to talk about how AI can tran
 ## License
 
 [Apache 2.0](LICENSE) — Use freely, attribution required. See [NOTICE](NOTICE) for details.
+
+Every skill file carries its own attribution notice in the frontmatter and in an **Attribution** footer. Apache 2.0 requires that notice to travel with the file, so keep it in place when you copy, adapt, or redistribute a skill.

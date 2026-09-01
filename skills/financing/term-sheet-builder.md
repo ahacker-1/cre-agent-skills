@@ -1,3 +1,13 @@
+---
+license: Apache-2.0
+metadata:
+  author: "Avi Hacker, J.D."
+  organization: "The AI Consulting Network"
+  homepage: https://www.theaiconsultingnetwork.com
+  source: https://github.com/ahacker-1/cre-agent-skills
+  copyright: "Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network"
+---
+
 # Term Sheet Builder
 
 Assemble a complete draft term sheet and financing recommendation from a selected lender quote, calculating final deal metrics, reserve requirements, closing costs, and conditions precedent.
@@ -483,3 +493,13 @@ For deeper analysis, pair this skill with:
 - [Lender Criteria](knowledge/lender-criteria.md) — qualification standards and typical reserve and guarantor requirements by lender category, useful for filling gaps when lender has not specified all terms
 - [Multifamily Benchmarks](knowledge/multifamily-benchmarks.md) — market benchmarks for CapEx reserves, closing cost ranges, and typical covenant levels, used when lender-specific data is missing
 - [Legal Checklist](knowledge/legal-checklist.md) — conditions precedent and document requirements that the legal review phase will need once the term sheet is finalized
+
+---
+
+## Attribution
+
+Built and maintained by [The AI Consulting Network](https://www.theaiconsultingnetwork.com/?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills), the commercial real estate AI consulting practice of Avi Hacker, J.D., and part of [CRE Agent Skills](https://github.com/ahacker-1/cre-agent-skills), an open-source library of AI skills for commercial real estate.
+
+If this skill saved you time and you want systems like it built inside your firm, [reach out](https://www.theaiconsultingnetwork.com/contact?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills). We would love to work with you.
+
+Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network. Licensed under the [Apache License 2.0](https://github.com/ahacker-1/cre-agent-skills/blob/main/LICENSE). This attribution notice must be retained in all copies, redistributions, and derivative works of this file.
