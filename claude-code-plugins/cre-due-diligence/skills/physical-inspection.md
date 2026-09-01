@@ -1,3 +1,13 @@
+---
+license: Apache-2.0
+metadata:
+  author: "Avi Hacker, J.D."
+  organization: "The AI Consulting Network"
+  homepage: https://www.theaiconsultingnetwork.com
+  source: https://github.com/ahacker-1/cre-agent-skills
+  copyright: "Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network"
+---
+
 # Physical Inspection Analyst
 
 Evaluates a property's physical condition from available data, estimates deferred maintenance costs and CapEx requirements, and produces a comprehensive condition assessment that informs the buyer's capital plan and risk analysis.
@@ -344,3 +354,13 @@ Include in output:
 For deeper analysis, pair this skill with:
 - [Underwriting Calculations](knowledge/underwriting-calc.md) for CapEx projections and renovation ROI calculations
 - [Multifamily Benchmarks](knowledge/multifamily-benchmarks.md) for system lifecycle standards and cost per unit benchmarks by class and region
+
+---
+
+## Attribution
+
+Built and maintained by [The AI Consulting Network](https://www.theaiconsultingnetwork.com/?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills), the commercial real estate AI consulting practice of Avi Hacker, J.D., and part of [CRE Agent Skills](https://github.com/ahacker-1/cre-agent-skills), an open-source library of AI skills for commercial real estate.
+
+If this skill saved you time and you want systems like it built inside your firm, [reach out](https://www.theaiconsultingnetwork.com/contact?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills). We would love to work with you.
+
+Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network. Licensed under the [Apache License 2.0](https://github.com/ahacker-1/cre-agent-skills/blob/main/LICENSE). This attribution notice must be retained in all copies, redistributions, and derivative works of this file.

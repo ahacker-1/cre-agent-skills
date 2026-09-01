@@ -163,6 +163,27 @@ if (Test-Path -LiteralPath $readmePath) {
     }
 }
 
+# Attribution: every skill file must carry the frontmatter + footer stamped by scripts/add_attribution.py
+$attributionCopyright = 'Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network'
+$attributionFiles = @($rootSkills) + @(Get-ChildItem -LiteralPath $pluginDir -Recurse -File -Filter '*.md' | Where-Object {
+    $_.FullName -match '[\\/]skills[\\/]' -or $_.Name -eq 'SKILL.md'
+})
+foreach ($file in $attributionFiles) {
+    $text = Get-Content -LiteralPath $file.FullName -Raw
+    $gaps = @()
+    $fm = [regex]::Match($text, '\A---\r?\n(.*?)\r?\n---\r?\n', [System.Text.RegularExpressions.RegexOptions]::Singleline)
+    if (-not ($fm.Success -and $fm.Groups[1].Value.Contains('license: Apache-2.0') -and $fm.Groups[1].Value.Contains($attributionCopyright))) {
+        $gaps += 'frontmatter'
+    }
+    $footerIndex = $text.IndexOf('## Attribution')
+    if ($footerIndex -lt 0 -or -not $text.Substring($footerIndex).Contains($attributionCopyright)) {
+        $gaps += 'footer'
+    }
+    if ($gaps.Count -gt 0) {
+        Add-ValidationError "$(Get-RepoRelativePath $file.FullName) lacks attribution $($gaps -join ' and '); run scripts/add_attribution.py."
+    }
+}
+
 if ($warnings.Count -gt 0) {
     Write-Host 'Validation warnings:'
     foreach ($warning in $warnings) {

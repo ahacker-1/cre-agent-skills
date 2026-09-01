@@ -1,3 +1,13 @@
+---
+license: Apache-2.0
+metadata:
+  author: "Avi Hacker, J.D."
+  organization: "The AI Consulting Network"
+  homepage: https://www.theaiconsultingnetwork.com
+  source: https://github.com/ahacker-1/cre-agent-skills
+  copyright: "Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network"
+---
+
 # Scenario Analyst
 
 Run 27 scenario permutations on a base case financial model to stress-test returns, identify probability-weighted outcomes, and rank variable sensitivities for a multifamily CRE acquisition.
@@ -330,3 +340,13 @@ For deeper analysis, pair this skill with:
 - [Financial Model Builder](skills/underwriting/financial-model-builder.md) — produces the base case model that this skill stress-tests
 - [IC Memo Writer](skills/underwriting/ic-memo-writer.md) — consumes this skill's scenario output for the investment committee memorandum
 - Downstream: [Hold/Sell/Refi Analyst](../asset-management/hold-sell-refi-analyst.md)
+
+---
+
+## Attribution
+
+Built and maintained by [The AI Consulting Network](https://www.theaiconsultingnetwork.com/?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills), the commercial real estate AI consulting practice of Avi Hacker, J.D., and part of [CRE Agent Skills](https://github.com/ahacker-1/cre-agent-skills), an open-source library of AI skills for commercial real estate.
+
+If this skill saved you time and you want systems like it built inside your firm, [reach out](https://www.theaiconsultingnetwork.com/contact?utm_source=github&utm_medium=skill-file&utm_campaign=cre-agent-skills). We would love to work with you.
+
+Copyright 2026 Avi Hacker, J.D. / The AI Consulting Network. Licensed under the [Apache License 2.0](https://github.com/ahacker-1/cre-agent-skills/blob/main/LICENSE). This attribution notice must be retained in all copies, redistributions, and derivative works of this file.
