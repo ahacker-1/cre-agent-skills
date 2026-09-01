@@ -284,9 +284,16 @@ HIGH | MEDIUM | LOW
 
 ## Related Knowledge Bases
 
-- [Asset Management Benchmarks](../knowledge/asset-management-benchmarks.md) — §3 stabilization definitions, §6 concession depth by market condition + burn-off triggers, §8 absorption by market tier + lease-up type + reforecast triggers
-- [Multifamily Benchmarks](../knowledge/multifamily-benchmarks.md) — rent growth by tier, economic-vs-physical occupancy diagnostic, cap-rate ranges
-- [Underwriting Calc](../knowledge/underwriting-calc.md) — Concessions and free-rent adjustment formula (verbatim), EGI derivation, DSCR
+- [Asset Management Benchmarks](knowledge/asset-management-benchmarks.md) — §3 stabilization definitions, §6 concession depth by market condition + burn-off triggers, §8 absorption by market tier + lease-up type + reforecast triggers
+- [Multifamily Benchmarks](knowledge/multifamily-benchmarks.md) — rent growth by tier, economic-vs-physical occupancy diagnostic, cap-rate ranges
+- [Underwriting Calc](knowledge/underwriting-calc.md) — Concessions and free-rent adjustment formula (verbatim), EGI derivation, DSCR
+
+---
+
+## Research Basis
+
+- [Lease-Up & Concessions Analyst Research (R5)](research/asset-management/lease-up-concessions-analyst-research.md)
+- [Asset Management Taxonomy Seed](research/asset-management/_taxonomy-seed.md) — §4 rent definitions (effective rent subtractive convention)
 
 ---
 

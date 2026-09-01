@@ -99,6 +99,13 @@ foreach ($plugin in $plugins) {
     foreach ($pluginSkill in $pluginSkills) {
         if (-not $rootSkillsByName.ContainsKey($pluginSkill.Name)) {
             Add-ValidationError "$(Get-RepoRelativePath $pluginSkill.FullName) has no root skill with matching filename."
+            continue
+        }
+        $rootSkill = $rootSkillsByName[$pluginSkill.Name]
+        $mirrorHash = (Get-FileHash -LiteralPath $pluginSkill.FullName -Algorithm SHA256).Hash
+        $rootHash = (Get-FileHash -LiteralPath $rootSkill.FullName -Algorithm SHA256).Hash
+        if ($mirrorHash -ne $rootHash) {
+            Add-ValidationError "$(Get-RepoRelativePath $pluginSkill.FullName) differs from $(Get-RepoRelativePath $rootSkill.FullName); root is the source of truth, copy it over the mirror."
         }
     }
 

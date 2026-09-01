@@ -313,10 +313,16 @@ Premium-realization failure modes (required naming per R6 when realization under
 
 ## Related Knowledge Bases
 
-- [Asset Management Benchmarks](../knowledge/asset-management-benchmarks.md) — unit-turn capex ranges, rent premium realization benchmarks, yield-on-cost thresholds
-- [Renewal Economics](../knowledge/renewal-economics.md) — renewal trade-out dynamics and renewal-vs-new-lease premium split
-- [Multifamily Benchmarks](../knowledge/multifamily-benchmarks.md) — COL cost dispersion multipliers, per-unit expense benchmarks, class-tier context
-- [Underwriting Calculations](../knowledge/underwriting-calc.md) — NOI / NCF conventions, yield and IRR formulas, effective-rent (concession) math
+- [Asset Management Benchmarks](knowledge/asset-management-benchmarks.md) — unit-turn capex ranges, rent premium realization benchmarks, yield-on-cost thresholds
+- [Renewal Economics](knowledge/renewal-economics.md) — renewal trade-out dynamics and renewal-vs-new-lease premium split
+- [Multifamily Benchmarks](knowledge/multifamily-benchmarks.md) — COL cost dispersion multipliers, per-unit expense benchmarks, class-tier context
+- [Underwriting Calculations](knowledge/underwriting-calc.md) — NOI / NCF conventions, yield and IRR formulas, effective-rent (concession) math
+
+---
+
+## Research Basis
+
+- [CapEx / Value-Add Execution Tracker Research (R6)](research/asset-management/capex-value-add-execution-tracker-research.md)
 
 ---
 

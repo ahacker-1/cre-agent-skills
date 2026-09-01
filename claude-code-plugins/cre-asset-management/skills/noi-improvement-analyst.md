@@ -282,6 +282,12 @@ HIGH | MEDIUM | LOW
 
 ---
 
+## Research Basis
+
+- [NOI Improvement Analyst Research (R7)](research/asset-management/noi-improvement-analyst-research.md) — primary lever library, state-legality overlay, prioritization framework, scoring rubric, edge-case red flags.
+
+---
+
 ## Structured Output
 
 ```json

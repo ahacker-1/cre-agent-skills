@@ -261,7 +261,10 @@ HIGH | MEDIUM | LOW
 - [Asset Management Reporting Standards](knowledge/asset-management-reporting-standards.md) — Variance Classification at the Reporting Layer, Materiality Thresholds in Reports, Model Narrative Format, LP-facing commentary conventions
 - [Underwriting Calculations](knowledge/underwriting-calc.md) — NOI, EGI, GPI, concessions, bad-debt, and replacement-reserve / NCF formulas referenced by the variance table (do not redefine)
 
----
+## Research Basis
+
+- [Monthly Variance Analyst Research](research/asset-management/monthly-variance-analyst-research.md)
+- [Asset Management Taxonomy Seed](research/asset-management/_taxonomy-seed.md) — §3 Timing / Permanent / One-Time decision rules (applied verbatim), Mixed-Variance Rule, Seasonal/Weather Rule, Materiality floor convention
 
 ## Structured Output
 

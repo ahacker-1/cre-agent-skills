@@ -293,10 +293,16 @@ The +3% renewal is the right recommendation on this unit. The skill would offer 
 
 ## Related Knowledge Bases
 
-- [Renewal Economics](../knowledge/renewal-economics.md) — primary framework source; Retain-vs-Replace formula, rent-bump elasticity curve, tenant tier definitions, turnover cost components, seasonality modifiers
-- [Asset Management Benchmarks](../knowledge/asset-management-benchmarks.md) — cross-reference for property-level retention/renewal-rate targets and turnover benchmarks
-- [Multifamily Benchmarks](../knowledge/multifamily-benchmarks.md) — cost-of-living / vintage / catastrophe multipliers applied to turn capex; class-based turnover benchmarks
-- [Underwriting Calculations](../knowledge/underwriting-calc.md) — canonical Loss-to-Lease, Effective Rent, and Concession formulas (cross-reference only; not redefined here)
+- [Renewal Economics](knowledge/renewal-economics.md) — primary framework source; Retain-vs-Replace formula, rent-bump elasticity curve, tenant tier definitions, turnover cost components, seasonality modifiers
+- [Asset Management Benchmarks](knowledge/asset-management-benchmarks.md) — cross-reference for property-level retention/renewal-rate targets and turnover benchmarks
+- [Multifamily Benchmarks](knowledge/multifamily-benchmarks.md) — cost-of-living / vintage / catastrophe multipliers applied to turn capex; class-based turnover benchmarks
+- [Underwriting Calculations](knowledge/underwriting-calc.md) — canonical Loss-to-Lease, Effective Rent, and Concession formulas (cross-reference only; not redefined here)
+
+---
+
+## Research Basis
+
+- [Renewal Decision Analyst Research](research/asset-management/renewal-decision-analyst-research.md) (R4) — sourced from AvalonBay / Essex / Equity Residential / MAA / Camden / UDR FY 2024 10-Ks and Q4 supplementals, NMHC Quarterly Apartment Markets, NAA 2024 "From Momentum to Management" survey, IREM Income/Expense IQ, RealPage multifamily renewal analytics, Yardi Matrix, ALN Apartment Data, J Turner retention research, RentCafe renter-intent survey, ResMan make-ready benchmarks, Multifamily Executive turnover-cost framework
 
 ---
 
