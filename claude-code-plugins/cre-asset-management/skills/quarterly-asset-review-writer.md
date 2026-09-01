@@ -524,6 +524,11 @@ HIGH | MEDIUM | LOW
 - [Underwriting Calculations](knowledge/underwriting-calc.md) — DSCR, Debt Yield, Cap Rate, IRR, NOI, EGI formulas referenced (by reference only) in the KPI Dashboard and Financial Position sections
 - [Multifamily Benchmarks](knowledge/multifamily-benchmarks.md) — occupancy, expense ratio, turnover, bad debt, DSCR, LTV / LTC benchmark ranges referenced in KPI Dashboard and Risks & Watch Items
 
+## Research Basis
+
+- [Quarterly Asset Review Writer Research](research/asset-management/quarterly-asset-review-writer-research.md) — R9 — primary research note; sourced from ILPA Reporting Template, ILPA Quarterly Reporting Standards PDF, NCREIF-PREA Reporting Standards, NCREIF NPI Methodology, AvalonBay / Equity Residential / Camden Q4 2024 Earnings Supplementals (SEC primary filings), ANREV/INREV/NCREIF Global Definitions Database, SEC Reg S-K Item 303 MD&A, ILPA Diversity in Action, PRI Real Estate Module, PREA Member Guidance, Nareit Supplemental Guide, GRESB Real Estate Assessment (13 Tier-1/Tier-2 sources)
+- [Asset Management Taxonomy Seed](research/asset-management/_taxonomy-seed.md) — §2 KPI formulas (referenced, not redefined); §3 Timing / Permanent / One-Time decision rules and materiality floor inherited at the reporting layer; §4 rent definitions
+
 ---
 
 ## Structured Output

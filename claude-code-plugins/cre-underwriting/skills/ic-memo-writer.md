@@ -357,6 +357,7 @@ For deeper analysis, pair this skill with:
 - [Multifamily Benchmarks](knowledge/multifamily-benchmarks.md) — market norms for expense ratios, vacancy, rent growth, and cap rates used to contextualize findings
 - [Financial Model Builder](skills/underwriting/financial-model-builder.md) — produces the base case financial model that feeds Sections 7 and 8 of the memo
 - [Scenario Analyst](skills/underwriting/scenario-analyst.md) — produces the 27-scenario stress test that feeds Section 8 of the memo
+- Downstream: [Quarterly Asset Review Writer](../asset-management/quarterly-asset-review-writer.md)
 
 ---
 

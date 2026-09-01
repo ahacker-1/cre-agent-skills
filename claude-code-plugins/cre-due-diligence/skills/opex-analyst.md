@@ -358,6 +358,7 @@ Include in output:
 For deeper analysis, pair this skill with:
 - [Underwriting Calculations](knowledge/underwriting-calc.md) for NOI calculations and expense ratio benchmarks
 - [Multifamily Benchmarks](knowledge/multifamily-benchmarks.md) for per-unit expense ranges by category, class, and region
+- Downstream: [Annual Operating Budget Builder](../asset-management/annual-operating-budget-builder.md), [NOI Improvement Analyst](../asset-management/noi-improvement-analyst.md)
 
 ---
 

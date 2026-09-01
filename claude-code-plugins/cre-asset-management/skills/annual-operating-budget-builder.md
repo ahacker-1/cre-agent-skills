@@ -271,6 +271,13 @@ Each flag is specific, thresholded, and cites the source. The skill MUST surface
 
 ---
 
+## Research Basis
+
+- [Annual Operating Budget Builder Research](research/asset-management/annual-operating-budget-builder-research.md) — empirical calibration: NAA/IREM 2024 $8,657/unit anchor, regional multipliers, insurance & property-tax stress-test methodology, turnover wide-definition economics, 2025–2026 moderation-not-inflation finding, budget-construction methodology decisions.
+- [Asset Management Taxonomy Seed](research/asset-management/_taxonomy-seed.md) — canonical OpEx line-item taxonomy, KPI formulas, variance classification rules, rent definitions, AR aging — inherited verbatim by this skill.
+
+---
+
 ## Structured Output
 
 ```json

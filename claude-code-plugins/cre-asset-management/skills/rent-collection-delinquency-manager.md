@@ -271,6 +271,10 @@ PROBLEM (past-due >25% of receivables OR bad-debt ratio >class watch threshold O
 - [Multifamily Benchmarks](knowledge/multifamily-benchmarks.md) — bad-debt ratio KPI benchmark, class/regional overlays
 - [Underwriting Calc](knowledge/underwriting-calc.md) — Bad Debt formula (`Bad Debt = GPI × Bad Debt Rate`), Bad Debt Ratio (cross-referenced, not redefined here)
 
+## Research Basis
+
+- [Rent Collection & Delinquency Manager Research](research/asset-management/rent-collection-delinquency-manager-research.md)
+
 ---
 
 ## Structured Output

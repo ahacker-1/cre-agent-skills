@@ -363,9 +363,15 @@ Same asset, same measurement date. The value-add plan originally called for inte
 
 ## Related Knowledge Bases
 
-- [Renewal Economics & Hold/Sell/Refi Decision Frameworks](../knowledge/renewal-economics.md) — primary: Sections 6 (Hold Period Analytics), 7 (Refinance Economics), 8 (Disposition Timing), 9 (Capital Markets Snapshot)
-- [Underwriting Calculations](../knowledge/underwriting-calc.md) — IRR (Worked Example 5), Equity Multiple (Worked Example 6), DSCR, debt-service, cap-rate formulas (cross-reference; do not redefine)
-- [Multifamily Benchmarks](../knowledge/multifamily-benchmarks.md) — cap-rate ranges, submarket adjustments for exit-cap derivation, OpEx benchmarks for forward-NOI extrapolation
+- [Renewal Economics & Hold/Sell/Refi Decision Frameworks](knowledge/renewal-economics.md) — primary: Sections 6 (Hold Period Analytics), 7 (Refinance Economics), 8 (Disposition Timing), 9 (Capital Markets Snapshot)
+- [Underwriting Calculations](knowledge/underwriting-calc.md) — IRR (Worked Example 5), Equity Multiple (Worked Example 6), DSCR, debt-service, cap-rate formulas (cross-reference; do not redefine)
+- [Multifamily Benchmarks](knowledge/multifamily-benchmarks.md) — cap-rate ranges, submarket adjustments for exit-cap derivation, OpEx benchmarks for forward-NOI extrapolation
+
+---
+
+## Research Basis
+
+- [Hold/Sell/Refi Analyst Research](research/asset-management/hold-sell-refi-analyst-research.md) (R8)
 
 ---
 

@@ -5,7 +5,7 @@ Checks the same invariants as the PowerShell validator so contributors on
 macOS / Linux can run the strict gate locally:
 
 - every root skill has the 9 required "## " headings
-- every root skill has a Claude Code plugin mirror with the same filename
+- every root skill has a Claude Code plugin mirror with the same filename and identical content
 - every plugin has SKILL.md, and its skills/ and knowledge/ copies map to root files
 - every research area has INDEX.md and one <skill>-research.md per root skill
 - README badges match actual counts
@@ -111,8 +111,15 @@ def main():
         if not os.path.isfile(os.path.join(plugin, "SKILL.md")):
             errors.append(f"{rel(plugin)} is missing SKILL.md.")
     for p in plugin_skill_files:
-        if os.path.basename(p) not in root_by_name:
+        root = root_by_name.get(os.path.basename(p))
+        if root is None:
             errors.append(f"{rel(p)} has no root skill with matching filename.")
+            continue
+        with open(p, "rb") as fh_mirror, open(root, "rb") as fh_root:
+            if fh_mirror.read() != fh_root.read():
+                errors.append(
+                    f"{rel(p)} differs from {rel(root)}; root is the source of truth, copy it over the mirror."
+                )
     for k in plugin_knowledge_files:
         if not os.path.isfile(os.path.join(knowledge_dir, os.path.basename(k))):
             errors.append(f"{rel(k)} has no root knowledge file with matching filename.")
