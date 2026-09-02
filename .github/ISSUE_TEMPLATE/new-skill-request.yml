@@ -19,6 +19,9 @@ body:
         - Asset Management
         - Office
         - Capital Markets
+        - Retail
+        - Lender / Credit
+        - Development and Construction
         - Other / New Department
     validations:
       required: true

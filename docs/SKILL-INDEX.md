@@ -125,6 +125,45 @@ Find the right skill for your task. Each entry shows what the skill does, what i
 | [Lender Update Package Builder](../skills/capital-markets/lender-update-package-builder.md) | Build lender, servicer, or capital-provider update package | Loan facts, T-12, rent roll, NOI bridge, business plan, requested decision | Workout and Extension Structures, Capital Markets Benchmarks |
 | [Recap IC Memo Writer](../skills/capital-markets/recap-ic-memo-writer.md) | Synthesize refinance, extension, workout, rescue capital, sale, or hold decision | Outputs from maturity, refi gap, rescue capital, term sheet, servicing, and lender update skills | All Capital Markets knowledge bases, Risk Scoring Framework |
 
+## Retail v1
+
+| Skill | Use When You Need To... | Key Inputs | Pair With |
+|-------|------------------------|------------|-----------|
+| [Retail Market and Trade Area Study](../skills/retail/retail-market-and-trade-area-study.md) | Define and test the trade area - demand, void and leakage, competitive supply, anchor draw, access, and category resilience | Property address, format, anchor lineup, GLA, competitive set | Retail Benchmarks |
+| [Retail Rent Roll and Tenant Mix Analyst](../skills/retail/retail-rent-roll-and-tenant-mix-analyst.md) | Reconcile space mix, tenant productivity, rollover, concentration, credit, and mark-to-market | Rent roll, lease schedule, reported tenant sales, market rents | Retail Benchmarks, Retail Tenant Sales and Occupancy Cost |
+| [Retail Lease Abstract Reviewer](../skills/retail/retail-lease-abstract-reviewer.md) | Abstract retail lease economics, recovery structure, exclusives, use restrictions, and control rights | Lease documents, amendments, side letters, REA / OEA where applicable | Retail Lease Structures |
+| [Retail Co-Tenancy and Anchor Risk Analyst](../skills/retail/retail-co-tenancy-and-anchor-risk-analyst.md) | Map anchors and co-tenancy clauses, model the dark-anchor cascade, and rate anchor risk | Anchor lineup, co-tenancy clauses, REA / OEA, tenant health signals | Retail Lease Structures, Retail Tenant Sales and Occupancy Cost |
+| [Retail CAM Reconciliation and Recovery Analyst](../skills/retail/retail-cam-reconciliation-and-recovery-analyst.md) | Rebuild the recoverable expense pool and test prior CAM reconciliations | Operating statements, CAM reconciliations, lease recovery provisions | Retail Lease Structures, Retail Benchmarks |
+| [Retail Underwriting Model Builder](../skills/retail/retail-underwriting-model-builder.md) | Build a lease-by-lease retail cash flow with percentage rent, capped recoveries, and an anchor reserve | Rent roll, lease abstracts, tenant sales, leasing assumptions, deal terms | Retail Benchmarks, Retail Lender Criteria, Underwriting Calculations |
+| [Retail Financing Fit](../skills/retail/retail-financing-fit.md) | Identify the lender lanes that will quote the asset and the controlling sizing test | NOI, format, anchor and tenant quality, WALT, loan request | Retail Lender Criteria, Underwriting Calculations |
+| [Retail IC Memo Writer](../skills/retail/retail-ic-memo-writer.md) | Synthesize retail diligence into a decision memo | Outputs from trade area, rent roll, lease, co-tenancy, recovery, underwriting, and financing skills | All Retail knowledge bases, Risk Scoring Framework |
+
+## Lender / Credit v1
+
+| Skill | Use When You Need To... | Key Inputs | Pair With |
+|-------|------------------------|------------|-----------|
+| [Loan Request Screening and Sizing](../skills/lender-credit/loan-request-screening-and-sizing.md) | Screen a loan request for product and policy fit and size it under every applicable test | Loan request, property financials, rent roll, sponsor summary, credit policy | Lender Credit Policy Benchmarks, Underwriting Calculations |
+| [Sponsor and Guarantor Analyst](../skills/lender-credit/sponsor-and-guarantor-analyst.md) | Verify sponsor and guarantor capacity, global cash flow, and the guaranty the credit needs | Personal and entity financial statements, SREO, tax returns, background info | Lender Credit Policy Benchmarks |
+| [Appraisal and Valuation Reviewer](../skills/lender-credit/appraisal-and-valuation-reviewer.md) | Review an appraisal or evaluation for compliance and reasonableness and reconcile it to underwriting | Appraisal or evaluation report, engagement letter, lender underwriting | Credit Memo and Appraisal Review Standards |
+| [Credit Memo Writer](../skills/lender-credit/credit-memo-writer.md) | Draft a CRE credit approval memorandum | Screening and sizing output, sponsor analysis, appraisal review, proposed structure | Credit Memo and Appraisal Review Standards, Lender Credit Policy Benchmarks |
+| [Covenant Compliance and Watchlist Monitor](../skills/lender-credit/covenant-compliance-and-watchlist-monitor.md) | Test a closed loan against covenants and triggers and set watchlist treatment | Loan documents, covenant schedule, current financials, reporting history | Regulatory Risk Rating and Classification |
+| [Annual Loan Review and Risk Rating](../skills/lender-credit/annual-loan-review-and-risk-rating.md) | Run the periodic review and confirm or change the classification and internal grade | Current financials, rent roll, appraisal date, covenant status, prior review | Regulatory Risk Rating and Classification, Lender Credit Policy Benchmarks |
+| [Problem Loan and Modification Analyst](../skills/lender-credit/problem-loan-and-modification-analyst.md) | Classify a deteriorating loan and compare resolution paths | Loan status, collateral value, sponsor condition, proposed modification terms | Regulatory Risk Rating and Classification |
+| [CRE Portfolio Concentration and Stress Tester](../skills/lender-credit/cre-portfolio-concentration-and-stress-tester.md) | Segment and stress a CRE book for the board or ALCO | Loan-level portfolio data, capital figures, segment definitions, scenario assumptions | CRE Concentration and Stress Testing |
+
+## Development and Construction v1
+
+| Skill | Use When You Need To... | Key Inputs | Pair With |
+|-------|------------------------|------------|-----------|
+| [Site and Entitlement Screen](../skills/development/site-and-entitlement-screen.md) | Screen a site for zoning fit, entitlement path, fees, constraints, and political risk | Site address, current zoning, proposed program, known site conditions | Entitlement and Site Risk |
+| [Development Budget and Yield on Cost Analyst](../skills/development/development-budget-and-yield-on-cost-analyst.md) | Build or audit a budget and test yield on cost, spread, residual land value, and overruns | Line-item budget, sources and uses, program, exit cap assumption | Development Benchmarks, Underwriting Calculations |
+| [Construction Loan Sizing and Structure](../skills/development/construction-loan-sizing-and-structure.md) | Size the loan against every controlling test and structure reserve, guaranty, and takeout | Total development cost, stabilized NOI, appraised value, sponsor profile | Construction Lending Criteria |
+| [Construction Draw and Cost-to-Complete Reviewer](../skills/development/construction-draw-and-cost-to-complete-reviewer.md) | Review a monthly draw, the in-balance test, and cost to complete | Pay application, schedule of values, inspector report, lien waivers, change order log | Construction Contracts and Draw Controls, Construction Lending Criteria |
+| [GC Contract and Change Order Reviewer](../skills/development/gc-contract-and-change-order-reviewer.md) | Review a GC or CM agreement and its change orders for price, time, payment, and risk transfer | Contract and exhibits, supplementary conditions, change orders and backup | Construction Contracts and Draw Controls |
+| [Schedule and Delivery Risk Tracker](../skills/development/schedule-and-delivery-risk-tracker.md) | Test the delivery date against the loan and the lease-up plan and price the delay | Baseline and current schedule, milestone status, long-lead items, loan dates | Development Benchmarks, Construction Lending Criteria |
+| [Lease-Up and Stabilization Pro Forma](../skills/development/lease-up-and-stabilization-pro-forma.md) | Model absorption, concessions, carry, breakeven, stabilization, and takeout coverage | Delivery schedule, absorption assumptions, concession plan, debt terms | Development Benchmarks, Underwriting Calculations |
+| [Development IC Memo Writer](../skills/development/development-ic-memo-writer.md) | Synthesize development diligence into a go / no-go memo | Outputs from site, budget, loan sizing, contract, schedule, and lease-up skills | All Development knowledge bases, Risk Scoring Framework |
+
 ---
 
 ## Common Workflows
@@ -204,3 +243,33 @@ Find the right skill for your task. Each entry shows what the skill does, what i
 2. **Extension / Workout Strategy Builder** → build lender give/get and milestone strategy
 3. **CMBS / Special Servicing Readiness Reviewer** → map servicer path and package gaps
 4. **Lender Update Package Builder** → produce borrower package and exhibit checklist
+
+### "I need a U.S. retail acquisition or asset review workflow"
+1. **Retail Market and Trade Area Study** → test trade-area demand, void and leakage, competitive supply, and anchor draw
+2. **Retail Rent Roll and Tenant Mix Analyst** → reconcile space mix, productivity, rollover, concentration, and mark-to-market
+3. **Retail Lease Abstract Reviewer** → abstract economics, recoveries, exclusives, use restrictions, and control rights
+4. **Retail Co-Tenancy and Anchor Risk Analyst** → model the dark-anchor cascade and test the REA
+5. **Retail CAM Reconciliation and Recovery Analyst** → rebuild the recoverable pool and tie recovery income to underwriting
+6. **Retail Underwriting Model Builder** → build the lease-by-lease cash flow with percentage rent and capped recoveries
+7. **Retail Financing Fit** → identify lender lanes and the controlling sizing test
+8. **Retail IC Memo Writer** → summarize the investment case
+
+### "I am the lender on this deal, not the borrower"
+1. **Loan Request Screening and Sizing** → test product and policy fit and name the controlling sizing test
+2. **Sponsor and Guarantor Analyst** → verify liquidity, net worth, contingent liabilities, and global DSCR
+3. **Appraisal and Valuation Reviewer** → review the appraisal and reconcile it to underwriting
+4. **Credit Memo Writer** → draft the approval memo for the approval authority and loan review
+5. **Covenant Compliance and Watchlist Monitor** → test covenants after closing and set watchlist treatment
+6. **Annual Loan Review and Risk Rating** → confirm or change the classification and internal grade
+7. **Problem Loan and Modification Analyst** → compare resolution paths when the credit deteriorates
+8. **CRE Portfolio Concentration and Stress Tester** → segment and stress the book for the board or ALCO
+
+### "I am building this from the ground up"
+1. **Site and Entitlement Screen** → test zoning fit, entitlement path, fees and exactions, and political risk
+2. **Development Budget and Yield on Cost Analyst** → build the budget and test yield on cost and overrun sensitivity
+3. **Construction Loan Sizing and Structure** → size the loan and structure equity, reserve, guaranty, and takeout
+4. **GC Contract and Change Order Reviewer** → review price, time, payment, and risk transfer before signing
+5. **Construction Draw and Cost-to-Complete Reviewer** → run the monthly draw, in-balance test, and cost to complete
+6. **Schedule and Delivery Risk Tracker** → test delivery against the loan and lease-up plan and price the delay
+7. **Lease-Up and Stabilization Pro Forma** → model absorption, concessions, carry, breakeven, and takeout coverage
+8. **Development IC Memo Writer** → summarize the development case with a go / no-go recommendation

@@ -16,3 +16,12 @@ jobs:
       - name: Validate skill repository
         shell: pwsh
         run: .\scripts\validate-repo.ps1 -Strict
+
+  validate-python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate skill repository (cross-platform)
+        run: python3 scripts/validate_repo.py --strict
