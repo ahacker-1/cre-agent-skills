@@ -24,6 +24,7 @@ If you want to add a new CRE analysis skill:
 5. Add it to the relevant Claude Code plugin in `claude-code-plugins/`
 6. Run `python3 scripts/add_attribution.py` so the new file carries the attribution frontmatter and footer (the validator fails without it)
 7. Update README.md and docs/SKILL-INDEX.md
+8. Run the strict validator before opening the PR. On Windows use `.\scripts\validate-repo.ps1 -Strict`; on macOS / Linux use `python3 scripts/validate_repo.py --strict`. The Python script is a port of the PowerShell one and checks the same invariants, and CI runs both.
 
 ### Research-Backed Authoring Standard
 

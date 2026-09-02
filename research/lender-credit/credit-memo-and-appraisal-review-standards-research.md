@@ -1,0 +1,126 @@
+# Credit Memo and Appraisal Review Standards Research
+
+## Purpose
+
+- Supports `knowledge/credit-memo-and-appraisal-review-standards.md`
+- Also supports the credit memo, appraisal review, and annual review skills in `skills/lender-credit/`
+- Intended users: bank and credit union credit analysts, underwriters, credit officers, appraisal review staff, loan review, and portfolio managers preparing or challenging a CRE credit approval package
+
+## U.S.-Only Assumptions
+
+- Geography: United States
+- Institution type: federally insured depositories and their affiliates subject to the federal banking agencies' appraisal regulations (12 CFR 34 subpart C for national banks and the parallel FDIC, Federal Reserve, and NCUA rules). Debt funds, life companies, and CMBS shops are not bound by these rules but commonly borrow the same review structure
+- Deal type: income-producing commercial real estate and acquisition, development, and construction (ADC) lending
+- Legal assumptions: this research supports educational decision support. It is not legal, accounting, appraisal, or financing advice, and the institution's own loan policy and its primary regulator control
+
+## Source Table
+
+| Source | Publisher | URL | Publish Date | Access Date | Source Type | Notes |
+|---|---|---|---|---|---|---|
+| Interagency Appraisal and Evaluation Guidelines | OCC, FRB, FDIC, OTS, NCUA (Federal Register via GovInfo) | https://www.govinfo.gov/content/pkg/FR-2010-12-10/html/2010-30913.htm | 2010-12-10 | 2026-09-01 | Primary regulator guidance | Independence, review program, minimum appraisal content, evaluation content, prospective values, validity over time |
+| "Commercial Real Estate Lending," Comptroller's Handbook, Version 2.0 | OCC | https://www.occ.gov/publications-and-resources/publications/comptrollers-handbook/files/commercial-real-estate-lending/pub-ch-commercial-real-estate.pdf | 2022-03 (reputation risk references removed 2025-03-20) | 2026-09-01 | Primary regulator handbook | Underwriting standards, supervisory LTV limits, covenants, loan file contents, Appendix E CRE Appraisal Review Worksheet, Appendix F Evaluation Review Worksheet |
+| 12 CFR 34.44, Minimum Appraisal Standards | Cornell Legal Information Institute (mirror of the CFR) | https://www.law.cornell.edu/cfr/text/12/34.44 | n.d., current text | 2026-09-01 | Primary regulation text (mirror) | Six minimum standards, including deductions and discounts |
+| OCC Bulletin 2010-42, Sound Practices for Appraisals and Evaluations | OCC | https://www.occ.gov/news-issuances/bulletins/2010/bulletin-2010-42.html | 2010-12-10 | 2026-09-01 | Primary regulator bulletin | Conveys the Interagency Appraisal and Evaluation Guidelines; appraiser selection, independence, internal controls, periodic collateral updates |
+| Federal Banking Agencies Issue Final Rule to Exempt Commercial Real Estate Transactions of $500,000 or Less From Appraisal Requirements | OCC (joint release with FRB and FDIC) | https://www.occ.treas.gov/news-issuances/news-releases/2018/nr-ia-2018-33.html | 2018-04-02 | 2026-09-01 | Primary regulator release | CRE appraisal threshold raised from $250,000 to $500,000; evaluation permitted below it |
+| Policy Statement on Prudent Commercial Real Estate Loan Accommodations and Workouts | OCC, FRB, FDIC, NCUA (Federal Register via GovInfo) | https://www.govinfo.gov/content/pkg/FR-2023-07-06/html/2023-14247.htm | 2023-07-06 | 2026-09-01 | Primary regulator policy statement | When to update valuations, workout credit file expectations, classification of restructured loans |
+| RMS Manual of Examination Policies, Section 3.2 Loans | FDIC | https://www.fdic.gov/regulations/safety/manual/section3-2.pdf | n.d., periodically updated | 2026-09-01 | Primary regulator manual | Loan policy content, credit file expectations, cost / sales comparison / income approaches |
+| Uniform Standards of Professional Appraisal Practice (USPAP) | The Appraisal Foundation | https://appraisalfoundation.org/pages/uspap | 2024 edition, effective 2024-01-01 | 2026-09-01 | Standards body | Standards 1-4 referenced by the federal banking agencies; Standards 3 and 4 cover appraisal review |
+| USPAP Talk: STANDARD 3 Developing an Appraisal Review (Episode 232) | The Appraisal Foundation | https://appraisalfoundation.org/pages/podcasts-episodes-group-a/uspap-talk-standard-3-developing-an-appraisal-review | 2026-06-08 | 2026-09-01 | Standards body | Confirms Standard 3 is the current development standard for appraisal review |
+| Standards of Professional Practice | Appraisal Institute | https://www.appraisalinstitute.org/insights-and-resources/resources/standards-of-professional-practice | n.d. | 2026-09-01 | Professional association standards | Standards of Valuation Practice: Standard B review development, Standard C reporting; Guide Notes as interpretive material |
+| Quality Control Standards for Automated Valuation Models, final rule | CFPB with OCC, FRB, FDIC, NCUA, FHFA | https://www.consumerfinance.gov/rules-policy/final-rules/quality-control-standards-for-automated-valuation-models/ | Effective 2025-10-01 | 2026-09-01 | Primary regulator rule | Scope is mortgages secured by a consumer's principal dwelling; does not reach CRE |
+| OCC's Semiannual Risk Perspective Highlights Key Risks in the Federal Banking System (Spring 2026) | OCC | https://www.occ.treas.gov/news-issuances/news-releases/2026/nr-occ-2026-35.html | 2026-05-07 | 2026-09-01 | Primary regulator release | CRE credit conditions and refinancing risk flagged for ongoing monitoring |
+| U.S. Cap Rate Survey H1 2026 | CBRE | https://www.cbre.com/insights/reports/us-cap-rate-survey-h1-2026 | 2026-08-12 | 2026-09-01 | Institutional market research | All-property average cap rate essentially flat; about 60% of respondents expect cap rates unchanged over the next six months; 10-year Treasury peaked at 4.67% |
+
+## Key Findings
+
+### Credit memo structure
+
+- The OCC handbook states that loan documentation practices must let the bank make an informed lending decision, identify the purpose of the loan and the source of repayment, assess the borrower's ability to repay, and keep claims legally enforceable. The loan file should hold an approval memorandum that documents the approval and gives approvers enough information for a fully informed credit decision, and the executed loan documents should be consistent with that approval document.
+- The same handbook lists what effective CRE lending policies address, which in practice is the content spine of a memo: minimum net worth and guarantor support, borrower and guarantor cash flow and DSCR, LTV limits by property type, maximum tenor, minimum debt yield, amortization criteria, pricing and profitability, minimum documentation standards, global cash flow, contingent liabilities, minimum hard equity, project feasibility and sensitivity to changes in interest rates, vacancy, and operating expenses, preleasing and presale requirements, limits on interest reserves and interest-only, limits on partial and nonrecourse structures, takeout commitments, and requirements for affirmative and negative covenants.
+- Sensitivity work is expected, not optional. The handbook calls for stress testing sensitivity to changing conditions such as interest rates, capitalization rates, and DSCR, and says cash flow and NOI projections that are inadequately supported or questionable should be challenged.
+- Policy exceptions have their own documentation rule: the Interagency Guidelines for Real Estate Lending, reproduced in the handbook, require that approval of a nonconforming loan be supported by a written justification setting out the relevant credit factors, that the justification and approval documents stay in the permanent loan file, and that exception loans of significant size be reported individually to the board.
+- The 2023 interagency workout policy statement sets the parallel content bar for modifications: updated and comprehensive financial information on the borrower, the project, and all guarantors and sponsors; current valuations supporting the loan and the workout plan; loan structure with covenants and curtailment or re-margining requirements; and a current, well documented credit assessment supporting the accrual decision.
+
+### Documentation and covenants
+
+- The OCC handbook's typical CRE loan file list: approval memorandum; signed borrower and guarantor financial statements plus property operating statements and rent rolls; title insurance policy; recorded mortgage or deed of trust, note, lease assignments, and security agreement with identical property descriptions across mortgage, security agreement, title policy, survey, and tax statement; leases and executed tenant estoppels; insurance policies with proof of premium payment covering hazard, liability, and where appropriate loss of rents and flood; the appraisal or evaluation plus the bank's own review, the engagement letter, and the appraiser's qualifications; survey showing improvements, easements, and encroachments; entity organizational documents, borrowing resolutions, and good standing certificates; evidence taxes are paid and that the collateral has its own parcel identification numbers; environmental reports as warranted.
+- Construction files add a construction loan agreement with draw conditions, budget, curtailment and release prices, and events of default; evidence of borrower or contractor expertise; title policy updated with each advance where available; pro forma cash flows; as-is and as-completed or as-stabilized appraisals stating when stabilized occupancy is expected; project plans, feasibility study, and construction budget with hard, soft, and indirect costs; executed construction contracts; soil reports; and a foundation survey.
+- The handbook names the common financial covenants for income-producing CRE loans as debt yield, DSCR, LTV, LTC, and borrower or guarantor minimum net worth or liquidity, and notes other covenants may apply depending on complexity.
+- Covenant definitions matter. The handbook warns that where loan documents contain debt service coverage covenants, income and expenses should be clearly defined, and that the covenant DSCR calculation may differ from the DSCR used for underwriting and risk rating.
+- Reporting covenants should be calibrated to the asset: annual operating statements and rent rolls may suffice for a stabilized property with few tenants and long leases, while lease-up assets or multi-tenant properties with frequent expirations can warrant monthly, quarterly, or semiannual reporting, and the information collected has to actually be analyzed on time.
+
+### Appraisal versus evaluation
+
+- Per the OCC handbook, an evaluation may be used instead of an appraisal when the loan amount is $500,000 or less; when the transaction is a business loan of $1 million or less and income from the sale or rental of real estate is not the primary repayment source; when it represents an existing extension of credit with no new money beyond reasonable closing costs; or when it represents an existing extension of credit with new money advanced but no obvious and material change in market conditions or the physical aspects of the property that would threaten collateral adequacy.
+- A state certified appraiser is required for all transactions of $1 million or more, for nonresidential transactions of $500,000 or more including one- to four-family construction loans, and for complex residential transactions of $500,000 or more.
+- The $500,000 CRE threshold came from the 2018 joint final rule, which raised it from $250,000 and allowed an evaluation in place of an appraisal for the newly exempt transactions.
+- The 2010 guidelines and the handbook's Appendix F set evaluation content: location, description of the property and its current and projected use, market value in actual physical condition, use, and zoning as of the effective date with limiting conditions noted, the methods used to confirm physical condition and the extent of inspection, the analysis performed and supporting information, supplemental information considered when an analytical method or technological tool was used, and all sources including external databases, property-specific data, evidence of inspection, and photos, with preparer identification and signature.
+- The AVM quality control rule effective 2025-10-01 governs AVMs used for mortgages secured by a consumer's principal dwelling and does not reach commercial real estate; do not cite it as a CRE requirement.
+
+### Appraisal independence and review
+
+- The collateral valuation function must be isolated from loan production and collection influence with independent reporting lines. Where a small institution cannot achieve full separation, it must demonstrate prudent safeguards.
+- The guidelines and the handbook list prohibited communications: conveying a predetermined, expected, or qualifying value, a loan amount, or a target LTV; specifying a minimum value needed to approve the loan or as a condition of ordering the valuation; conditioning compensation on loan consummation; not paying because the property did not value at a certain amount; implying retention depends on the value; or excluding an appraiser from future work because a reported value missed a threshold. Asking the appraiser to consider additional information, provide support, or correct factual errors is permitted.
+- A borrower-ordered or borrower-provided appraisal violates the appraisal regulations. An appraisal performed for another financial institution may be used only if that institution selected and engaged the appraiser, the appraiser had no interest in the property or parties, and the bank determines the appraisal is still valid, conforms to the regulation, and is appropriate for the transaction, with a more thorough review in that case.
+- Reviewers must be independent of the transaction and have education, expertise, and competence commensurate with the complexity of the transaction, property type, and market. The depth of review should be risk-focused. Where deficiencies cannot be resolved with the appraiser, the institution must obtain a compliant appraisal or evaluation before making the credit decision.
+- A reviewer cannot change the value conclusion in the original appraisal. A second opinion of value requires a new, USPAP-compliant appraisal or appraisal review by an appraiser.
+- 12 CFR 34.44 sets six minimum standards: conform to USPAP; be written with sufficient information and analysis to support the decision; be subject to appropriate review for USPAP compliance; analyze and report appropriate deductions and discounts for proposed construction or renovation, partially leased buildings, non-market lease terms, and tract developments with unsold units; be based on the regulatory market value definition; and be performed by a state licensed or certified appraiser.
+- USPAP Standards 3 and 4 govern development and reporting of an appraisal review; the Appraisal Institute's Standards of Valuation Practice mirror this with Standard B for review development and Standard C for reporting.
+
+### Value premises and assumption testing
+
+- As-is market value reflects the property's actual physical condition, use, and zoning as of the effective date. Prospective market value upon completion ("as complete") is value at expected completion of development; prospective market value upon stabilization ("as stabilized") is value at the date stabilized occupancy is projected to be achieved. Prospective values must rest on current and reasonably expected market conditions.
+- The handbook ties the value premise to the LTV test: as-is is appropriate for raw land or a stabilized property; as-completed generally for an owner-occupied building or a preleased property to be constructed; as-stabilized for an existing property that is not stabilized or a property to be built that is not preleased to stabilized levels.
+- The OCC's Appendix E CRE Appraisal Review Worksheet is the most concrete regulator-published review checklist. It asks, among other items, whether the bank engaged the appraiser directly, whether the as-is value is reported, whether the appraisal analyzed any current sale agreement, option, or listing and reported sales in the prior three years, whether omitted approaches are explained and the reconciliation is reasoned, whether comparables are truly comparable and the adjustments supported, whether assumptions are logical and supportable with market data, whether discount and capitalization rates are analyzed, whether tenant strength, rollover risk, renewal probability, lease terms, releasing costs, current and projected vacancy and absorption, effective rents net of concessions, management quality, and competing new construction are addressed, whether deductions and discounts were reported, whether significant departures from past lease rates, expenses, and absorption are explained, whether units of comparison match the comparables cited, whether the capitalization or discount rate is supportable and reasonable for the class, property type, and market, and whether cost exceeds or approximates value, which raises the question of why the transaction is being done at all.
+- The FDIC manual notes the cost approach is usually inappropriate in a troubled market except for special purpose facilities, that commercial sales data is often insufficient to carry the sales comparison approach alone, and that for troubled properties a discounted cash flow is more typically used than direct capitalization.
+- Validity of an existing appraisal is a facts test, not a calendar test. The handbook lists passage of time, market volatility, financing terms and availability, natural disasters, over- or under-supply of competing properties, improvements or lack of maintenance at the subject or competitors, changes in economic assumptions such as capitalization rates and lease terms, zoning, materials or technology changes, and environmental contamination, and states an arbitrary period such as 12 months should not be the decisive criterion.
+- The 2023 workout policy statement adds trigger events for a new or updated valuation: material deterioration in project performance, changes in the geographic market and property type, and variances between actual conditions and the original appraisal assumptions. It also matches the value premise to the strategy, as-stabilized where the institution will work toward stabilized occupancy and fair value less costs to sell of the as-is property where foreclosure is the path.
+
+## Benchmark and Formula Decisions
+
+Suitable as repo defaults because they are set in regulation or agency guidance:
+
+- $500,000 CRE evaluation threshold; $1 million business loan exemption when real estate income is not the primary repayment source; existing extension of credit exemptions.
+- State certified appraiser required at $1 million or more, and for nonresidential transactions at $500,000 or more.
+- Supervisory LTV limits: raw land 65 percent; land development or improved lots 75 percent; commercial, multifamily, and other nonresidential construction 80 percent; one- to four-family construction 85 percent; improved commercial, multifamily, and other nonresidential property 85 percent; owner-occupied one- to four-family and home equity has no set limit, but requires mortgage insurance or readily marketable collateral at or above 90 percent. These are ceilings on internal limits, and the handbook is explicit that loans at these levels are not automatically sound.
+- The six minimum appraisal standards of 12 CFR 34.44 and the evaluation content list.
+- The rule that a reviewer may not change the appraiser's value conclusion.
+- The as-is, as-complete, as-stabilized mapping to the LTV calculation.
+
+Case-by-case only, stated as such in the knowledge base:
+
+- Any numeric DSCR, debt yield, LTV, or debt service constant floor. The agencies require the institution to set clear and measurable standards; they do not publish CRE coverage minimums. Those belong to institution policy and to `knowledge/lender-credit-policy-benchmarks.md`.
+- Reporting frequency for covenants, which the handbook explicitly scales to asset stability.
+- What counts as a supportable capitalization or discount rate. The review test is internal consistency with the comparables cited and with class, property type, and market conditions, not a fixed spread.
+- Percentage tolerances for cap rate, absorption, or expense variances between the appraisal and the credit memo. No agency source publishes one; institutions set their own reconciliation triggers.
+
+Formulas: none are restated here. Use `knowledge/underwriting-calc.md` for DSCR, debt yield, LTV, cap rate, and stress mechanics.
+
+Directional market data, dated in the knowledge base text:
+
+- CBRE reported on 2026-08-12 that the all-property average cap rate was essentially flat in H1 2026 with about 60 percent of surveyed professionals expecting no change over the following six months, and that the 10-year Treasury peaked at 4.67 percent during the period. This is context for judging whether an appraisal's cap rate assumption is stale, not a benchmark cap rate.
+- The OCC flagged CRE credit conditions and refinancing risk for ongoing monitoring in its Spring 2026 Semiannual Risk Perspective release dated 2026-05-07.
+
+## Conflicting Source Resolution
+
+- Threshold conflict: the 2010 guidelines as originally published reference a $250,000 appraisal threshold. The 2018 joint final rule raised the CRE threshold to $500,000, and the 2022 OCC handbook states the current $500,000 figure. The later rule and the later handbook control; the knowledge base uses $500,000 and does not repeat the superseded number as if current.
+- Reviewer authority: practitioner commentary sometimes describes a review that "corrects" an appraised value. The guidelines are explicit that a reviewer cannot change the value conclusion, and only a USPAP-compliant appraisal or appraisal review by an appraiser can produce a second opinion of value. Regulator text controls.
+- Appraisal aging: institution practice often uses a fixed 12-month rule. The handbook states an arbitrary period should not be the decisive criterion. The knowledge base presents the factor test first and treats a fixed interval as an internal policy convenience.
+- Valuation approach weighting: the FDIC manual and the appraisal literature differ on how much weight commercial sales comparison deserves. Both agree the choice is market and data dependent, so the knowledge base frames it as a review question rather than a rule.
+
+## Edge Cases and Red Flags
+
+- Owner-occupied and business loans where the real estate is collateral but not the repayment source can fall under the $1 million business loan exemption; the memo still has to underwrite the operating business, so the exemption is not a reason to skip valuation analysis.
+- Going concern assets such as hotels, senior housing, and self-storage with heavy operations require the appraisal to allocate value among the real property, personal property, and intangibles; an unallocated going concern number should not be used as the CRE market value.
+- Tract development and for-sale residential require deductions and discounts and a supportable absorption period; presold units with binding contracts and substantial nonrefundable deposits can be excluded when determining whether an appraisal is required.
+- Appraisals transferred from another institution, portfolio purchases, and participations bought from a lead bank need the more thorough review the handbook calls for, not a file copy.
+- Distressed and workout credits should not have their value premise chosen for convenience; the 2023 policy statement pairs as-stabilized with a genuine stabilization plan and as-is fair value less costs to sell with a foreclosure path. Borrower-side workout mechanics live in `knowledge/workout-and-extension-structures.md` and the capital markets pack.
+- Small institutions that cannot separate the valuation function from production must document the compensating safeguards; the absence of that documentation is itself a finding.
+- Do not import the AVM quality control rule into CRE files. Its scope is consumer principal dwellings.
+
+## Open Questions
+
+- The exact current text of the USPAP 2024 edition Standards 3 and 4 is behind The Appraisal Foundation's paywall, so this research relies on the Foundation's public description and on the agencies' incorporation of USPAP rather than quoting the standard.
+- Publicly available regulator sources do not publish CRE DSCR or debt yield minimums; institution-level policy benchmarks are deferred to `knowledge/lender-credit-policy-benchmarks.md`.
+- The FDIC RMS manual section is undated on its face; the version accessed on 2026-09-01 is treated as current and the knowledge base does not attach a publication year to it.
+- Whether any agency has revised the 2010 guidelines since the AVM rule took effect was not confirmed in this session beyond the sources listed; users should check the agencies' current issuances before relying on the 2010 text for a specific examination question.

@@ -4,6 +4,91 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.6.0] - 2026-09-01
+
+### Added
+
+- Retail Pack v1 release with 8 new U.S.-focused retail skills under `skills/retail/`
+  - Retail Market and Trade Area Study
+  - Retail Rent Roll and Tenant Mix Analyst
+  - Retail Lease Abstract Reviewer
+  - Retail Co-Tenancy and Anchor Risk Analyst
+  - Retail CAM Reconciliation and Recovery Analyst
+  - Retail Underwriting Model Builder
+  - Retail Financing Fit
+  - Retail IC Memo Writer
+- 4 new retail knowledge bases under `knowledge/`
+  - `retail-benchmarks.md` - retail format definitions, occupancy and leasing reference points, leasing capital, occupancy cost, recovery load, and e-commerce exposure
+  - `retail-lease-structures.md` - retail lease forms, base and percentage rent, CAM / tax / insurance recovery, tenant control rights, REA / OEA and pads, assignment, estoppel, and SNDA
+  - `retail-tenant-sales-and-occupancy-cost.md` - sales and occupancy-cost definitions, category frames, tenant credit tiers, distress signals, renewal and backfill economics, and STNL frameworks
+  - `retail-lender-criteria.md` - retail lender lanes, core sizing tests, deterioration signals, reserves, holdbacks, and recourse posture
+- 12 new companion research notes under `research/retail/` plus `research/retail/INDEX.md`
+- New Claude Code plugin: `cre-retail` at `claude-code-plugins/cre-retail/`
+- Lender / Credit Pack v1 release with 8 new U.S.-focused credit-side skills under `skills/lender-credit/`
+  - Loan Request Screening and Sizing
+  - Sponsor and Guarantor Analyst
+  - Appraisal and Valuation Reviewer
+  - Credit Memo Writer
+  - Covenant Compliance and Watchlist Monitor
+  - Annual Loan Review and Risk Rating
+  - Problem Loan and Modification Analyst
+  - CRE Portfolio Concentration and Stress Tester
+- 4 new lender / credit knowledge bases under `knowledge/`
+  - `lender-credit-policy-benchmarks.md` - CRE credit policy content, supervisory leverage ceilings and the exception basket, sizing frames by lender and property type, and pricing and reserve frames
+  - `regulatory-risk-rating-and-classification.md` - supervisory classification definitions, criticized / classified / watchlist mapping, dual risk rating scales, nonaccrual, modification treatment, and rating migration reporting
+  - `credit-memo-and-appraisal-review-standards.md` - credit approval memo structure, documentation and covenant checklists, policy exceptions and supervisory LTV limits, and appraisal review standards
+  - `cre-concentration-and-stress-testing.md` - supervisory concentration screening criteria, book segmentation, stress-test design, and how results feed capital, ACL, and policy limits
+- 12 new companion research notes under `research/lender-credit/` plus `research/lender-credit/INDEX.md`
+- New Claude Code plugin: `cre-lender-credit` at `claude-code-plugins/cre-lender-credit/`
+- Development and Construction Pack v1 release with 8 new U.S.-focused development skills under `skills/development/`
+  - Site and Entitlement Screen
+  - Development Budget and Yield on Cost Analyst
+  - Construction Loan Sizing and Structure
+  - Construction Draw and Cost-to-Complete Reviewer
+  - GC Contract and Change Order Reviewer
+  - Schedule and Delivery Risk Tracker
+  - Lease-Up and Stabilization Pro Forma
+  - Development IC Memo Writer
+- 4 new development knowledge bases under `knowledge/`
+  - `development-benchmarks.md` - development budget taxonomy, contingency and escalation, dated cost frames, yield on cost and development spread, residual land value, and schedule and lease-up durations
+  - `construction-lending-criteria.md` - construction sizing tests, equity and HVCRE treatment, interest reserve and carry, guaranty posture, in-balance and draw controls, and extension / mini-perm / takeout paths
+  - `construction-contracts-and-draw-controls.md` - contract families and risk allocation, money mechanics, change orders versus construction change directives, completion and retainage, draw packages, lien waivers, bonds, and insurance
+  - `entitlement-and-site-risk.md` - approval pathways and their cost, exactions and impact fees, environmental site review, utilities and geotechnical obligations, and historic, design, and state environmental review
+- 12 new companion research notes under `research/development/` plus `research/development/INDEX.md`
+- New Claude Code plugin: `cre-development` at `claude-code-plugins/cre-development/`
+- Cross-platform validation tooling: `scripts/validate_repo.py`, a Python port of `scripts/validate-repo.ps1` that checks the same invariants and runs with `python3 scripts/validate_repo.py --strict`
+- Second CI job `validate-python` on `ubuntu-latest` in `.github/workflows/validate.yml`, alongside the unchanged Windows job
+- New release notes:
+  - `docs/releases/retail-v1.md`
+  - `docs/releases/lender-credit-v1.md`
+  - `docs/releases/development-v1.md`
+  - `docs/releases/v1.6.0-pr-summary.md`
+
+### Changed
+
+- Updated README, HOW-TO-USE, SKILL-INDEX, and ROADMAP to position Retail v1, Lender / Credit v1, and Development and Construction v1 as the sixth, seventh, and eighth additive packs after Industrial v1, Brokerage Investment Sales v1, Asset Management v1, Office v1, and Capital Markets v1
+- Updated README counts, badges, project structure, knowledge base table, example workflows, common workflows, and FAQ for 90 skills, 35 knowledge bases, 93 research notes, and 14 Claude Code plugins
+- Updated `docs/ROADMAP.md` so the Retail / Self-Storage wave reads "Retail shipped in v1.6.0, self-storage deferred", and marked the capital-markets depth items "lender-side credit memo variants" and "construction-loan workouts" as shipped via the new packs
+- Updated `.github/ISSUE_TEMPLATE/new-skill-request.yml` with Retail, Lender / Credit, and Development and Construction department options
+- Updated `CONTRIBUTING.md` and `.github/PULL_REQUEST_TEMPLATE.md` so macOS / Linux contributors can run the Python validator as the equivalent of the PowerShell one
+
+### New conventions introduced
+
+- First release to ship three packs at once; release notes are written per pack with a single combined PR summary
+- First lender-side pack in the repo. Every prior pack is borrower, owner, or seller side; Lender / Credit v1 is the credit-side mirror and states plainly that classification, nonaccrual, allowance, and regulatory reporting conclusions belong to the institution and its regulator
+- Validation is now cross-platform: `scripts/validate_repo.py --strict` mirrors `scripts/validate-repo.ps1 -Strict` check for check, so contributors on macOS and Linux can run the same strict gate locally and CI runs both
+- Development content covers the interval from site control to stabilization and hands off to the stabilized-operations packs rather than restating them
+- Retail content separates reported tenant sales (unaudited landlord reporting) from lease-driven contract rent, and separates issuer-published occupancy cost statistics from underwritten recovery income
+
+### Deferred to future releases
+
+- Self-storage sector pack
+- Leasing pack for landlord and tenant representation
+- Equity / JV / investor relations pack for waterfalls, promotes, capital calls, and LP reporting
+- Affordable and workforce housing overlays
+- Hospitality pack
+- Capital markets depth for agency-specific refinance overlays and note-sale bidding workflows
+
 ## [1.5.0] - 2026-06-16
 
 ### Added

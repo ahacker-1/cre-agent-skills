@@ -37,6 +37,7 @@ The repo still works well with individual skill files, and Claude Code now has a
 - plus the `/cre-asset-management` plugin added in v1.3.0
 - plus the `/cre-office` plugin added in v1.4.0
 - plus the `/cre-capital-markets` plugin added in v1.5.0
+- plus the `/cre-retail`, `/cre-lender-credit`, and `/cre-development` plugins added in v1.6.0
 
 PowerShell example for the new Industrial v1 plugin:
 
@@ -87,6 +88,36 @@ Set-Location .\cre-agent-skills
 
 New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
 Copy-Item -Recurse .\claude-code-plugins\cre-capital-markets "$HOME\.claude\skills\"
+```
+
+Retail v1 install example:
+
+```powershell
+git clone https://github.com/ahacker-1/cre-agent-skills.git
+Set-Location .\cre-agent-skills
+
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
+Copy-Item -Recurse .\claude-code-plugins\cre-retail "$HOME\.claude\skills\"
+```
+
+Lender / Credit v1 install example:
+
+```powershell
+git clone https://github.com/ahacker-1/cre-agent-skills.git
+Set-Location .\cre-agent-skills
+
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
+Copy-Item -Recurse .\claude-code-plugins\cre-lender-credit "$HOME\.claude\skills\"
+```
+
+Development and Construction v1 install example:
+
+```powershell
+git clone https://github.com/ahacker-1/cre-agent-skills.git
+Set-Location .\cre-agent-skills
+
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
+Copy-Item -Recurse .\claude-code-plugins\cre-development "$HOME\.claude\skills\"
 ```
 
 ---
@@ -199,6 +230,24 @@ Load all 7 due diligence skills + Risk Scoring Framework + Multifamily Benchmark
 - Knowledge: Capital Markets Benchmarks + Workout and Extension Structures + Rescue Capital and Preferred Equity + CMBS Servicing and Default Playbook + Underwriting Calculations + Risk Scoring Framework
 - Research: use `research/capital-markets/` when you want the model to see the source-backed maturity, debt sizing, workout, rescue capital, and special servicing logic behind the pack
 - Note: this pack is property-type-agnostic and works especially well with Office v1, Asset Management v1, Brokerage v1, and Financing skills.
+
+### Retail v1
+- Retail Market and Trade Area Study + Retail Rent Roll and Tenant Mix Analyst + Retail Lease Abstract Reviewer + Retail Co-Tenancy and Anchor Risk Analyst + Retail CAM Reconciliation and Recovery Analyst + Retail Underwriting Model Builder + Retail Financing Fit + Retail IC Memo Writer
+- Knowledge: Retail Benchmarks + Retail Lease Structures + Retail Tenant Sales and Occupancy Cost + Retail Lender Criteria + Underwriting Calculations + Risk Scoring Framework
+- Research: use `research/retail/` when you want the model to see the source-backed trade-area, tenant sales, co-tenancy, recovery, and lender assumptions behind the pack
+- Note: this pack is U.S.-focused and treats retail as lease-driven and sales-driven - tenant sales, occupancy cost, anchor health, co-tenancy, exclusives, and CAM recovery structure control value.
+
+### Lender / Credit v1
+- Loan Request Screening and Sizing + Sponsor and Guarantor Analyst + Appraisal and Valuation Reviewer + Credit Memo Writer + Covenant Compliance and Watchlist Monitor + Annual Loan Review and Risk Rating + Problem Loan and Modification Analyst + CRE Portfolio Concentration and Stress Tester
+- Knowledge: Lender Credit Policy Benchmarks + Regulatory Risk Rating and Classification + Credit Memo and Appraisal Review Standards + CRE Concentration and Stress Testing + Underwriting Calculations + Risk Scoring Framework
+- Research: use `research/lender-credit/` when you want the model to see the source-backed credit policy, classification, appraisal review, and concentration guidance behind the pack
+- Note: this is the only credit-side pack in the repo. Every other pack is borrower, owner, or seller side. Classification, nonaccrual, allowance, and regulatory reporting conclusions belong to your institution and its regulator.
+
+### Development and Construction v1
+- Site and Entitlement Screen + Development Budget and Yield on Cost Analyst + Construction Loan Sizing and Structure + Construction Draw and Cost-to-Complete Reviewer + GC Contract and Change Order Reviewer + Schedule and Delivery Risk Tracker + Lease-Up and Stabilization Pro Forma + Development IC Memo Writer
+- Knowledge: Development Benchmarks + Construction Lending Criteria + Construction Contracts and Draw Controls + Entitlement and Site Risk + Underwriting Calculations + Risk Scoring Framework
+- Research: use `research/development/` when you want the model to see the source-backed entitlement, cost, construction-lending, and draw-control basis behind the pack
+- Note: this pack covers the interval from site control to stabilization. Once the asset is delivered and stabilized, hand off to the multifamily, industrial, office, retail, and asset management packs.
 
 ### Post-Acquisition Budget-to-QAR Combo
 - Annual Operating Budget Builder → Monthly Variance Analyst → Quarterly Asset Review Writer

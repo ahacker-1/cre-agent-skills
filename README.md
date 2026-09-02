@@ -1,6 +1,6 @@
 # CRE Agent Skills — AI-Powered Commercial Real Estate Analysis
 
-**66 CRE skills. No orchestrator required.**
+**90 CRE skills. No orchestrator required.**
 
 Most CRE operators don't need another AI platform.
 
@@ -34,6 +34,12 @@ Added an **Office** pack for lease-driven office analysis - flight-to-quality, s
 
 Added a **Capital Markets** pack for the messy refinance and maturity work everyone is dealing with now - debt maturity diagnostics, proceeds gaps, extensions, workouts, rescue capital, CMBS special servicing readiness, lender updates, and recap IC memos.
 
+Added a **Retail** pack, because retail is lease-driven and sales-driven at the same time - trade area demand, tenant sales and occupancy cost, anchor health, co-tenancy and exclusives, CAM recovery structure, lease-by-lease underwriting, financing fit, and IC memos.
+
+Added a **Lender / Credit** pack. Every other pack in this repo sits on the borrower, owner, or seller side of the table. This one sits on the other side - screening and sizing loan requests, analyzing sponsors and guarantors, reviewing appraisals, writing credit memos, monitoring covenants and watchlists, running annual reviews and risk ratings, working out problem loans, and stress-testing a CRE book.
+
+Added a **Development and Construction** pack for ground-up and heavy redevelopment - site and entitlement screening, budgets and yield on cost, construction loan sizing and structure, draw and cost-to-complete review, GC contracts and change orders, schedule and delivery risk, lease-up and stabilization pro formas, and development IC memos.
+
 Built knowledge bases — real references, not placeholders. Every benchmark traces to a cited source.
 
 Grab it. Apache 2.0. No API keys. No signup. Clone, star, come back.
@@ -43,24 +49,42 @@ Here's where I want to land.
 I want this to be the most helpful AI resource in commercial real estate. Period. Not a product I sell. A growing set of building blocks you pick from. Scaffolding for the work you're already trying to think through.
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-66-green.svg)](#skill-index)
-[![Knowledge Bases](https://img.shields.io/badge/Knowledge_Bases-23-blue.svg)](#knowledge-bases)
-[![Research Notes](https://img.shields.io/badge/Research_Notes-57-orange.svg)](#new-in-v150)
-[![Claude Code Plugins](https://img.shields.io/badge/Claude_Code_Plugins-11-purple.svg)](#claude-code-plugins-recommended)
+[![Skills](https://img.shields.io/badge/Skills-90-green.svg)](#skill-index)
+[![Knowledge Bases](https://img.shields.io/badge/Knowledge_Bases-35-blue.svg)](#knowledge-bases)
+[![Research Notes](https://img.shields.io/badge/Research_Notes-93-orange.svg)](#new-in-v160)
+[![Claude Code Plugins](https://img.shields.io/badge/Claude_Code_Plugins-14-purple.svg)](#claude-code-plugins-recommended)
 [![No API Keys](https://img.shields.io/badge/API_Keys-None_Required-brightgreen.svg)](#quick-start)
 
 ---
 
 | | | | |
 |---|---|---|---|
-| **66** AI Skills | **23** Knowledge Bases | **11** Claude Code Plugins | **0** Dependencies |
-| **8** Capital Markets v1 | **8** Office v1 | **9** Asset Management v1 | **8** Brokerage v1 |
+| **90** AI Skills | **35** Knowledge Bases | **14** Claude Code Plugins | **0** Dependencies |
+| **8** Retail v1 | **8** Lender / Credit v1 | **8** Development and Construction v1 | **8** Capital Markets v1 |
+| **8** Office v1 | **9** Asset Management v1 | **8** Brokerage v1 | **8** Industrial v1 |
 
 ---
 
 > **No API keys. No installation. No dependencies.** Each `.md` file works on its own.
 
 > **Disclaimer:** These skill files are educational and informational resources, not production software for making investment decisions. The financial calculations, legal checklists, underwriting models, and analysis outputs are for reference and learning purposes only. Nothing in this repository constitutes financial, legal, investment, or tax advice. The authors and contributors are not liable for any decisions made based on information produced using these skills. Always consult qualified professionals — licensed attorneys, CPAs, commercial real estate brokers, and financial advisors — before making real estate investment decisions. These materials are provided "as is" without warranty of any kind. See [LICENSE](LICENSE) for full terms.
+
+---
+
+## New in v1.6.0
+
+This release ships three packs at once - a retail sector pack, the repo's first lender-side pack, and a development and construction pack:
+
+- **Retail v1** with 8 new U.S.-focused retail skills - market and trade area study, rent roll and tenant mix, lease abstract review, co-tenancy and anchor risk, CAM reconciliation and recovery, lease-by-lease underwriting, financing fit, and IC memo writing
+- **Lender / Credit v1** with 8 new U.S.-focused credit-side skills - loan request screening and sizing, sponsor and guarantor analysis, appraisal and valuation review, credit memo writing, covenant compliance and watchlist monitoring, annual loan review and risk rating, problem loan and modification analysis, and CRE portfolio concentration and stress testing
+- **Development and Construction v1** with 8 new U.S.-focused development skills - site and entitlement screening, development budget and yield on cost, construction loan sizing and structure, construction draw and cost-to-complete review, GC contract and change order review, schedule and delivery risk tracking, lease-up and stabilization pro forma, and development IC memo writing
+- **12 new knowledge bases** - 4 retail, 4 lender / credit, and 4 development and construction
+- **36 new companion research notes** under `research/retail/`, `research/lender-credit/`, and `research/development/`
+- **3 new Claude Code plugins** - `/cre-retail`, `/cre-lender-credit`, and `/cre-development`
+- **Cross-platform validation** with `scripts/validate_repo.py --strict`, a Python port of the existing PowerShell validator, plus a second CI job on Ubuntu
+- **Additive release framing** on top of the original multifamily core, Industrial v1, Brokerage Investment Sales v1, Asset Management v1, Office v1, and Capital Markets v1
+
+Retail v1 is lease-driven and sales-driven: tenant sales, occupancy cost, anchor health, co-tenancy, exclusives, and CAM recovery structure control value. Lender / Credit v1 is the credit-side mirror of everything else here, written for credit analysts, underwriters, portfolio managers, credit officers, loan review, and special assets. Development and Construction v1 covers U.S. ground-up and heavy redevelopment for developers, development managers, owner representatives, construction lenders, and equity partners.
 
 ---
 
@@ -136,6 +160,7 @@ The original multifamily core remains intact. Industrial v1 is the first additiv
 
 ## Table of Contents
 
+- [New in v1.6.0](#new-in-v160)
 - [New in v1.5.0](#new-in-v150)
 - [New in v1.4.0](#new-in-v140)
 - [New in v1.3.0](#new-in-v130)
@@ -175,7 +200,7 @@ claude
 > /cre-due-diligence Analyze the rent roll for 200 Park Avenue, Austin TX
 ```
 
-See [Claude Code Plugins](#claude-code-plugins-recommended) below for the original department plugins plus the additive Industrial v1, Brokerage v1, Asset Management v1, Office v1, and Capital Markets v1 packs.
+See [Claude Code Plugins](#claude-code-plugins-recommended) below for the original department plugins plus the additive Industrial v1, Brokerage v1, Asset Management v1, Office v1, Capital Markets v1, Retail v1, Lender / Credit v1, and Development and Construction v1 packs.
 
 #### Windows / PowerShell
 
@@ -217,6 +242,36 @@ New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
 Copy-Item -Recurse .\claude-code-plugins\cre-capital-markets "$HOME\.claude\skills\"
 ```
 
+Retail v1 example:
+
+```powershell
+git clone https://github.com/ahacker-1/cre-agent-skills.git
+Set-Location .\cre-agent-skills
+
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
+Copy-Item -Recurse .\claude-code-plugins\cre-retail "$HOME\.claude\skills\"
+```
+
+Lender / Credit v1 example:
+
+```powershell
+git clone https://github.com/ahacker-1/cre-agent-skills.git
+Set-Location .\cre-agent-skills
+
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
+Copy-Item -Recurse .\claude-code-plugins\cre-lender-credit "$HOME\.claude\skills\"
+```
+
+Development and Construction v1 example:
+
+```powershell
+git clone https://github.com/ahacker-1/cre-agent-skills.git
+Set-Location .\cre-agent-skills
+
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
+Copy-Item -Recurse .\claude-code-plugins\cre-development "$HOME\.claude\skills\"
+```
+
 ### Option 2: Copy a Single Skill File
 
 1. Browse the [Skill Index](#skill-index) below
@@ -243,7 +298,7 @@ The repo is structured so an AI agent can read this README, understand the full 
 
 ## Claude Code Plugins (Recommended)
 
-The repo now includes the original six department plugins plus five additive packs: Industrial v1, Brokerage Investment Sales v1, Asset Management v1, Office v1, and Capital Markets v1. Each plugin includes a `SKILL.md` entry point that routes to the right specialist skill based on your request, plus all referenced knowledge base files bundled inside.
+The repo now includes the original six department plugins plus eight additive packs: Industrial v1, Brokerage Investment Sales v1, Asset Management v1, Office v1, Capital Markets v1, Retail v1, Lender / Credit v1, and Development and Construction v1. Each plugin includes a `SKILL.md` entry point that routes to the right specialist skill based on your request, plus all referenced knowledge base files bundled inside.
 
 ### Available Plugins
 
@@ -260,6 +315,9 @@ The repo now includes the original six department plugins plus five additive pac
 | **Brokerage v1** | `/cre-brokerage` | 8 skills (assignment intake, BOV, listing proposal, OM / teaser, buyer process, bid leveling, negotiation brief, PSA-to-close coordination) | Brokerage Investment Sales Process, Broker Opinion of Value Guidance, Marketing Confidentiality and Buyer Process, Offer Negotiation and Closing Playbook |
 | **Office v1** | `/cre-office` | 8 skills (market / flight-to-quality, rent roll / stacking plan, lease abstract, rollover / occupancy cost, TI/LC underwriting, tenant credit, financing fit, IC memo) | Office Benchmarks, Office Lease Structures, Office TI/LC Economics, Office Lender Criteria |
 | **Capital Markets v1** | `/cre-capital-markets` | 8 skills (maturity diagnostic, refi gap, extension/workout, rescue capital, term sheet comparison, CMBS readiness, lender update, recap IC memo) | Capital Markets Benchmarks, Workout and Extension Structures, Rescue Capital and Preferred Equity, CMBS Servicing and Default Playbook |
+| **Retail v1** | `/cre-retail` | 8 skills (market / trade area, rent roll and tenant mix, lease abstract, co-tenancy and anchor risk, CAM reconciliation, underwriting, financing fit, IC memo) | Retail Benchmarks, Retail Lease Structures, Retail Tenant Sales and Occupancy Cost, Retail Lender Criteria |
+| **Lender / Credit v1** | `/cre-lender-credit` | 8 skills (loan screening and sizing, sponsor and guarantor, appraisal review, credit memo, covenant and watchlist monitoring, annual review and risk rating, problem loan and modification, portfolio concentration and stress test) | Lender Credit Policy Benchmarks, Regulatory Risk Rating and Classification, Credit Memo and Appraisal Review Standards, CRE Concentration and Stress Testing |
+| **Development and Construction v1** | `/cre-development` | 8 skills (site and entitlement screen, budget and yield on cost, construction loan sizing, draw and cost-to-complete, GC contract and change order, schedule and delivery risk, lease-up pro forma, IC memo) | Development Benchmarks, Construction Lending Criteria, Construction Contracts and Draw Controls, Entitlement and Site Risk |
 
 ### How to Install
 
@@ -339,6 +397,27 @@ New-Item -ItemType Directory -Force .\.claude\skills | Out-Null
 Copy-Item -Recurse C:\path\to\cre-agent-skills\claude-code-plugins\cre-capital-markets .\.claude\skills\
 ```
 
+Retail v1 example:
+
+```powershell
+New-Item -ItemType Directory -Force .\.claude\skills | Out-Null
+Copy-Item -Recurse C:\path\to\cre-agent-skills\claude-code-plugins\cre-retail .\.claude\skills\
+```
+
+Lender / Credit v1 example:
+
+```powershell
+New-Item -ItemType Directory -Force .\.claude\skills | Out-Null
+Copy-Item -Recurse C:\path\to\cre-agent-skills\claude-code-plugins\cre-lender-credit .\.claude\skills\
+```
+
+Development and Construction v1 example:
+
+```powershell
+New-Item -ItemType Directory -Force .\.claude\skills | Out-Null
+Copy-Item -Recurse C:\path\to\cre-agent-skills\claude-code-plugins\cre-development .\.claude\skills\
+```
+
 Project-level skills take priority over personal skills with the same name. You can commit the `.claude/skills/` directory to git so your team shares the same skills.
 
 #### Method C: Using `--add-dir` (No Installation)
@@ -408,6 +487,21 @@ Once installed, invoke any plugin with its slash command:
 /cre-capital-markets Diagnose the maturity risk for this loan due in October
 /cre-capital-markets Calculate the refinance proceeds gap and rescue-capital need
 /cre-capital-markets Build the lender update package for an extension request
+
+# Retail v1
+/cre-retail Define and test the trade area for this grocery-anchored center
+/cre-retail Map the co-tenancy clauses and model the dark-anchor cascade
+/cre-retail Rebuild the CAM pool and reconcile recovery income to underwriting
+
+# Lender / Credit v1
+/cre-lender-credit Screen and size this $18M loan request against policy
+/cre-lender-credit Write the credit approval memo for the loan committee
+/cre-lender-credit Run the annual review and confirm or change the risk rating
+
+# Development and Construction v1
+/cre-development Screen this site for zoning fit and entitlement risk
+/cre-development Test the budget with untrended and trended yield on cost
+/cre-development Review this month's draw package and cost to complete
 ```
 
 Claude reads the `SKILL.md` entry point, identifies which specialist skill to load based on your request, loads the full skill instructions plus relevant knowledge bases, and runs the analysis.
@@ -618,11 +712,50 @@ response = client.messages.create(
 | [Lender Update Package Builder](skills/capital-markets/lender-update-package-builder.md) | Builds lender, servicer, or capital-provider update package with NOI bridge and exhibit checklist |
 | [Recap IC Memo Writer](skills/capital-markets/recap-ic-memo-writer.md) | Synthesizes refinance, extension, workout, rescue capital, sale, or hold alternatives into an IC memo |
 
+### Retail v1 (8 skills)
+
+| Skill | What It Does |
+|-------|-------------|
+| [Retail Market and Trade Area Study](skills/retail/retail-market-and-trade-area-study.md) | Defines and tests the trade area behind a retail asset - demand, void and leakage, competitive supply, anchor draw, access, and category resilience |
+| [Retail Rent Roll and Tenant Mix Analyst](skills/retail/retail-rent-roll-and-tenant-mix-analyst.md) | Turns a retail rent roll into a reconciled read on space mix, tenant productivity, rollover, concentration, credit, and mark-to-market |
+| [Retail Lease Abstract Reviewer](skills/retail/retail-lease-abstract-reviewer.md) | Abstracts retail leases into economic, recovery, and control-right summaries and flags the investor, lender, and rent-roll conflicts that change value |
+| [Retail Co-Tenancy and Anchor Risk Analyst](skills/retail/retail-co-tenancy-and-anchor-risk-analyst.md) | Maps anchors and co-tenancy clauses, models the dark-anchor cascade, tests the REA, and rates anchor risk with a mitigation plan |
+| [Retail CAM Reconciliation and Recovery Analyst](skills/retail/retail-cam-reconciliation-and-recovery-analyst.md) | Rebuilds the recoverable expense pool lease by lease, tests prior CAM reconciliations, and ties recovery income back to underwriting |
+| [Retail Underwriting Model Builder](skills/retail/retail-underwriting-model-builder.md) | Builds a lease-by-lease retail cash flow with percentage rent, capped recoveries, sales-driven renewals, anchor reserve, co-tenancy downside, and lender sizing |
+| [Retail Financing Fit](skills/retail/retail-financing-fit.md) | Maps a retail asset to the lender lanes that will actually quote it, finds the test that controls proceeds, and specifies required structure |
+| [Retail IC Memo Writer](skills/retail/retail-ic-memo-writer.md) | Synthesizes trade area, rent roll, lease, co-tenancy, recovery, underwriting, and financing work into one IC memo with a decision table and named conditions |
+
+### Lender / Credit v1 (8 skills)
+
+| Skill | What It Does |
+|-------|-------------|
+| [Loan Request Screening and Sizing](skills/lender-credit/loan-request-screening-and-sizing.md) | Screens an incoming loan request for product and policy fit, sizes it under every applicable test, names the controlling test, and returns a pursue / structure / decline verdict |
+| [Sponsor and Guarantor Analyst](skills/lender-credit/sponsor-and-guarantor-analyst.md) | Analyzes sponsor and guarantor financials, verified liquidity and net worth, contingent liabilities and REO, global cash flow and global DSCR, track record, and guaranty structure |
+| [Appraisal and Valuation Reviewer](skills/lender-credit/appraisal-and-valuation-reviewer.md) | Reviews an appraisal or evaluation for regulatory compliance and analytical reasonableness, reconciles it to underwriting, and issues accept, condition, or reject |
+| [Credit Memo Writer](skills/lender-credit/credit-memo-writer.md) | Drafts a CRE credit approval memorandum that an approval authority, loan review, and an examiner can all read in the same order |
+| [Covenant Compliance and Watchlist Monitor](skills/lender-credit/covenant-compliance-and-watchlist-monitor.md) | Tests a closed loan against covenants, reporting obligations, and structural triggers, then recommends watchlist placement, retention, or removal with an action plan |
+| [Annual Loan Review and Risk Rating](skills/lender-credit/annual-loan-review-and-risk-rating.md) | Refreshes NOI, DSCR, debt yield, LTV, appraisal age, rollover, sponsor condition, and exceptions, then confirms or changes the classification and internal grade |
+| [Problem Loan and Modification Analyst](skills/lender-credit/problem-loan-and-modification-analyst.md) | Classifies a deteriorating loan, names the source of impairment, compares resolution paths on recovery, timing, cost, and accounting, and sets an action plan |
+| [CRE Portfolio Concentration and Stress Tester](skills/lender-credit/cre-portfolio-concentration-and-stress-tester.md) | Segments a CRE book against the supervisory concentration criteria, stresses it, estimates rating migration and reserve pressure, and produces a board or ALCO-ready report |
+
+### Development and Construction v1 (8 skills)
+
+| Skill | What It Does |
+|-------|-------------|
+| [Site and Entitlement Screen](skills/development/site-and-entitlement-screen.md) | Screens a development site for zoning fit, entitlement path, fees and exactions, environmental and physical constraints, and political risk |
+| [Development Budget and Yield on Cost Analyst](skills/development/development-budget-and-yield-on-cost-analyst.md) | Builds or audits a development budget, ties it to sources and uses, and tests untrended and trended yield on cost, spread, residual land value, and overrun sensitivity |
+| [Construction Loan Sizing and Structure](skills/development/construction-loan-sizing-and-structure.md) | Sizes a construction loan against every controlling test and structures cash equity, interest reserve, guaranties, draw controls, and takeout |
+| [Construction Draw and Cost-to-Complete Reviewer](skills/development/construction-draw-and-cost-to-complete-reviewer.md) | Reviews a monthly draw package end to end - pay application, retainage, lien waivers, change orders, cost to complete, in-balance test - and recommends fund, partial-fund, or hold |
+| [GC Contract and Change Order Reviewer](skills/development/gc-contract-and-change-order-reviewer.md) | Reviews a GC or CM agreement and its change orders for price, time, payment, and risk transfer, and produces an issues list with negotiation positions |
+| [Schedule and Delivery Risk Tracker](skills/development/schedule-and-delivery-risk-tracker.md) | Tracks the schedule from entitlement through certificate of occupancy, tests delivery against the loan and lease-up plan, prices delay, and rates each milestone |
+| [Lease-Up and Stabilization Pro Forma](skills/development/lease-up-and-stabilization-pro-forma.md) | Models absorption, pre-leasing, concession burn-off, operating shortfall and carry, breakeven and stabilization dates, and whether the takeout repays the construction loan |
+| [Development IC Memo Writer](skills/development/development-ic-memo-writer.md) | Synthesizes site and entitlement, budget and yield on cost, capital stack, contract, schedule, and lease-up work into a development IC memo with a go / no-go recommendation |
+
 ---
 
 ## Knowledge Bases
 
-Twenty-three reference files containing formulas, benchmarks, criteria, and checklists. Five belong to the original multifamily-first release, three extend the repo for Industrial v1, four extend it for Brokerage Investment Sales v1, three extend it for Asset Management v1, four extend it for Office v1, and four extend it again for Capital Markets v1.
+Thirty-five reference files containing formulas, benchmarks, criteria, and checklists. Five belong to the original multifamily-first release, three extend the repo for Industrial v1, four extend it for Brokerage Investment Sales v1, three extend it for Asset Management v1, four extend it for Office v1, four extend it for Capital Markets v1, four extend it for Retail v1, four extend it for Lender / Credit v1, and four extend it again for Development and Construction v1.
 
 | Knowledge Base | What It Contains | Used By |
 |---------------|-----------------|---------|
@@ -649,12 +782,24 @@ Twenty-three reference files containing formulas, benchmarks, criteria, and chec
 | [Workout and Extension Structures](knowledge/workout-and-extension-structures.md) | Extensions, modifications, forbearance, A/B notes, discounted payoff, deed-in-lieu, lender give/get, and package requirements | Extension / Workout Strategy, Lender Update Package, Recap IC Memo |
 | [Rescue Capital and Preferred Equity](knowledge/rescue-capital-and-pref-equity.md) | Preferred equity, mezzanine, JV equity, bridge, note purchase, discounted payoff, dilution, governance, and exit analysis | Rescue Capital Comparator, Refinance Gap Analyzer, Term Sheet Comparator |
 | [CMBS Servicing and Default Playbook](knowledge/cmbs-servicing-and-default-playbook.md) | CMBS parties, transfer triggers, special-servicer package readiness, borrower strategy, and watchlist/default signals | CMBS Readiness Reviewer, Extension / Workout Strategy, Lender Update Package |
+| [Retail Benchmarks](knowledge/retail-benchmarks.md) | Retail format definitions, occupancy and leasing reference points, leasing capital, occupancy cost and sales PSF, recovery load, and e-commerce exposure | Retail Market and Trade Area Study, Rent Roll and Tenant Mix, Retail Underwriting, Retail IC Memo |
+| [Retail Lease Structures](knowledge/retail-lease-structures.md) | Retail lease forms, base and percentage rent, CAM / tax / insurance recovery, tenant control rights, REA / OEA and pads, assignment, estoppel, and SNDA issue spotting | Retail Lease Abstract Reviewer, Co-Tenancy and Anchor Risk, CAM Reconciliation |
+| [Retail Tenant Sales and Occupancy Cost](knowledge/retail-tenant-sales-and-occupancy-cost.md) | Sales and occupancy-cost definitions, category frames, tenant credit tiers, distress and store-closure signals, renewal and backfill economics, and STNL frameworks | Rent Roll and Tenant Mix, Retail Underwriting, Retail IC Memo |
+| [Retail Lender Criteria](knowledge/retail-lender-criteria.md) | Retail lender lanes, core sizing tests, how lenders read retail deterioration, reserves, holdbacks, and recourse posture | Retail Financing Fit, Retail Underwriting, Retail IC Memo |
+| [Lender Credit Policy Benchmarks](knowledge/lender-credit-policy-benchmarks.md) | What examiners expect in a CRE credit policy, supervisory leverage ceilings and the exception basket, sizing and structure frames by lender and property type, and pricing and reserve frames | Loan Request Screening and Sizing, Credit Memo Writer, Annual Loan Review |
+| [Regulatory Risk Rating and Classification](knowledge/regulatory-risk-rating-and-classification.md) | Supervisory classification definitions, criticized / classified / watchlist mapping, dual risk rating scales, nonaccrual, modification treatment, and rating migration reporting | Annual Loan Review and Risk Rating, Covenant Compliance and Watchlist Monitor, Problem Loan Analyst |
+| [Credit Memo and Appraisal Review Standards](knowledge/credit-memo-and-appraisal-review-standards.md) | Credit approval memo structure, documentation and covenant checklists, policy exceptions and supervisory LTV limits, appraisal-versus-evaluation tests, and appraisal review standards | Credit Memo Writer, Appraisal and Valuation Reviewer |
+| [CRE Concentration and Stress Testing](knowledge/cre-concentration-and-stress-testing.md) | Supervisory concentration screening criteria, book segmentation, stress-test design, and how results feed capital, ACL, and policy limits | CRE Portfolio Concentration and Stress Tester, Annual Loan Review |
+| [Development Benchmarks](knowledge/development-benchmarks.md) | Development budget taxonomy, contingency and escalation, dated cost frames, yield on cost and development spread, residual land value, and schedule and lease-up durations | Development Budget and Yield on Cost Analyst, Lease-Up and Stabilization Pro Forma, Development IC Memo |
+| [Construction Lending Criteria](knowledge/construction-lending-criteria.md) | Construction sizing tests, equity and HVCRE treatment, interest reserve and carry, guaranty posture, in-balance and draw controls, and extension / mini-perm / takeout paths | Construction Loan Sizing and Structure, Draw and Cost-to-Complete Reviewer, Development IC Memo |
+| [Construction Contracts and Draw Controls](knowledge/construction-contracts-and-draw-controls.md) | Contract families and risk allocation, money mechanics, change orders versus construction change directives, completion and retainage, draw packages, lien waivers, bonds, and insurance | GC Contract and Change Order Reviewer, Draw and Cost-to-Complete Reviewer |
+| [Entitlement and Site Risk](knowledge/entitlement-and-site-risk.md) | Approval pathways and what each costs, exactions and impact fees, environmental site review, utilities and geotechnical obligations, and historic, design, and state environmental review | Site and Entitlement Screen, Schedule and Delivery Risk Tracker |
 
 **How to use knowledge bases:** Load the knowledge base alongside the skill you're using. For example, when using the Financial Model Builder skill, also load Underwriting Calculations for formula definitions and Multifamily Benchmarks for expense assumptions. The Claude Code plugins bundle relevant knowledge bases automatically.
 
 ### Companion Research Notes
 
-Industrial v1 includes 11 research notes under `research/industrial/` plus [research/industrial/INDEX.md](research/industrial/INDEX.md). Brokerage Investment Sales v1 adds 12 more research notes under `research/brokerage/` plus [research/brokerage/INDEX.md](research/brokerage/INDEX.md). Asset Management v1 adds 10 more research files under `research/asset-management/` - 1 shared taxonomy seed, 9 skill-backing notes with 168+ cited sources, and [research/asset-management/INDEX.md](research/asset-management/INDEX.md). Office v1 adds 12 more research notes under `research/office/` plus [research/office/INDEX.md](research/office/INDEX.md). Capital Markets v1 adds 12 more research notes under `research/capital-markets/` plus [research/capital-markets/INDEX.md](research/capital-markets/INDEX.md), bringing the repo to 57 companion research notes.
+Industrial v1 includes 11 research notes under `research/industrial/` plus [research/industrial/INDEX.md](research/industrial/INDEX.md). Brokerage Investment Sales v1 adds 12 more research notes under `research/brokerage/` plus [research/brokerage/INDEX.md](research/brokerage/INDEX.md). Asset Management v1 adds 10 more research files under `research/asset-management/` - 1 shared taxonomy seed, 9 skill-backing notes with 168+ cited sources, and [research/asset-management/INDEX.md](research/asset-management/INDEX.md). Office v1 adds 12 more research notes under `research/office/` plus [research/office/INDEX.md](research/office/INDEX.md). Capital Markets v1 adds 12 more research notes under `research/capital-markets/` plus [research/capital-markets/INDEX.md](research/capital-markets/INDEX.md). Retail v1 adds 12 more research notes under `research/retail/` plus [research/retail/INDEX.md](research/retail/INDEX.md). Lender / Credit v1 adds 12 more research notes under `research/lender-credit/` plus [research/lender-credit/INDEX.md](research/lender-credit/INDEX.md). Development and Construction v1 adds 12 more research notes under `research/development/` plus [research/development/INDEX.md](research/development/INDEX.md), bringing the repo to 93 companion research notes.
 
 ---
 
@@ -687,7 +832,7 @@ cre-agent-skills/
 |-- LICENSE                                # Apache 2.0
 |-- NOTICE                                 # Attribution notice
 |
-|-- skills/                                # 66 standalone skill files
+|-- skills/                                # 90 standalone skill files
 |   |-- due-diligence/                     # 7 property analysis skills
 |   |-- underwriting/                      # 3 financial modeling skills
 |   |-- financing/                         # 3 debt sourcing skills
@@ -698,9 +843,12 @@ cre-agent-skills/
 |   |-- brokerage/                         # 8 brokerage investment sales v1 skills
 |   |-- asset-management/                  # 9 post-acquisition operations skills
 |   |-- office/                            # 8 office v1 skills
-|   `-- capital-markets/                   # 8 capital markets v1 skills
+|   |-- capital-markets/                   # 8 capital markets v1 skills
+|   |-- retail/                            # 8 retail v1 skills
+|   |-- lender-credit/                     # 8 lender / credit v1 skills
+|   `-- development/                       # 8 development and construction v1 skills
 |
-|-- knowledge/                             # 23 domain knowledge reference files
+|-- knowledge/                             # 35 domain knowledge reference files
 |   |-- underwriting-calc.md
 |   |-- risk-scoring.md
 |   |-- multifamily-benchmarks.md
@@ -723,16 +871,31 @@ cre-agent-skills/
 |   |-- capital-markets-benchmarks.md
 |   |-- workout-and-extension-structures.md
 |   |-- rescue-capital-and-pref-equity.md
-|   `-- cmbs-servicing-and-default-playbook.md
+|   |-- cmbs-servicing-and-default-playbook.md
+|   |-- retail-benchmarks.md
+|   |-- retail-lease-structures.md
+|   |-- retail-tenant-sales-and-occupancy-cost.md
+|   |-- retail-lender-criteria.md
+|   |-- lender-credit-policy-benchmarks.md
+|   |-- regulatory-risk-rating-and-classification.md
+|   |-- credit-memo-and-appraisal-review-standards.md
+|   |-- cre-concentration-and-stress-testing.md
+|   |-- development-benchmarks.md
+|   |-- construction-lending-criteria.md
+|   |-- construction-contracts-and-draw-controls.md
+|   `-- entitlement-and-site-risk.md
 |
-|-- research/                              # 57 companion research notes
+|-- research/                              # 93 companion research notes
 |   |-- industrial/
 |   |-- brokerage/
 |   |-- asset-management/
 |   |-- office/
-|   `-- capital-markets/
+|   |-- capital-markets/
+|   |-- retail/
+|   |-- lender-credit/
+|   `-- development/
 |
-|-- claude-code-plugins/                   # 11 ready-to-install Claude Code plugins
+|-- claude-code-plugins/                   # 14 ready-to-install Claude Code plugins
 |   |-- cre-due-diligence/
 |   |-- cre-underwriting/
 |   |-- cre-financing/
@@ -743,10 +906,14 @@ cre-agent-skills/
 |   |-- cre-brokerage/
 |   |-- cre-asset-management/
 |   |-- cre-office/
-|   `-- cre-capital-markets/
+|   |-- cre-capital-markets/
+|   |-- cre-retail/
+|   |-- cre-lender-credit/
+|   `-- cre-development/
 |
 |-- scripts/
-|   `-- validate-repo.ps1                  # strict repo consistency checks
+|   |-- validate-repo.ps1                  # strict repo consistency checks (Windows)
+|   `-- validate_repo.py                   # same checks, cross-platform (macOS / Linux)
 |
 |-- .github/
 |   `-- workflows/validate.yml             # CI validation workflow
@@ -847,6 +1014,45 @@ Here are the files: [upload rent roll, T-12, offering memo]
 /cre-capital-markets Write the recap IC memo with refinance, workout, rescue capital, and sale options
 ```
 
+### Example: Retail v1 Workflow
+
+```
+/cre-retail Define and test the trade area for this grocery-anchored center
+/cre-retail Reconcile the rent roll and score the tenant mix, rollover, and concentration
+/cre-retail Abstract the anchor and inline leases, including exclusives and use restrictions
+/cre-retail Map the co-tenancy clauses and model the dark-anchor cascade
+/cre-retail Rebuild the CAM pool and test the last two reconciliations
+/cre-retail Build the lease-by-lease underwriting model with percentage rent and capped recoveries
+/cre-retail Test financing fit and identify the controlling sizing test
+/cre-retail Write the IC memo for the acquisition committee
+```
+
+### Example: Lender / Credit v1 Workflow
+
+```
+/cre-lender-credit Screen and size this $18M loan request against our policy
+/cre-lender-credit Analyze the sponsor and guarantor, including global cash flow and global DSCR
+/cre-lender-credit Review the appraisal and reconcile it to our underwriting
+/cre-lender-credit Draft the credit approval memo for loan committee
+/cre-lender-credit Test covenant compliance and recommend watchlist treatment
+/cre-lender-credit Run the annual review and confirm or change the risk rating
+/cre-lender-credit Compare resolution paths on this deteriorating loan
+/cre-lender-credit Stress the CRE book against the supervisory concentration criteria
+```
+
+### Example: Development and Construction v1 Workflow
+
+```
+/cre-development Screen this site for zoning fit, entitlement path, and political risk
+/cre-development Build the development budget and test untrended and trended yield on cost
+/cre-development Size the construction loan and structure the interest reserve and guaranties
+/cre-development Review the GC contract and the pending change orders
+/cre-development Review this month's draw package and the cost to complete
+/cre-development Track the schedule against the loan completion date and price the delay
+/cre-development Model lease-up, concession burn-off, and the stabilization date
+/cre-development Write the development IC memo
+```
+
 ---
 
 ## Common Workflows
@@ -938,6 +1144,36 @@ Here are the files: [upload rent roll, T-12, offering memo]
 4. **Lender Update Package Builder** → assemble ask, NOI bridge, business plan, exhibits, and lender protections
 5. **Recap IC Memo Writer** → document decision, alternatives, risks, and approval conditions
 
+### "I need a U.S. retail acquisition or asset review workflow"
+1. **Retail Market and Trade Area Study** → test trade-area demand, void and leakage, competitive supply, and anchor draw
+2. **Retail Rent Roll and Tenant Mix Analyst** → reconcile space mix, productivity, rollover, concentration, and mark-to-market
+3. **Retail Lease Abstract Reviewer** → abstract economics, recovery structure, exclusives, use restrictions, and control rights
+4. **Retail Co-Tenancy and Anchor Risk Analyst** → model the dark-anchor cascade and test the REA for re-tenanting restrictions
+5. **Retail CAM Reconciliation and Recovery Analyst** → rebuild the recoverable pool and tie recovery income to underwriting
+6. **Retail Underwriting Model Builder** → build the lease-by-lease cash flow with percentage rent, capped recoveries, and an anchor reserve
+7. **Retail Financing Fit** → identify the lender lanes and the controlling sizing test
+8. **Retail IC Memo Writer** → summarize the investment case with a decision table and named conditions
+
+### "I am the lender on this deal, not the borrower"
+1. **Loan Request Screening and Sizing** → test product and policy fit, size under every test, and name the controlling test
+2. **Sponsor and Guarantor Analyst** → verify liquidity, net worth, contingent liabilities, global cash flow, and global DSCR
+3. **Appraisal and Valuation Reviewer** → review the appraisal for compliance and reasonableness and reconcile it to underwriting
+4. **Credit Memo Writer** → draft the approval memo for the approval authority, loan review, and the examiner
+5. **Covenant Compliance and Watchlist Monitor** → test covenants and triggers after closing and set watchlist treatment
+6. **Annual Loan Review and Risk Rating** → refresh the metrics, confirm or change the classification, and set the next review date
+7. **Problem Loan and Modification Analyst** → compare resolution paths when the credit deteriorates
+8. **CRE Portfolio Concentration and Stress Tester** → segment and stress the book for the board or ALCO
+
+### "I am building this from the ground up"
+1. **Site and Entitlement Screen** → test zoning fit, entitlement path, fees and exactions, and political risk
+2. **Development Budget and Yield on Cost Analyst** → build the budget and test yield on cost, spread, and overrun sensitivity
+3. **Construction Loan Sizing and Structure** → size the loan, quantify cash equity, and structure reserve, guaranty, and takeout
+4. **GC Contract and Change Order Reviewer** → review price, time, payment, and risk transfer before signing
+5. **Construction Draw and Cost-to-Complete Reviewer** → run the monthly draw, in-balance test, and cost to complete
+6. **Schedule and Delivery Risk Tracker** → test delivery against the loan and the lease-up plan and price the delay
+7. **Lease-Up and Stabilization Pro Forma** → model absorption, concessions, carry, breakeven, and takeout coverage
+8. **Development IC Memo Writer** → summarize the development case with a go / no-go recommendation
+
 ---
 
 ## FAQ
@@ -972,7 +1208,7 @@ This repo extracts those same agents into standalone skills you can use individu
 
 ### Can I use these for property types other than multifamily?
 
-Yes. The original repo was optimized for multifamily acquisitions, and those skills remain intact. As of v1.1.0, the repo also includes **Industrial v1** for U.S. industrial acquisitions. As of v1.2.0, it includes **Brokerage Investment Sales v1** for U.S. seller-side commercial investment sales process work. As of v1.4.0, it includes **Office v1** for U.S. office acquisitions, refinancings, recapitalizations, lease-up, tenant credit, TI/LC underwriting, and IC memo writing. As of v1.5.0, it includes **Capital Markets v1** for debt maturities, refinance gaps, workouts, rescue capital, special servicing, and recap decisions across property types. Retail and self-storage are still planned future sector packs, though many shared, brokerage, and capital-markets workflows transfer.
+Yes. The original repo was optimized for multifamily acquisitions, and those skills remain intact. As of v1.1.0, the repo also includes **Industrial v1** for U.S. industrial acquisitions. As of v1.2.0, it includes **Brokerage Investment Sales v1** for U.S. seller-side commercial investment sales process work. As of v1.4.0, it includes **Office v1** for U.S. office acquisitions, refinancings, recapitalizations, lease-up, tenant credit, TI/LC underwriting, and IC memo writing. As of v1.5.0, it includes **Capital Markets v1** for debt maturities, refinance gaps, workouts, rescue capital, special servicing, and recap decisions across property types. As of v1.6.0, it includes **Retail v1** for grocery-anchored, power, strip, lifestyle, mall, mixed-use, pad, and single-tenant net lease assets, **Lender / Credit v1** for the credit side of CRE lending, and **Development and Construction v1** for U.S. ground-up and heavy redevelopment. Self-storage, and affordable and workforce housing overlays, are still planned, though many shared, brokerage, capital-markets, and lender-side workflows transfer.
 
 ---
 
